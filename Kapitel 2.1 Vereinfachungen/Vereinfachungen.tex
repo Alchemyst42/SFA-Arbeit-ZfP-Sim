@@ -1,0 +1,75 @@
+\documentclass[a4paper, 11pt]{scrartcl}
+
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+
+\newcommand{\vect}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
+\DeclareMathOperator{\atantwo}{atan2d}
+
+\begin{document}
+\section{Berechnung der Strahlenverläufe}
+\subsection{Grundbegriffe und Notation der Vektorrechnung}
+Im Folgenden sollen die zur Berechnung verwendeten Formeln erklärt und hergeleitet werden. 
+Dazu ist es nötig, einige Bezeichnungen einzuführen: wie allgemein üblich, werden wir einen Vektor, welcher sich als \glqq Schritt\grqq{} im Raum versinnbildlichen lässt, durch einen Pfeil darüber kennzeichnen, zum Beispiel $\vec{v}$. 
+Weiterhin soll der Ortsvektor eines Punktes (also der Vektor vom Koordinatenursprung zu dem Punkt) mit dem zum Großbuchstaben des Punktes gehörenden Kleinbuchstaben bezeichnet werden. Der Punkt $O(4|2)$ hat also den Ortsvektor $\vec{o} = \vect{4}{2}$. 
+Zudem verweist ein tiefgestelltes $x$ auf die Komponente eines Vektors beziehungsweise eines Punktes in x-Richtung und ein $y$ auf die y-Komponente. 
+Auf das soeben genannte Beispiel bezogen gilt $O_x = \vec{o}_x = 4$ und $O_y = \vec{o}_y = 2$.
+
+\subsection{Erklärung und Begründung der vorgenommenen Vereinfachungen}
+%TODO notwendig? -> kürzer?
+Da das Programm die Berechnungen in akzeptabler Zeit durchführen können soll, dürfen die verwendeten Formeln nicht zu umfangreich sein. 
+Außerdem ist eine exakte Simulation nicht nötig, da der Nutzer den jeweiligen Probekörper ohnehin nur annähernd digitalisieren kann, weshalb berechnete Ergebnisse unabhängig von der Berechnung meist nicht genau mit den realen Messwerten übereinstimmen werden. 
+Daher ist es legitim, einige mathematische und physikalische Vereinfachungen vorzunehmen, um die \hyperref[sec:herleitung]{Herleitung der Formeln} möglichst unkompliziert zu gestalten. 
+Welche Näherungen mit welcher Intention vorgenommen wurden, soll in diesem Kapitel näher beleuchtet werden.
+
+\subsubsection{Betrachtung der Ultraschallwellen als Strahlenbündel}
+%TODO zu viel Doppelpunkt
+Genau wie jede andere Art des Schalls ist Ultraschall eine mechanische Welle und breitet sich daher dem Huygens'schen Prinzip folgend allseitig aus. 
+%old Jedoch ist die Amplitude und somit auch die Intensität der Welle in einer Richtung wesentlicher stärker: Der Aufbau des Senders ermöglicht es, den Schall zu \glqq lenken\grqq{} und damit gezielt bestimmte Bereiche des Probekörpers zu überprüfen. 
+Jedoch ist die Amplitude und somit auch die Intensität der Welle in einer Richtung wesentlicher stärker: Der Aufbau des Senders ermöglicht es, den Schall zu fokussieren, um spezifische Bereiche des Körpers prüfen zu können.
+Die Ausbreitung einer Welle, inklusive der Reflexion beim Übergang von einem Medium in ein anderes, zu berechnen ist sehr kompliziert, besonders da sie schlecht als Datenstruktur dargestellt werden kann.\\
+An dieser Stelle kommt die Vektorrechnung ins Spiel: Indem angenommen wird, dass sich der Schall in nur eine Richtung ausbreitet, kann man ihn als Strahl betrachten. 
+Mathematisch gesehen besteht er also aus einem Ortsvektor zum Startpunkt und einem Richtungsvektor. 
+Die vektorielle Darstellung eines Strahls $\vec{v}$, der in einem zweidimensionalen kartesischen Koordinatensystem mit dem Koordinatenursprung $O(0|0)$ am Punkt $P(0|3)$ beginnt und von dort aus in Richtung des Punktes $Q(1|4)$ verläuft, lautet also $\vec{v} = \overrightarrow{OP} + \lambda \cdot \overrightarrow{PQ} = \vect{0}{3} + \lambda \cdot \vect{1}{1}$, wobei $\lambda\in\mathbb{R}$ und $\lambda\geq0$ gilt. 
+Dieses Vorgehen bringt große Vorteile mit sich: Beispielsweise ist es mithilfe dessen sehr einfach, Schnittpunkte und Reflexionsvektoren auszurechnen, wie in Kapitel \ref{sec:herleitung} beschrieben.\\
+%TODO natürlich muss jedoch... Satz doof
+% machen wir nicht immer, fachlich nicht ganz korrekt
+Natürlich muss jedoch die dadurch entstehende Vernachlässigung der allseitigen Ausbreitung kompensiert werden. 
+Aus diesem Grund wird nicht nur ein, sondern mehrere solcher Strahlen von der Quelle ausgesandt. 
+Somit entfällt einerseits die Problematik der Reflexion einer gesamten Wellenfront an einem Objekt, welche sehr umständlich ist, andererseits bleibt die Genauigkeit nahezu erhalten. 
+Wird in einem realen Prüfkörper ein großer Teil des Schalls zurück zum Sender reflektiert, passiert dasselbe auch in der Simulation. 
+Der Unterschied besteht allein darin, dass in einer realen Messung die registrierte Schallintensität analog ist, da sie auch von Feinheiten im Prüfling beeinflusst wird, während das Programm eine digitale Intensität feststellt, denn diese ist abhängig von der Anzahl der zurückreflektierten Strahlen, welche selbstverständlich eine natürliche Zahl sein muss.\\
+Aufgrund dessen entsteht eine geringe Abweichung der Berechnung von der Messung, jedoch kann diese Abweichung minimiert werden, indem möglichst viele Strahlen ausgesandt werden, was die \glqq Lücken\grqq{} zwischen den digitalen Zahlen verkleinert. 
+Dies impliziert zwar einen höheren Rechenaufwand, jedoch kann die Strahlenanzahl für die meisten Simulationsparameter (wie zum Beispiel die Form des Prüfkörpers und Anzahl der Reflexionen) so gewählt werden, dass sowohl die Qualität des Ergebnisses als auch die zur Berechnung benötigte Zeit akzeptabel sind.
+\subsubsection{Berechnung der Intensität eines einzelnen Strahls}
+%TODO ganz raus
+Neben der Anzahl der zurückgekommenen Strahlen gibt es für den Sender einen weiteren Parameter dafür, wie stark der Peak des Oszillogramms an einem bestimmten Zeitpunkt sein muss. 
+Aus der Länge des Weges jedes Strahls wird berechnet, wie groß seine Intensität bei der Rückkehr ist. 
+Näher beleuchtet wird dies in Kapitel \ref{sec:sim}.\\
+Dieser zusätzliche Parameter ist notwendig, da Ultraschallwellen in der Realität ebenfalls abhängig von der zurückgelegten Strecke Energie (welche gleichbedeutend mit der Intensität ist) verlieren. 
+%TODO Komma statt Klammer?
+Wie groß die verbleibende Intensität ist, berechnet das Programm mithilfe der Formel $I = \dfrac{I_0}{1.05^{\tfrac{s}{c}}}$. 
+Dabei steht $I_0$ für die Anfangsintensität, $s$ für den zurückgelegten Weg und $c$ für die Schallgeschwindigkeit im jeweiligen Medium.
+\subsubsection{Vernachlässigung der Materialübergänge und Annahme der Totalreflexion}
+In unserer Arbeit gehen wir davon aus, dass der gesamte Prüfkörper aus einem einzigen Material besteht. 
+Dies bringt zum Einen den Vorteil, dass die genannte Formel zur Berechnung der Intensität eines Strahls angewendet werden kann, da die Schallgeschwindigkeit so konstant ist. 
+Existierten mehrere Materialien, so würde sie sich während des Durchlaufs durch den Probekörper ändern und würde so die Berechnung erschweren. 
+Weiterhin finden an Materialübergängen wellenphysikalische Vorgänge wie Brechung und Reflexion statt, welche den Verlauf der Strahlen direkt beeinflussen. 
+Das Problem ist vor allem, dass sich dabei die Energie des ursprünglichen Strahls in den gebrochenen und den reflektierten Anteil aufspaltet, wodurch sehr schnell sehr viele separate Strahlen aus einem einzigen Ursprungsstrahl entstehen, welche jeweils einzeln berechnet werden müssen und somit in der Summe einen großen Rechenaufwand darstellen. 
+All dies ist zwar prinzipiell leicht zu berechnen, wenn klare Grenzen zwischen den verschiedenen Stoffen bestehen, jedoch nicht, wenn diese eher \glqq fließend\grqq{} ineinander übergehen.\\
+Daraus folgt weiterhin, dass es sich erübrigt, eine allgemeine Formel zur Berechnung des reflektierten Schalls zu verwenden. 
+Es wird davon ausgegangen, dass der einzige Materialübergang zwischen dem Prüfkörper und seiner Umgebung, also Luft, besteht. 
+%TODO Simulation in Vakuum?
+Da sich die Schallgeschwindigkeit in Luft sehr stark von derjenigen in festen Stoffen unterscheidet, wird beinahe der gesamte Anteil des Strahls reflektiert, was aus Gründen der Berechenbarkeit als tatsächliche Totalreflexion angesehen wird. 
+Somit kann die Reflexion als rein mathematisches Problem der Vektorrechnung ohne physikalische Beschränkungen betrachtet werden.
+
+\newpage
+
+\end{document}
