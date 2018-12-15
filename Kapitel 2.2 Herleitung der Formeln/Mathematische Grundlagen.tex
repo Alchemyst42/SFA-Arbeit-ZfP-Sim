@@ -86,7 +86,17 @@ Dazu wird eine Formel zur Berechnung des Winkels in mathematisch positiver Richt
 Als letzte Form haben wir die Ellipse $E(P, Q, e)$ implementiert.
 Wie beim Kreis ist es nötig, eine vektorielle Darstellung zu finden. 
 Aufgrund der Definition einer Ellipse lautet diese $E: \vec{x} = \vec{p} + \vec{u} = \vec{q} + \vec{v}$ mit $ e = |\vec{u}| + |\vec{v}|$.
-Zur Bestimmung des Schnittpunkts $S$ wird nun folgendes Gleichungssystem nach
+Zur Bestimmung des Schnittpunkts $S$ wird nun folgendes Gleichungssystem nach $\lambda$ gelöst:
+\begin{equation*}
+\begin{split}
+\vec{o} + \lambda \cdot \vec{r} &= \vec{p} + \vec{u} \\
+\vec{o} + \lambda \cdot \vec{r} &= \vec{q} + \vec{v} \\
+\vec{p} + \vec{u} &= \vec{q} + \vec{v} \\
+|\vec{u}| + |\vec{v}| &= e
+\end{split}
+\end{equation*}
+Daraus ergibt sich folgend der Punkt $S$ mit $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$.
+
 
 
 
