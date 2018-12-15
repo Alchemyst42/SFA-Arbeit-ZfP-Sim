@@ -16,7 +16,7 @@ Die im vorangegangenen Kapitel hergeleiteten Formeln sind in der Klasse \texttt{
 Das Kernstück der Klasse ist jedoch die \texttt{trace}-Funktion, welche dazu dient, den gesamten Verlauf eines Strahls im Probekörper zu ermitteln. Dazu wird mithilfe der Schnittpunkt-Funktionen der Schnittpunkt mit jedem Objekt in dem Körper ermittelt, sofern existent. Anschließend wird die Reflexionsmethode für dasjenige Objekt aufgerufen, welches tatsächlich vom Strahl getroffen wird, also dessen Schnittpunkt mit dem Strahl am nächsten an dem Ausgangspunkt des Strahls liegt. Sind mehrere Objekte gleich weit entfernt, wird die Funktion zur Reflexion an Ecken aufgerufen, sodass in jedem Fall ein eindeutiger neuer Strahl entsteht.\\
 Bei jeder einzelnen Reflexion wird der vorherige Strahl in einer Liste gespeichert, sodass am Ende sämtliche Strahlen mit Anfangspunkt und Richtungsvektor geordnet in dieser Liste stehen. Mithilfe dessen ist der Verlauf des Strahls durch den Prüfkörper eindeutig nachvollziehbar, indem die Reflexionspunkte in der gegebenen Reihenfolge betrachtet werden.
 
-\subsection{Scanverfahren}
+\subsection{Scanverfahren} %TODO keine einworttitel
 %%todo Anknüpfen an Text davor, Bezug auf Klassen selbst oder algorithmische Erklärung der Verfahren?
 Basierend auf den von Raytracer ermittelten Punkten, an welchen die Strahlen reflektiert werden, errechnet man, welche Zeit zwischen den einzelnen Reflexionen vergeht.
 Weiterhin wird für jeden Auftreffpunkt geprüft, ob dieser im Messbereich des Senders liegt. 

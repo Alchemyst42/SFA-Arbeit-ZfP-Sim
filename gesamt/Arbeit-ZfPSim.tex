@@ -1,11 +1,4 @@
 \documentclass[reducespace,stylepage,semiarbeit]{spezidoc}
-\usepackage[ngerman]{babel}
-\usepackage{graphicx}
-\usepackage{amssymb}
-\usepackage{amsfonts}
-\interfootnotelinepenalty=10000
-
-
 
 \schuelerone{Lukas}{Schneider}{12as}
 \schuelertwo{Moritz}{Vogel}{12bs}
@@ -15,47 +8,389 @@
 \aussenbetreuer[false]{Herr Doktor Florian Römer}
 \title{Simulation Ultraschall-basierter zerstörungsfreier Materialprüfung}
 \date{\today}
+
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[ngerman]{babel}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{ulem}
+\usepackage{wrapfig}
+
+
+
 \parindent0pt
 \setlength{\parskip}{\baselineskip}
-\usepackage[ngerman]{babel}
-\usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{caption}
-%\usepackage{setspace}
-%\usepackage{ulem}
-%\usepackage{wrapfig}
-\usepackage[style=science, backend=bibtex]{biblatex} %style=verbose
-\bibliography{Theorie_Ultraschall}
+\newcommand{\vect}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
+\DeclareMathOperator{\atantwo}{atan2d}
+
+
+
 
 \begin{document}
+
+
 \maketitlepage
 \newpage
+
+
 \tableofcontents
 \thispagestyle{empty}
 \newpage
+
+. 
+
 
 \setcounter{page}{1}
 
 \section{Theorie der Zerstörungsfreien Prüfung}
 \subsection{Definition zerstörungsfreier Prüfung}
-Das Gebiet der Material- oder Werkstoffprüfung befasst sich mit der Ermittlung der Kenngrößen und des Verhaltens fertiger Bauteile, z.B. einer Eisenbahnschiene, und Werkstoffproben, etwa eines Steinblocks. Getestet werden können zum Beispiel Dehnbarkeit, Hitzebeständigkeit oder Fehlerfreiheit.\\ 
-%[https://de.wikipedia.org/wiki/Werkstoffpr%C3%BCfung]
+Das Gebiet der Material- oder Werkstoffprüfung befasst sich mit der Ermittlung der Kenngrößen und des Verhaltens fertiger Bauteile, z.B. 
+einer Eisenbahnschiene, und Werkstoffproben, etwa eines Steinblocks. 
+Getestet werden können zum Beispiel Dehnbarkeit, Hitzebeständigkeit oder Fehlerfreiheit.\\ 
+%TODO [https://de.wikipedia.org/wiki/Werkstoffpr%C3%BCfung]
 Unter Fehlern versteht man dabei Unregelmäßigkeiten beziehungsweise Abweichungen von der Norm an der Oberfläche oder im Inneren des Bauteils oder Werkstoffs (Im Weiteren Prüfkörper), welche die Verwendbarkeit desselben beeinträchtigen. 
-Man unterscheidet weiterhin bei der Werkstoffprüfung zwischen zerstörenden und zerstörungsfreien Verfahren. Zu ersterer Kategorie zählen unter anderem Stresstests, bei denen die Grenzen eines Prüflings getestet werden. Ein Test der Reißfestigkeit eines Seils etwa ist dann beendet, wenn es reißt. Mit ähnlichen Verfahren lassen sich viele Informationen ermitteln und die zerstörenden Verfahren decken ein entsprechend breites Spektrum ab. Sie versagen allerdings in einem sehr wichtigen Anwendungsgebiet der Materialprüfung - der Fehlerprüfung.\\
-Anders als die Ermittlung allgemeiner Informationen über ein Produkt müssen Fehlerprüfungen regelmäßig durchgeführt werden. Man nehme zum Beispiel eine Halterung für Flugzeugturbinen. Die Belastbarkeit des Bauteils ist hier eine entscheidende Information und wird daher genau (zerstörend) gemessen, was zur Zerstörung des Bauteils führt. Wenn man einige Bauteile verwendet um den Test durchzuführen und starke Abweichungen streicht erhält man sehr wahrscheinlich einen Wert, der die zu erwartende Belastbarkeit des Bauteils widerspiegelt und Kunden zur Information dienen kann. Die dabei zerstörte Menge an Halterungen ist ein vernachlässigbarer Verlust.\\
-Möchte man jedoch wissen, wie die weiteren produzierten Bauteile beschaffen sind, muss man nicht mehr den genauen Wert ermitteln, sondern nur auf Abweichungen von der Norm prüfen, also auf Fehler. Ein naheliegender Einfall ist, Stichproben zu nehmen, was jedoch zwei Nachteile hat: Zum einen ist selbst der Verlust einzelner Teile ein Verlust, und damit nicht wünschenswert. Zum anderen ist eine Stichprobe nicht sicher, da diese nur zuverlässige Fehler, hervorgerufen durch eine dauerhafte Fehlfunktion in der Fertigung, eindeutig feststellt.\\
-Beide Probleme werden durch zerstörungsfreie Materialprüfung gelöst. Wie der Name schon sagt, wird der Prüfkörper bei diesen Verfahren nicht verbraucht, was diverse Vorteile hat. So kann man nun alle Bauteile prüfen und dennoch verkaufen. Diese Prüfverfahren eignen sich auch für eine Prüfung lange nach der Fertigung, bei der festgestellt werden soll, ob durch den Gebrauch Fehler entstanden sind. Hier wäre eine Stichprobe gänzlich nutzlos und eine vollständige Zerstörung ginge gegen den Sinn der Prüfung. Zerstörungsfreie Verfahren dagegen ermöglichen es, festzustellen, ob Teile ersetzt werden müssen und falls nicht, fallen nur die Kosten für die eigentliche Prüfung an.\\
-Ein Nachteil dieser Methoden ist jedoch, dass sie nur auf Fehler aufmerksam machen, anstatt ihre Wirkung einzuschätzen. Die Ablösung der zerstörenden Prüfung auf dem Gebiet der Bestimmung von Kenngrößen ist also zumindest mit den momentan bekannten Methoden der zerstörungsfreien Prüfung noch nicht möglich.
-\newpage
+Man unterscheidet weiterhin bei der Werkstoffprüfung zwischen zerstörenden und zerstörungsfreien Verfahren. 
+Zu ersterer Kategorie zählen unter anderem Stresstests, bei denen die Grenzen eines Prüflings getestet werden. 
+Ein Test der Reißfestigkeit eines Seils etwa ist dann beendet, wenn es reißt. 
+Mit ähnlichen Verfahren lassen sich viele Informationen ermitteln und die zerstörenden Verfahren decken ein entsprechend breites Spektrum ab. 
+Sie versagen allerdings in einem sehr wichtigen Anwendungsgebiet der Materialprüfung - der Fehlerprüfung.\\
+Anders als die Ermittlung allgemeiner Informationen über ein Produkt müssen Fehlerprüfungen regelmäßig durchgeführt werden. 
+Man nehme zum Beispiel eine Halterung für Flugzeugturbinen. 
+Die Belastbarkeit des Bauteils ist hier eine entscheidende Information und wird daher genau (zerstörend) gemessen, was zur Zerstörung des Bauteils führt. 
+Wenn man einige Bauteile verwendet um den Test durchzuführen und starke Abweichungen streicht erhält man sehr wahrscheinlich einen Wert, der die zu erwartende Belastbarkeit des Bauteils widerspiegelt und Kunden zur Information dienen kann. 
+Die dabei zerstörte Menge an Halterungen ist ein vernachlässigbarer Verlust.\\
+Möchte man jedoch wissen, wie die weiteren produzierten Bauteile beschaffen sind, muss man nicht mehr den genauen Wert ermitteln, sondern nur auf Abweichungen von der Norm prüfen, also auf Fehler. 
+Ein naheliegender Einfall ist, Stichproben zu nehmen, was jedoch zwei Nachteile hat: Zum einen ist selbst der Verlust einzelner Teile ein Verlust, und damit nicht wünschenswert. 
+Zum anderen ist eine Stichprobe nicht sicher, da diese nur zuverlässige Fehler, hervorgerufen durch eine dauerhafte Fehlfunktion in der Fertigung, eindeutig feststellt.\\
+Beide Probleme werden durch zerstörungsfreie Materialprüfung gelöst. 
+Wie der Name schon sagt, wird der Prüfkörper bei diesen Verfahren nicht verbraucht, was diverse Vorteile hat. 
+So kann man nun alle Bauteile prüfen und dennoch verkaufen. 
+Diese Prüfverfahren eignen sich auch für eine Prüfung lange nach der Fertigung, bei der festgestellt werden soll, ob durch den Gebrauch Fehler entstanden sind. 
+Hier wäre eine Stichprobe gänzlich nutzlos und eine vollständige Zerstörung ginge gegen den Sinn der Prüfung. 
+Zerstörungsfreie Verfahren dagegen ermöglichen es, festzustellen, ob Teile ersetzt werden müssen und falls nicht, fallen nur die Kosten für die eigentliche Prüfung an.\\
+Ein Nachteil dieser Methoden ist jedoch, dass sie nur auf Fehler aufmerksam machen, anstatt ihre Wirkung einzuschätzen. 
+Die Ablösung der zerstörenden Prüfung auf dem Gebiet der Bestimmung von Kenngrößen ist also zumindest mit den momentan bekannten Methoden der zerstörungsfreien Prüfung noch nicht möglich.
 
 \subsection{Ultraschall-basierte Werkstoffprüfung}
-Eines der wichtigsten Verfahren im Bereich der zerstörungsfreien Prüfung ist die Ultraschall-Fehlerprüfung. Es basiert darauf, dass Schallwellen von einem Prüfkopf aus in einen Probekörper eingeleitet und anschließend eventuelle Reflexionen gemessen werden. Diese Messungen werden dann in einem sogenannten Oszillogramm dargestellt.
+Eines der wichtigsten Verfahren im Bereich der zerstörungsfreien Prüfung ist die Ultraschall-Fehlerprüfung. 
+Es basiert darauf, dass Schallwellen von einem Prüfkopf aus in einen Probekörper eingeleitet und anschließend eventuelle Reflexionen gemessen werden. 
+Diese Messungen werden dann in einem sogenannten Oszillogramm dargestellt.
+
+%TODO bild hinzufügen
 %\begin{figure}[h]\begin{center}
 %\label{oszillogramme}
-%\includegraphics[width=.85\textwidth]{Oszillogramme.jpg}
+%\includegraphics[width=.85\textwidth]{pictures/Oszillogramme.jpg}
 %\caption{Oszillogramme (beispielhaft, Nummer eins bis fünf von links nach rechts)}
 %\end{center}\end{figure}\\
-Je höher dabei eine Spitze (auch Peak) ist, desto stärker war das zugehörige Echo. Hierbei wird ausgenutzt, dass beim Übergang der Ultraschallwellen von einem Material zum anderen ein bestimmter Anteil reflektiert wird, während ein anderer Anteil (unter einem anderen Winkel) sich weiter durch den Körper bewegt. Trifft eine Schallwelle, die sich in einem festen Körper bewegt, auf Luft, so wird sie beinahe vollständig zurückgeworfen, weshalb etwaige passierende Schallwellen gering genug sind, um vernachlässigt werden zu können. So erscheint das erste Echo schon direkt zu Beginn der Messung, wie im ersten Oszillogramm zu sehen: es entsteht, wenn die ausgesandten Wellen in den Probekörper eintreten, denn zwischen Prüfkopf und Probekörper befindet sich immer eine (meist sehr dünne) Luftschicht; daher wird der Schall schon einmal reflektiert, bevor der relevante Teil des Verfahrens beginnt. Um dies in der Praxis zu minimieren, wird eine Kopplungsflüssigkeit verwendet, welche den Schall mit möglichst wenig Reflexionen zwischen Werkstück und Prüfkopf transportiert. Das zweite Echo stellt in diesem Fall das sogenannte Rückwandecho dar, bei welchem die Wellen von der dem Prüfkopf gegenüberliegenden Seite zurückgeworfen werden. Mithilfe dessen kann auch Tiefe des Probekörpers ermittelt werden: da der Schall stets eine materialspezifische Geschwindigkeit $c_\mathrm{Material}$ \cite{schallgeschwindigkeiten} besitzt, gilt für die Stärke des Körpers: $d = \dfrac{c_\mathrm{Material}~\cdot~t}{2}$. Dies ist vor allem hilfreich, wenn Probeköper nur von einer Seite erreichbar sind und ihre Dimensionen daher nicht mit herkömmlichen Werkzeugen bestimmt werden können.\\
-Für die zerstörungsfreie Prüfung ist diese Möglichkeit jedoch eher von geringerer Bedeutung. Der eigentliche Nutzen von Ultraschall lässt sich besser an den anderen Oszillogrammen erklären. Befinden sich Fehler im Werkstück, sind das meist Lufteinschlüsse in Form von Rissen oder Löchern. Da sich somit auch dort ein Materialübergang befindet, werden Schallwellen an Fehlstellen ebenfalls reflektiert. Analog zur Bestimmung der Maße des Körpers können auch die ungefähren Positionen der Fehler ermittelt werden. Der große Vorteil dieses Verfahrens ist, dass es nahezu unbegrenzt einsetzbar ist, da sich Sender und Empfänger in einem Gerät befinden und so auch bei komplexen Geometrien, welche nur eingeschränkt zugänglich sind, genutzt werden können. Problematisch ist hingegen die Auswertung der entstehenden Oszillogramme. Zum Beispiel Oszillogramm Nummer vier: einerseits gibt es das normale Rückwandecho, also befindet sich der Prüfkopf teilweise über einem Streifen ohne Fehler; zusätzlich existieren jedoch noch weitere Echos, die auf Fehlstellen hinweisen. Eine mögliche Deutung wäre, dass es mehrere verschieden große Lufteinschlüsse in unterschiedlichen Tiefen gibt, welche die Echos verursachen. Diese Interpretation wäre allerdings falsch, denn wie man sehen kann, gibt es nur einen Fehler, von dem das Echo immer wieder reflektiert wird. An dieser Stelle muss man anmerken, dass in diesem Fall kein gutes Kopplungsmittel verwendet wurde, da sonst das Echo sehr viel schneller abschwächen würde. Der Grund dafür, dass es dennoch schwächer wird, ist einerseits der Fakt, dass die Wellen teilweise die Fehlstelle passieren und somit ein wenig ihrer Stärke verlieren, andererseits aber auch die Streuung der Schallwellen im Körper, sodass das Signal stetig schwächer wird.\\
-Im Detail kann die Verfahrensweise der zerstörungsfreien Materialprüfung mit Ultraschall nachgelesen werden in Quelle \cite{karldeutsch}.
+hier bild einfügen\\
+
+Je höher dabei eine Spitze (auch Peak) ist, desto stärker war das zugehörige Echo. 
+Hierbei wird ausgenutzt, dass beim Übergang der Ultraschallwellen von einem Material zum anderen ein bestimmter Anteil reflektiert wird, während ein anderer Anteil (unter einem anderen Winkel) sich weiter durch den Körper bewegt. 
+Trifft eine Schallwelle, die sich in einem festen Körper bewegt, auf Luft, so wird sie beinahe vollständig zurückgeworfen, weshalb etwaige passierende Schallwellen gering genug sind, um vernachlässigt werden zu können. 
+So erscheint das erste Echo schon direkt zu Beginn der Messung, wie im ersten Oszillogramm zu sehen: es entsteht, wenn die ausgesandten Wellen in den Probekörper eintreten, denn zwischen Prüfkopf und Probekörper befindet sich immer eine (meist sehr dünne) Luftschicht; daher wird der Schall schon einmal reflektiert, bevor der relevante Teil des Verfahrens beginnt. 
+Um dies in der Praxis zu minimieren, wird eine Kopplungsflüssigkeit verwendet, welche den Schall mit möglichst wenig Reflexionen zwischen Werkstück und Prüfkopf transportiert. 
+Das zweite Echo stellt in diesem Fall das sogenannte Rückwandecho dar, bei welchem die Wellen von der dem Prüfkopf gegenüberliegenden Seite zurückgeworfen werden. 
+Mithilfe dessen kann auch Tiefe des Probekörpers ermittelt werden: da der Schall stets eine materialspezifische Geschwindigkeit $c_\mathrm{Material}$  \cite{schallgeschwindigkeiten}  %TODO Quelle
+besitzt, gilt für die Stärke des Körpers: $d = \dfrac{c_{\mathrm{Material}} \cdot t}{2}$. 
+Dies ist vor allem hilfreich, wenn Probeköper nur von einer Seite erreichbar sind und ihre Dimensionen daher nicht mit herkömmlichen Werkzeugen bestimmt werden können.\\
+Für die zerstörungsfreie Prüfung ist diese Möglichkeit jedoch eher von geringerer Bedeutung. 
+Der eigentliche Nutzen von Ultraschall lässt sich besser an den anderen Oszillogrammen erklären. 
+Befinden sich Fehler im Werkstück, sind das meist Lufteinschlüsse in Form von Rissen oder Löchern. 
+Da sich somit auch dort ein Materialübergang befindet, werden Schallwellen an Fehlstellen ebenfalls reflektiert. 
+Analog zur Bestimmung der Maße des Körpers können auch die ungefähren Positionen der Fehler ermittelt werden. 
+Der große Vorteil dieses Verfahrens ist, dass es nahezu unbegrenzt einsetzbar ist, da sich Sender und Empfänger in einem Gerät befinden und so auch bei komplexen Geometrien, welche nur eingeschränkt zugänglich sind, genutzt werden können. 
+Problematisch ist hingegen die Auswertung der entstehenden Oszillogramme. 
+Zum Beispiel Oszillogramm Nummer vier: einerseits gibt es das normale Rückwandecho, also befindet sich der Prüfkopf teilweise über einem Streifen ohne Fehler; zusätzlich existieren jedoch noch weitere Echos, die auf Fehlstellen hinweisen. 
+Eine mögliche Deutung wäre, dass es mehrere verschieden große Lufteinschlüsse in unterschiedlichen Tiefen gibt, welche die Echos verursachen. 
+Diese Interpretation wäre allerdings falsch, denn wie man sehen kann, gibt es nur einen Fehler, von dem das Echo immer wieder reflektiert wird. 
+An dieser Stelle muss man anmerken, dass in diesem Fall kein gutes Kopplungsmittel verwendet wurde, da sonst das Echo sehr viel schneller abschwächen würde. 
+Der Grund dafür, dass es dennoch schwächer wird, ist einerseits der Fakt, dass die Wellen teilweise die Fehlstelle passieren und somit ein wenig ihrer Stärke verlieren, andererseits aber auch die Streuung der Schallwellen im Körper, sodass das Signal stetig schwächer wird.\\
+Im Detail kann die Verfahrensweise der zerstörungsfreien Materialprüfung mit Ultraschall nachgelesen werden in Quelle 
+\cite{karldeutsch}. %TODO Quelle
+
+\subsection{Abgrenzung von anderen Testverfahren}
+
+Obwohl die zerstörungsfreie Prüfung mittels Ultraschall in der heutigen Wirtschaftslage unverzichtbar ist, kann mithilfe der Ultraschallmesstechnik nicht jeder Materialtest durchgeführt werden, da auch diese durch die Grundlagen der Physik eingeschränkt wird.
+%da diese durch die physikalischen Gegebenheiten eingeschränkt sind. \\
+%Somit werden weitere Materialeigenschaften verwendet, um technische Teile auf ihre Funktionalität zu prüfen. 
+Um diese Grenzen zu überwinden, wird auf andere Materialeigenschaften zurückgegriffen.
+Dabei handelt es sich um optische, thermische, elektrische, magnetische und atomare Eigenschaften des Prüflings. 
+Jede der Methoden bietet dabei eigene Vor- und Nachteile und ist damit für spezielle Prüfvorgänge geeignet. \\
+%Weiterhin unterscheiden sich die Verfahren auch entscheidend in ihre Komplexität und Voraussetzung and Technik und Fachwissen. 
+Grundsätzlich unterscheiden sich diese Verfahren in ihren Anforderungen an technische Geräten und dem benötigten Fachwissen, diese zu bedienen und den Prüfvorgang ordnungsgemäß durchzuführen. 
+Diese versucht man natürlich, möglichst gering zu halten, um viele Bauteile effizient prüfen zu können.
+%besseres Wort Bauteile?
+Daher sind die am meisten verwendeten Verfahren die Sichtprüfung und die Farbeindringprüfung. 
+Bei diesen wird entweder mit bloßem Auge oder mithilfe von farbigen Flüssigkeiten die Oberfläche von Prüflingen auf Fehler begutachtet. 
+%Entscheidend ist dabei, den Vorgang schnell, einfach und ohne technischen Aufwand durchführen zu können. 
+Dies kann schnell, einfach und ohne technischen Aufwand durchgeführt werden.
+Doch durch den Ablauf beim Prüfen werden auch die Nachteile dieser Verfahren klar, denn unter Verwendung des Auges oder von Kameras kann nur die Oberfläche von Prüfkörpern beurteilt werden. \\
+Dies ist für einige Teile ausreichend, doch besonders stark beanspruchte oder sicherheitsrelevante Teile dürfen auf keinen Fall versagen. 
+Oft reicht dabei schon ein kleiner Riss im Inneren, um genau dieses Versagen herbeizuführen. 
+%Daher ist es hier besonders wichzig, auch das Innere des Prüfkörpers auf Fehler zu untersuchen. 
+Daraus ergibt sich die Notwendigkeit, in diesen Fällen den Prüfkörper auch auf innere Beschädigungen zu untersuchen.
+%Hierfür stehen auch Methoden zur Verfügen. 
+Um dies durchzuführen stehen ebenfalls mehrere Methoden zur Verfügung.
+Abhängig von Größe und Material des Prüflings sind manche Testverfahren besser geeignet als andere. 
+So basieren z.B. manche Verfahren auf der elektrischen Leitfähigkeit des Prüfkörpers und sind daher auf bestimmte Materialien beschränkt.
+Andere hingehen erfordern geschlossene Sicherheitsräume, wie z.B. die Röntgenprüfung, und können daher schlecht zur Prüfung von bereits verbauten Teilen verwendet werden.\\
+Allerdings kann auch durch die verwendete Methode selbst eine Einschränkung erfolgen. So ist z.B. beim Prüfen mit Ultraschall die Materialdicke abhängig vom verwendeten Prüfgerät auf 5-8m beschränkt, da sonst Ungenauigkeiten entstehen könnten.\\
+% 5-8m ausschreiben?
+Das Ultraschallverfahren, dessen Simulation Thema dieser Arbeit ist, bietet insgesamt eine gute Kombination praxisrelevanter
+% praktikabler? praktischer? sonstiges?
+ Eigenschaften. So können bei relativ geringem Technischen Aufwand und unter Verwendung mobiler Prüfgeräte kleine bis mittelgroße Prüfkörper relativ genau auf innere Fehler untersucht werden.
+
+\newpage
+
+\section{Berechnung der Strahlenverläufe}
+
+\subsection{Grundbegriffe und Notation der Vektorrechnung}
+Im Folgenden sollen die zur Berechnung verwendeten Formeln erklärt und hergeleitet werden. 
+Dazu ist es nötig, einige Bezeichnungen einzuführen: wie allgemein üblich, werden wir einen Vektor, welcher sich als \glqq Schritt\grqq{} im Raum versinnbildlichen lässt, durch einen Pfeil darüber kennzeichnen, zum Beispiel $\vec{v}$. 
+Weiterhin soll der Ortsvektor eines Punktes (also der Vektor vom Koordinatenursprung zu dem Punkt) mit dem zum Großbuchstaben des Punktes gehörenden Kleinbuchstaben bezeichnet werden. Der Punkt $O(4|2)$ hat also den Ortsvektor $\vec{o} = \vect{4}{2}$. 
+Zudem verweist ein tiefgestelltes $x$ auf die Komponente eines Vektors beziehungsweise eines Punktes in x-Richtung und ein $y$ auf die y-Komponente. 
+Auf das soeben genannte Beispiel bezogen gilt $O_x = \vec{o}_x = 4$ und $O_y = \vec{o}_y = 2$.
+
+\subsection{Erklärung und Begründung der vorgenommenen Vereinfachungen}
+%TODO notwendig? -> kürzer?
+Da das Programm die Berechnungen in akzeptabler Zeit durchführen können soll, dürfen die verwendeten Formeln nicht zu umfangreich sein. 
+Außerdem ist eine exakte Simulation nicht nötig, da der Nutzer den jeweiligen Probekörper ohnehin nur annähernd digitalisieren kann, weshalb berechnete Ergebnisse unabhängig von der Berechnung meist nicht genau mit den realen Messwerten übereinstimmen werden. 
+Daher ist es legitim, einige mathematische und physikalische Vereinfachungen vorzunehmen, um die \hyperref[sec:herleitung]{Herleitung der Formeln} möglichst unkompliziert zu gestalten. 
+Welche Näherungen mit welcher Intention vorgenommen wurden, soll in diesem Kapitel näher beleuchtet werden.
+
+\subsubsection{Betrachtung der Ultraschallwellen als Strahlenbündel}
+%TODO zu viel Doppelpunkt
+Genau wie jede andere Art des Schalls ist Ultraschall eine mechanische Welle und breitet sich daher dem Huygens'schen Prinzip folgend allseitig aus. 
+%old Jedoch ist die Amplitude und somit auch die Intensität der Welle in einer Richtung wesentlicher stärker: Der Aufbau des Senders ermöglicht es, den Schall zu \glqq lenken\grqq{} und damit gezielt bestimmte Bereiche des Probekörpers zu überprüfen. 
+Jedoch ist die Amplitude und somit auch die Intensität der Welle in einer Richtung wesentlicher stärker: Der Aufbau des Senders ermöglicht es, den Schall zu fokussieren, um spezifische Bereiche des Körpers prüfen zu können.
+Die Ausbreitung einer Welle, inklusive der Reflexion beim Übergang von einem Medium in ein anderes, zu berechnen ist sehr kompliziert, besonders da sie schlecht als Datenstruktur dargestellt werden kann.\\
+An dieser Stelle kommt die Vektorrechnung ins Spiel: Indem angenommen wird, dass sich der Schall in nur eine Richtung ausbreitet, kann man ihn als Strahl betrachten. 
+Mathematisch gesehen besteht er also aus einem Ortsvektor zum Startpunkt und einem Richtungsvektor. 
+Die vektorielle Darstellung eines Strahls $\vec{v}$, der in einem zweidimensionalen kartesischen Koordinatensystem mit dem Koordinatenursprung $O(0|0)$ am Punkt $P(0|3)$ beginnt und von dort aus in Richtung des Punktes $Q(1|4)$ verläuft, lautet also $\vec{v} = \overrightarrow{OP} + \lambda \cdot \overrightarrow{PQ} = \vect{0}{3} + \lambda \cdot \vect{1}{1}$, wobei $\lambda\in\mathbb{R}$ und $\lambda\geq0$ gilt. 
+Dieses Vorgehen bringt große Vorteile mit sich: Beispielsweise ist es mithilfe dessen sehr einfach, Schnittpunkte und Reflexionsvektoren auszurechnen, wie in Kapitel \ref{sec:herleitung} beschrieben.\\
+%TODO natürlich muss jedoch... Satz doof
+% machen wir nicht immer, fachlich nicht ganz korrekt
+Natürlich muss jedoch die dadurch entstehende Vernachlässigung der allseitigen Ausbreitung kompensiert werden. 
+Aus diesem Grund wird nicht nur ein, sondern mehrere solcher Strahlen von der Quelle ausgesandt. 
+Somit entfällt einerseits die Problematik der Reflexion einer gesamten Wellenfront an einem Objekt, welche sehr umständlich ist, andererseits bleibt die Genauigkeit nahezu erhalten. 
+Wird in einem realen Prüfkörper ein großer Teil des Schalls zurück zum Sender reflektiert, passiert dasselbe auch in der Simulation. 
+Der Unterschied besteht allein darin, dass in einer realen Messung die registrierte Schallintensität analog ist, da sie auch von Feinheiten im Prüfling beeinflusst wird, während das Programm eine digitale Intensität feststellt, denn diese ist abhängig von der Anzahl der zurückreflektierten Strahlen, welche selbstverständlich eine natürliche Zahl sein muss.\\
+Aufgrund dessen entsteht eine geringe Abweichung der Berechnung von der Messung, jedoch kann diese Abweichung minimiert werden, indem möglichst viele Strahlen ausgesandt werden, was die \glqq Lücken\grqq{} zwischen den digitalen Zahlen verkleinert. 
+Dies impliziert zwar einen höheren Rechenaufwand, jedoch kann die Strahlenanzahl für die meisten Simulationsparameter (wie zum Beispiel die Form des Prüfkörpers und Anzahl der Reflexionen) so gewählt werden, dass sowohl die Qualität des Ergebnisses als auch die zur Berechnung benötigte Zeit akzeptabel sind.
+
+\subsubsection{Berechnung der Intensität eines einzelnen Strahls}
+%TODO ganz raus
+Neben der Anzahl der zurückgekommenen Strahlen gibt es für den Sender einen weiteren Parameter dafür, wie stark der Peak des Oszillogramms an einem bestimmten Zeitpunkt sein muss. 
+Aus der Länge des Weges jedes Strahls wird berechnet, wie groß seine Intensität bei der Rückkehr ist. 
+Näher beleuchtet wird dies in Kapitel \ref{sec:sim}.\\
+Dieser zusätzliche Parameter ist notwendig, da Ultraschallwellen in der Realität ebenfalls abhängig von der zurückgelegten Strecke Energie (welche gleichbedeutend mit der Intensität ist) verlieren. 
+%TODO Komma statt Klammer?
+Wie groß die verbleibende Intensität ist, berechnet das Programm mithilfe der Formel $I = \dfrac{I_0}{1.05^{\tfrac{s}{c}}}$. 
+Dabei steht $I_0$ für die Anfangsintensität, $s$ für den zurückgelegten Weg und $c$ für die Schallgeschwindigkeit im jeweiligen Medium.
+
+\subsubsection{Vernachlässigung der Materialübergänge und Annahme der Totalreflexion}
+In unserer Arbeit gehen wir davon aus, dass der gesamte Prüfkörper aus einem einzigen Material besteht. 
+Dies bringt zum Einen den Vorteil, dass die genannte Formel zur Berechnung der Intensität eines Strahls angewendet werden kann, da die Schallgeschwindigkeit so konstant ist. 
+Existierten mehrere Materialien, so würde sie sich während des Durchlaufs durch den Probekörper ändern und würde so die Berechnung erschweren. 
+Weiterhin finden an Materialübergängen wellenphysikalische Vorgänge wie Brechung und Reflexion statt, welche den Verlauf der Strahlen direkt beeinflussen. 
+Das Problem ist vor allem, dass sich dabei die Energie des ursprünglichen Strahls in den gebrochenen und den reflektierten Anteil aufspaltet, wodurch sehr schnell sehr viele separate Strahlen aus einem einzigen Ursprungsstrahl entstehen, welche jeweils einzeln berechnet werden müssen und somit in der Summe einen großen Rechenaufwand darstellen. 
+All dies ist zwar prinzipiell leicht zu berechnen, wenn klare Grenzen zwischen den verschiedenen Stoffen bestehen, jedoch nicht, wenn diese eher \glqq fließend\grqq{} ineinander übergehen.\\
+Daraus folgt weiterhin, dass es sich erübrigt, eine allgemeine Formel zur Berechnung des reflektierten Schalls zu verwenden. 
+Es wird davon ausgegangen, dass der einzige Materialübergang zwischen dem Prüfkörper und seiner Umgebung, also Luft, besteht. 
+%TODO Simulation in Vakuum?
+Da sich die Schallgeschwindigkeit in Luft sehr stark von derjenigen in festen Stoffen unterscheidet, wird beinahe der gesamte Anteil des Strahls reflektiert, was aus Gründen der Berechenbarkeit als tatsächliche Totalreflexion angesehen wird. 
+Somit kann die Reflexion als rein mathematisches Problem der Vektorrechnung ohne physikalische Beschränkungen betrachtet werden.
+
+\subsection{Herleitung der Formeln}\label{sec:herleitung}
+%TODO gute Überleitung / Anknüpfung an verwendetes mathematisches Modell
+
+%TODO bessere Überschrift: Grundlegend verwendete Prozedur zur Reflektion von eines Strahls
+\subsubsection{Reflexion an einer Geraden}
+Durch die Verwendung der Vektorrechnung lässt sich für unsere Arbeit die Reflexion eines Strahls an einer beliebigen regelmäßigen Geometrie auf die Reflexion eines Strahls an einer Geraden zurückführen. 
+Diese ist damit ein essenzieller Prozess, der häufig durchgeführt werden muss.\\
+\begin{wrapfigure}{rH}{10.5cm}
+\includegraphics[scale=0.4]{pictures/LineRef.png}
+\caption{Reflexion an einer Geraden}
+%TODO caption
+\end{wrapfigure}
+Um die Berechnung des reflektierten Strahls durchzuführen müssen sowohl zwei Punkte der Geraden, $A$ und $B$, gegeben sein, sowie der Ausgangspunkt $O$ und der Richtungsvektor $\vec{r}$ des Ausgangsstrahls. 
+Mittels des Vektors $\vec{u} = 2\cdot\overrightarrow{OL}$ zwischen $O$ und dem Lotfußpunkt $L$ von $O$ auf $\overline{AB}$ ergibt sich auch $\vec{o'} = \vec{o} + 2\cdot\vec{u}$ und damit der Spiegelpunkt $O'$ von $O$ an $AB$.
+Weiterhin ist der Schnittpunkt $S$ des Strahls von $O$ in Richtung $\vec{r}$ mit der Geraden $AB$ durch die Formel
+\begin{center}
+$\vec{s} = \vec{o} - \dfrac{O_x \cdot \vec{r}_y - O_y \cdot \vec{r}_x - A_x \cdot \vec{r}_y - A_y \cdot \vec{r}_x}{A_x \cdot \vec{r}_y - A_y \cdot \vec{r}_x - B_x \cdot \vec{r}_y + B_y \cdot \vec{r}_x} \cdot \vec{r}$
+\end{center}
+bestimmt. 
+Daraus ergibt sich folgend der Vektor
+\begin{center}
+$\vec{r'} = \vec{r'_1} = \overrightarrow{O'S}$
+\end{center}
+und damit auch der neue Strahl von $S$ in Richtung $r'$.
+
+
+%TODO Überschrift
+\subsubsection{Reflexion an weiteren regelmäßigen Geometrien}
+Neben der Reflexion der Strahlen an einer einfachen Geraden haben wir uns auch entschieden, dies für Kreise, Kreisbögen und Ovale herzuleiten und zu implementieren. 
+Grundsätzlich erfolgt dabei auch die Reflexion an einer Geraden, doch diese muss in Abhängigkeit der Form erst einmal bestimmt werden. 
+Für folgende Herleitungen wird erneut von einem Strahl, der in $O$ beginnt und sich in Richtung $\vec{r}$ ausbreitet, ausgegangen.
+\newpage
+\begin{wrapfigure}[16]{rH}{8.5cm}
+\includegraphics[scale=0.5]{pictures/CircleRef.png}
+\caption{Reflexion an einem Kreis}
+\end{wrapfigure}
+Die zur Berechnung notwendige vektorielle Darstellung des Kreises $K(M, r)$ erfolgt in der Form $K: \vec{x} = \vec{m} + \vec{v} \wedge |\vec{v}| = r$.
+%TODO old: Um die Berechnung an einem Kreis durchzuführen muss dieser zunächst vektoriell dargestellt werden.
+%Dies geschieht in der Form $K: \vec{x} = \vec{m} + \vec{v}$, wobei $\vec{m}$ der Ortsvektor zum Kreismittelpunkt $M$ und $\vec{v}$ der Richtungsvektor ist. 
+%Für letzteren gilt $\vec{v}_x^{~2} + \vec{v}_y^{~2} = r^2$, das heißt, dass jeder mögliche Richtungsvektor des Kreises $K$ ein Radius desselben ist. 
+Mithilfe dessen wird zunächst der Punkt bestimmt, in welchem der Strahl den Kreis schneidet, indem das folgende Gleichungssystem nach den drei unbekannten Variablen $\lambda$, $\vec{v}_x$, $\vec{v}_y$ gelöst wird:
+\begin{equation*}
+\begin{split}
+\vec{k}_x + \vec{v}_x & = O_x + \lambda\cdot\vec{r}_x\\
+\vec{k}_y + \vec{v}_y & = O_y + \lambda\cdot\vec{r}_y\\
+r^2 & = \vec{v}_x^{~2} + \vec{v}_y^{~2} 
+\end{split}
+\end{equation*}
+Das so ermittelte $\lambda$ wird in die Formel $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$  eingesetzt, um den Schnittpunkt $S$ zu berechnen. 
+%oldDurch diesen wird anschließend eine Tangente gelegt, welche sich leicht über den Vektor $\vec{n} = \vec{MS}$ zwischen Kreismittelpunkt und Schnittpunkt ermitteln lässt. 
+Durch den Vektor $\vec{n} = \vec{MS}$ zwischen Kreismittelpunkt und Schnittpunkt lässt sich leicht die Tangente in $S$ mit $T: ~\vec{x} = \vec{s} + \lambda \cdot \begin{pmatrix} -ny \\ nx \end{pmatrix}$ ermitteln.
+Somit kann die Reflexion am Kreis auf eine Reflexion an einer Geraden zurückgeführt werden.\\
+Die Reflexion an Kreisbögen funktioniert analog, aus einem Kreisbogen wird der entsprechende vollständige Kreis gebildet, an welchem wie beschrieben reflektiert wird. 
+Jedoch muss zusätzlich noch überprüft werden, ob der Schnittpunkt mit dem \glqq Hilfskreis\grqq{} auch auf dem Teil des Kreises liegt, den dieser mit dem Kreisbogen teilt. 
+Dies geschieht derart, dass festgestellt wird, ob der Winkel des Kreissektors vom Startpunkt des Kreisbogens bis zum Schnittpunkt kleiner ist als der Winkel des Kreissektors, welchem der Kreisbogen insgesamt entspricht. 
+Dazu wird eine Formel zur Berechnung des Winkels in mathematisch positiver Richtung von einem Vektor $v$ zu einem anderen Vektor $w$ $\sphericalangle(\vec{v}, \vec{w}) = -\atantwo(\vec{v}_x\cdot\vec{w}_y-\vec{v}_y\cdot\vec{w}_x,~\vec{v}_x\cdot\vec{w}_x+\vec{v}_y\cdot\vec{w}_y)$  verwendet.
+\par
+\begin{wrapfigure}[13]{rH}{8cm}
+\includegraphics[scale=0.7]{pictures/OvalRef.png}
+\caption{Reflexion an einer Ellipse}
+\end{wrapfigure}
+%oldAls letzte von uns implementierte geometrische Form ist die Ellipse diejenige mit der aufwändigsten Berechnungsformel. 
+Als letzte Form haben wir die Ellipse $E(P, Q, e)$ implementiert.
+Wie beim Kreis ist es nötig, eine vektorielle Darstellung zu finden. 
+Aufgrund der Definition einer Ellipse lautet diese $E: \vec{x} = \vec{p} + \vec{u} = \vec{q} + \vec{v}$ mit $ e = |\vec{u}| + |\vec{v}|$.
+Zur Bestimmung des Schnittpunkts $S$ wird nun folgendes Gleichungssystem nach $\lambda$ gelöst:
+\begin{equation*}
+\begin{split}
+\vec{o} + \lambda \cdot \vec{r} &= \vec{p} + \vec{u} \\
+\vec{o} + \lambda \cdot \vec{r} &= \vec{q} + \vec{v} \\
+\vec{p} + \vec{u} &= \vec{q} + \vec{v} \\
+|\vec{u}| + |\vec{v}| &= e
+\end{split}
+\end{equation*}
+Daraus ergibt sich folgend der Punkt $S$ mit $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$.
+%TODO fertig schreiben
+%TODO Erwähnung weiterer Herleitungen im Anhang
+% Erwähnung Quellen / Standardwissen
+% Bezug auf gerichteten Winkel
+
+\newpage
+
+\section{Programm Programm Programm Programm } %TODO besserer Titel
+
+\subsection{Anforderungen an das Programm}
+
+Das im Rahmen der Arbeit entstandene Programm soll in erster Linie für zwei Zwecke eingesetzt werden können: Die Findung eines Prüfansatzes für komplexe Prüfkörper und die Validierung uneindeutiger Hypothesen basierend auf Messungen an solchen Prüfkörpern.
+Um dies zu ermöglichen muss das Programm beliebige, komplexe, zweidimensionale Geometrien umsetzen können. 
+Dies geschieht im sogenannten Körpereditor, in dem der Nutzer aus einer Reihe von Figuren wie Ovalen, Kreisen und Polygonen sowohl die geplante Form des Prüflings - im Programm Outline - als auch eventuelle Fehler - im Programm Defects - zusammenfügen kann.
+Daraus ergibt sich eine naheliegende Begrenzung des Programms. 
+In der Praxis hat ein Prüfer Kenntnis der Outline und der Messergebnisse und muss daraus auf die Position und Art der Defekte schließen. 
+Das Simulationsprogramm hingegen schließt aus der Kenntnis der Outline und Defekte die Form der Messergebnisse, d.h. 
+es simuliert die Messung. 
+Dies steht in unmittelbarem Zusammenhang mit den beabsichtigten Anwendungsszenarien.
+Besteht nur eine ungefähre Vermutung über die Position möglicher Fehler, etwa in einer bestimmten, schwierig zu erreichenden Ecke eines konkaven Prüfkörpers, %TODO Hier Beispielabbildung? 
+so kann der Nutzer die bekannte Outline des Körpers nachbauen und mit verschiedenen Senderpositionen und Einfallswinkeln experimentieren, um einen guten Prüfansatz zu finden. 
+Das dabei entstehende Oszillogramm dient dann als Vorlage für eine fehlerfreie Messung.
+Als zweites Anwendungsfeld ergibt sich die Validierung von Hypothesen. 
+Ultraschall-Messungen geben oft keine eindeutige Auskunft über die Form und Position der Fehler. 
+Diese Schlussfolgerungen zu ziehen, ist Aufgabe eines Prüfers. 
+Es kann aber gerade bei komplexen Geometrien hilfreich sein, zu überprüfen, ob die vermutete Position des Fehlers tatsächlich zu den vorliegenden Messergebnissen führen würde.
+Neben dem Prüfling kann der Nutzer auch den Messaufbau verändern, indem er Position und Einfallswinkel des Senders verändert. 
+Auch im Simulationsfenster können Änderungen an der Position und Form des Prüfkörpers und der Defekte vorgenommen werden, was eine geringfügige Veränderung der Situation ermöglicht, ohne den Körpereditor zu verwenden.
+Startet der Nutzer die Simulation, erhält er zum einen eine Darstellung des Strahlenverlaufs im Prüfkörper und zum anderen eine grobe Form des entstehenden Oszillogramms, die im Wesentlichen aus den Peaks der Messung besteht.
+Das Programm ist als eine Java-Anwendung umgesetzt, da die Programmiersprache aus dem Unterricht bekannt ist und sich mittels des GUI-Toolkits Swing für die Darstellung einfach zu bedienender Benutzeroberflächen eignet.
+Weiterhin wird für die Berechnungen eine Python-Bibliothek mit gleichem Funktionsumfang aber ohne die dazugehörige Benutzeroberfläche entwickelt.
+%TODO zeilenumbrüche (siehe Original-Worddatei)
+
+
+\subsection{Simulation und Darstellung der Ultraschallprüfung}
+Die Simulation der Scanverfahren und die finale Berechnung und Auswertung der Reflexionen wird in der Klasse \textsc{Scan} umgesetzt. %%todo einheitlich Klassen anders
+
+\subsubsection{Raytracer und und die trace-Funktion}
+Die im vorangegangenen Kapitel hergeleiteten Formeln sind in der Klasse \texttt{Raytracer} implementiert. Daher existiert für jede geometrische Form eine Methode zum Berechnen des Schnittpunktes mit dem Strahl und eine zur Berechnung des reflektierten Vektors und somit des neuen Strahls. Weiterhin gibt es spezielle Prozeduren um das Problem der Reflexion in einer Ecke zu behandeln.\\
+Das Kernstück der Klasse ist jedoch die \texttt{trace}-Funktion, welche dazu dient, den gesamten Verlauf eines Strahls im Probekörper zu ermitteln. Dazu wird mithilfe der Schnittpunkt-Funktionen der Schnittpunkt mit jedem Objekt in dem Körper ermittelt, sofern existent. Anschließend wird die Reflexionsmethode für dasjenige Objekt aufgerufen, welches tatsächlich vom Strahl getroffen wird, also dessen Schnittpunkt mit dem Strahl am nächsten an dem Ausgangspunkt des Strahls liegt. Sind mehrere Objekte gleich weit entfernt, wird die Funktion zur Reflexion an Ecken aufgerufen, sodass in jedem Fall ein eindeutiger neuer Strahl entsteht.\\
+Bei jeder einzelnen Reflexion wird der vorherige Strahl in einer Liste gespeichert, sodass am Ende sämtliche Strahlen mit Anfangspunkt und Richtungsvektor geordnet in dieser Liste stehen. Mithilfe dessen ist der Verlauf des Strahls durch den Prüfkörper eindeutig nachvollziehbar, indem die Reflexionspunkte in der gegebenen Reihenfolge betrachtet werden.
+
+\subsubsection{Scanverfahren} %TODO keine einworttitel
+%%todo Anknüpfen an Text davor, Bezug auf Klassen selbst oder algorithmische Erklärung der Verfahren?
+Basierend auf den von Raytracer ermittelten Punkten, an welchen die Strahlen reflektiert werden, errechnet man, welche Zeit zwischen den einzelnen Reflexionen vergeht.
+Weiterhin wird für jeden Auftreffpunkt geprüft, ob dieser im Messbereich des Senders liegt. 
+Ist dies der Fall, so wird in Abhängigkeit der bereits verstrichenen Zeit die Intensität ermittelt. 
+Insgesamt geht man hierbei von einer über die Zeit exponential fallenden Intensität aus.\\
+Ähnlich verhält es sich auch bei der Simulation mit mehreren Strahlen. 
+Hierfür werden die Strahlen gleichmäßig über den gegebenen Streuwinkel verteilt und für jeden Strahl die zuvor erklärte Prozedur durchgeführt. 
+Final werden alle ermittelten Wertepaare aus Zeit und Auftreffintensität zusammengefasst.\\
+Das Verfahren kann dabei von zwei verschiedenen Größen abhängig gemacht werden. 
+Zum einen der maximalen Anzahl an Reflexionen, die für alle Strahlen gleichermaßen festgelegt wird. Hierbei liegt der Vorteil darin, dass die benötigte Speichermenge und Rechenzeit limitiert ist und vom Benutzer besser gesteuert werden kann. 
+Nachteilig ist hingegen, dass einzelne Strahlen, die in einem engen Bereich zwischen zwei begrenzenden Flächen oft reflektiert werden damit insgesamt kürzere Strecken zurücklegen, als Strahlen die nur auf den Begrenzungsflächen des Prüfkörpers auftreffen. 
+Dies führt zu eventuellen Verlusten von Messwerten, die in einer realen Anwendung wahrnehmbar gewesen wären, da die Strahlen mit kürzerem Weg noch eine höhere Intensität haben und eventuell nach weiteren Reflexionen den Sender noch erreichen könnte.\\
+Um diesen Fall ebenfalls abzudecken ist eine zweite Version dieser Prozedur verfasst. 
+Hierfür wird statt einer maximalen Anzahl an Reflexionen die maximale Weglänge eingelesen. 
+Damit legt jeder Strahl im Material die gleiche, vom Benutzer ausgewählte Strecke zurück, womit das Problem von Messwertverlusten gelöst wird. 
+Der Nachteil hierbei liegt allerdings darin, dass man für einen Strahl nie voraussehen kann, wann die Maximalweglänge überschritten wird. 
+Daher kann es hierbei zu einer hohen Anzahl an Reflexionen kommen, welche proportional zu Speicherbedarf und Rechenzeit sind. 
+Insgesamt muss hier für jeden Anwendungszweck separat entschieden werden, welchen Verfahren mit seinen Vor- und Nachteilen gewählt wird.\\
+
+\newpage
+\subsubsection{Auswertung der Scanergebnisse}
+%%todo verweis Struktogramm Anhang
+\begin{wrapfigure}[13]{lH}{2.8cm}
+\includegraphics[scale=0.25]{pictures/Strahlenbuendel.png}
+\label{fig:Wegunterschied}
+\caption{Strahlenverlauf}
+%TODO caption
+\end{wrapfigure} 
+Ungeachtet des gewählten Verfahrens kommt es bei der Darstellung der Messwerte eines Scans der auf einem Strahlenbündel basiert immer zu dem Problem, dass Strahlen die einen ähnlichen Verlauf haben sehr kleine zeitliche Differenzen zwischen ihrem Auftreffen auf dem Sender haben. 
+In der Nebenstehenden Abbildung \ref{fig:Wegunterschied} zu erkennen ist sind die zurückgelegten Strecken und damit die benötigte Zeit der einzelnen Strahlen, besonders wenn man noch kleinere Streuwinkel wählt, gering. %TODO ref richtig machen
+Die im Diagramm dargestellten Werte überlappen sich, doch dies entspricht nicht der Realität. 
+Durch die Annahme, dass jeder Strahl einen gewissen Teil der kinetischen Energie, die in Form der Schallwelle in den Körper abgegeben wird, repräsentiert sollten fast gleichzeitige Treffer nicht als solche wahrgenommen werden, sondern als ein Treffer mit höherer Intensität. %%todo ohne erklärung Welle?
+Die Notwendigkeit einer weiteren Zusammenfassung der Messwerte ist dadurch gegeben. 
+Dies erfolgt in der Methode \textsl{processScan}. \par %%todo einheitliche Schriftart für funktionen, Satz notwendig?
+\begin{wrapfigure}[28]{rH}{11.5cm}
+\includegraphics[scale=0.3]{pictures/Flowchart_processScan.png}
+%TODO caption
+\end{wrapfigure}  %TODO richtig platzieren
+Zuerst werden dabei alle Wertepaare aus Zeit und Intensität errechnet und in zeitlicher Abfolge sortiert. 
+Zwischen zwei Wertepaaren liegt eine Zeitdifferenz, die für alle Paare errechnet wird und in eine Liste einsortiert wird.
+Nun wird aus dieser Liste an Differenzen die Stelle gesucht, an der der Quotient aus zwei aufeinanderfolgenden Zeitdifferenzen am größten ist und der größere Wert der Zeitdifferenzen als sogenannter Zeitbereich definiert. 
+Dieser sagt aus, in welchen Abstand von einem gegebene Treffer weitere Treffer nicht separat in das Diagramm für A-Scans eingetragen, sondern als ein Treffer zusammengefasst werden.\\
+Auf Basis des Zeitbereichs werden nun alle Scanwerte durchgegangen und in Gruppen eingeteilt. 
+Ausgehend von einem Startwert werden alle folgenden Werte überprüft und solang der selben Gruppe zugeordnet, bis sie nicht mehr innerhalb des Zeitbereichs liegen. 
+Die Gruppe wir dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durchschnittszeit errechnet wird. 
+Dieses Teilergebnis ist eines der neuen Wertepaare, welche dann im Diagramm für A-Scans dargestellt werden. 
+Die Gruppe wird daraufhin geleert, ein neuer Wert hinzugefügt und das Verfahren wiederholt bis alle Scanergebnisse einer Gruppe zugeordnet wurden.
+
+
+\subsection{Verwendung des Programms} %TODO lieber in Sätzen?
+
+
+
+\newpage
+\section{Anhang}
+
+\subsection{Vollständige Herleitung aller verwendeten Berechnungsformeln}
+
+\subsection{Programmdokumentation und -benutzungsanleitung}
+
+
+%TODO
+%Gliederungspunkte überarbeite
+%Tipps von Florian überprüfen
+%Anhang fertig schreiben
+
+\eidesstattlicheerklaerung
+
 \end{document}
