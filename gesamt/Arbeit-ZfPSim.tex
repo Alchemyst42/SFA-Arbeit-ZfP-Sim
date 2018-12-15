@@ -243,7 +243,7 @@ Für folgende Herleitungen wird erneut von einem Strahl, der in $O$ beginnt und 
 \includegraphics[scale=0.5]{pictures/CircleRef.png}
 \caption{Reflexion an einem Kreis}
 \end{wrapfigure}
-Die zur Berechnung notwendige vektorielle Darstellung des Kreises $K(M, r)$ erfolgt in der Form $K: \vec{x} = \vec{m} + \vec{v} \wedge |\vec{v}| = r$.
+Die zur Berechnung notwendige vektorielle Darstellung des Kreises $K(M, r)$ erfolgt in der Form $K: \vec{x} = \vec{m} + \vec{v}$ mit $|\vec{v}| = r$.
 %TODO old: Um die Berechnung an einem Kreis durchzuführen muss dieser zunächst vektoriell dargestellt werden.
 %Dies geschieht in der Form $K: \vec{x} = \vec{m} + \vec{v}$, wobei $\vec{m}$ der Ortsvektor zum Kreismittelpunkt $M$ und $\vec{v}$ der Richtungsvektor ist. 
 %Für letzteren gilt $\vec{v}_x^{~2} + \vec{v}_y^{~2} = r^2$, das heißt, dass jeder mögliche Richtungsvektor des Kreises $K$ ein Radius desselben ist. 
@@ -267,6 +267,7 @@ Dazu wird eine Formel zur Berechnung des Winkels in mathematisch positiver Richt
 \begin{wrapfigure}[13]{rH}{8cm}
 \includegraphics[scale=0.7]{pictures/OvalRef.png}
 \caption{Reflexion an einer Ellipse}
+\label{fig:Ellipse}
 \end{wrapfigure}
 %oldAls letzte von uns implementierte geometrische Form ist die Ellipse diejenige mit der aufwändigsten Berechnungsformel. 
 Als letzte Form haben wir die Ellipse $E(P, Q, e)$ implementiert.
@@ -281,7 +282,27 @@ Zur Bestimmung des Schnittpunkts $S$ wird nun folgendes Gleichungssystem nach $\
 |\vec{u}| + |\vec{v}| &= e
 \end{split}
 \end{equation*}
-Daraus ergibt sich folgend der Punkt $S$ mit $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$.
+Daraus ergibt sich folgend der Punkt $S$ mit $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$.\\
+Um nun am Schnittpunkt eine Reflexion durchzuführen, ist es erneut notwendig, eine Tangente an das Oval anzulegen. 
+Dies erfolgt unter Ausnutzung der Brennpunkteigenschaft. %TODO Quelle
+Nach dem Satz vom Flüstergewölbe gilt für Brennstrahlen in Ellipsen, im Beispiel aus \ref{fig:Ellipse} $\overline{PS}$ und $\overline{QS}$, dass die Winkelhalbierende der beiden Strahlen die Normale zur Tangente im Punkt der Ellipsenperipherie, hier $S$, ist. %TODO fix ref
+Unter Ausnutzung dieser Eigenschaft lässt sich für Ellipsen eine Gleichung zu Herleitung einer Tangente $T(S)$ aufstellen.\\
+Um die Winkelhalbierende $\vec{n}$ zwischen den Brennstrahlen zu erhalten, werden diese normiert und aufaddiert.
+\begin{equation*}
+\begin{split}
+\vec{u'} & = \dfrac{\vec{u}}{|\vec{u}|} \\
+\vec{v'}  &= \dfrac{\vec{v}}{|\vec{v}|} \\ \\
+\vec{n} & = \vec{u'} + \vec{v'} \\ 
+\end{split}
+\end{equation*}
+Schließlich ist die Tangente lediglich der Vektor senkrecht auf der Normalen.
+\begin{equation*}
+\begin{split}
+T: \vec{x} & = \vec{s} + \lambda \cdot \begin{pmatrix} -ny \\ nx \end{pmatrix}
+\end{split}
+\end{equation*}
+Damit lässt sich auch die Reflexion an einer Ellipse auf die an einer Geraden zurückführen.
+
 %TODO fertig schreiben
 %TODO Erwähnung weiterer Herleitungen im Anhang
 % Erwähnung Quellen / Standardwissen
