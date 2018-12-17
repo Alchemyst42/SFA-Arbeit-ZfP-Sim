@@ -60,7 +60,7 @@ Besonders wenn man von Metall hoher Dicke spricht, oder Bauteilen, die stationä
 Eines dieser ist die Materialprüfung mittels Ultraschall, welchem wir uns in unseren Seminarfacharbeit Simulation Ultraschall-basierter zerstörungsfreier Materialprüfung genauer widmen wollen. 
 Ziel ist dabei, die Prüfmethode zu verstehen und die Unterschiede zu anderen Verfahren zu erfassen.\\
 %old Die Prüfung mittels Ultraschall unterscheidet sich dabei vom Röntgenverfahren zu großen Teilen. 
- Während beim Röntgen aufwendige Apparate mit großer Leistung betrieben werden, um die Vorteile einer Durchstrahlung auszunutzen, ist die Messung mittels Ultraschall bereits mit sehr kleinen, auch mobilen Geräten gut möglich. 
+Während beim Röntgen aufwendige Apparate mit großer Leistung betrieben werden, um die Vorteile einer Durchstrahlung auszunutzen, ist die Messung mittels Ultraschall bereits mit sehr kleinen, auch mobilen Geräten gut möglich. 
 Dafür unterliegt man jedoch der Einschränkung, dass die Messergebnisse, die sich in Form akustischer Wellen im Körper äußern nur an bestimmten Stellen der Körperoberfläche wahrgenommen und sinnvoll ausgewertet werden können.\\
 Im Gegensatz zum Durchstrahlungsverfahren Röntgen ist es bei der Prüfung mittels Ultraschall notwendig, genau zu Wissen wo auf der Körperoberfläche man die Messergebnisse aufnehmen kann. 
 Daher wird vor jeder Prüfung ein Prüfplan geschaffen, der die Vorgehensweise erläutert und die Art wie die Ergebnisse zu interpretieren sind vorgibt.\\
@@ -259,7 +259,7 @@ und damit auch der neue Strahl von $S$ in Richtung $r'$.
 
 
 %TODO Überschrift
-\subsubsection{Reflexion an weiteren regelmäßigen Geometrien}
+\subsubsection{Reflexion an weiteren regelmäßigen Geometrien} \label{sec:weitereGeometrien}
 Neben der Reflexion der Strahlen an einer einfachen Geraden haben wir uns auch entschieden, dies für Kreise, Kreisbögen und Ovale herzuleiten und zu implementieren. 
 Grundsätzlich erfolgt dabei auch die Reflexion an einer Geraden, doch diese muss in Abhängigkeit der Form erst einmal bestimmt werden. 
 Für folgende Herleitungen wird erneut von einem Strahl, der in $O$ beginnt und sich in Richtung $\vec{r}$ ausbreitet, ausgegangen.
@@ -543,8 +543,8 @@ f &= \frac{a_y \cdot r_x - o_y \cdot r_x - a_x \cdot r_y + o_x \cdot r_y}{v_x \c
 Um nun an der Geraden reflektieren zu können muss der Lotfußpunkt $L$ von $O$ auf $g$ ermittelt werden und der Spiegelpunkt $O'$ bestimmt werden.
 \begin{equation*}
 \begin{split}
-\vec{n} &\bot \vec{v} \\
-\vec{n} &= \begin{matrix} -v_y \\ v_x \end{matrix} \\
+\vec{n}~ &\bot ~\vec{v} \\
+\vec{n} &= \begin{pmatrix} -v_y \\ v_x \end{pmatrix} \\
 \end{split}
 \end{equation*}
 Durch das Schneiden der beiden Geraden $g$ und $n: \vec{x} = \vec{o} + f \cdot \vec{n}$ ergibt sich der Faktor $f$, woraus $L$ und $O'$ folgen.
@@ -622,7 +622,7 @@ M_1 &= e \cdot [e^{4} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot e^{2} \cdot (2 \cdot O
 &+ (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) + (4 \cdot O_x^{2} \cdot r_y^{2} - 4 \cdot O_x \cdot (2 \cdot O_y \cdot r_x + P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \\
 &\cdot r_y + 4 \cdot O_y^{2} \cdot r_x^{2} + 4 \cdot O_y \cdot (P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \cdot r_x + P_x^{2} \cdot (r_x^{2} + r_y^{2}) \\
 &- 2 \cdot P_x \cdot (Q_x \cdot (r_x^{2} - r_y^{2}) + 2 \cdot Q_y \cdot r_x \cdot r_y) + P_y^{2} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot P_y \cdot (2 \cdot Q_x \cdot r_x \cdot r_y \\
-&- Q_y \cdot (r_x^{2} - r_y^{2})) + (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) \cdot (P_x^{2} - 2 \cdot P_x \cdot Q_x + P_y^{2} - 2 \cdot P_y \cdot Q_y + Q_x^{2} + Q_y^{2})]^{frac{1}{2}} \\
+&- Q_y \cdot (r_x^{2} - r_y^{2})) + (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) \cdot (P_x^{2} - 2 \cdot P_x \cdot Q_x + P_y^{2} - 2 \cdot P_y \cdot Q_y + Q_x^{2} + Q_y^{2})]^{\frac{1}{2}} \\
 &+ e^{2} \cdot (2 \cdot O_x \cdot r_x + 2 \cdot O_y \cdot r_y - P_x \cdot r_x - P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y) - (2 \cdot O_x \cdot (P_x - Q_x) \\
 &+ 2 \cdot O_y \cdot (P_y - Q_y) - P_x^{2} - P_y^{2} + Q_x^{2} + Q_y^{2}) \cdot (P_x \cdot r_x + P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y)
 \end{aligned}
@@ -639,11 +639,13 @@ M_2 &= e \cdot [e^{4} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot e^{2} \cdot (2 \cdot O
 &+ (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) + (4 \cdot O_x^{2} \cdot r_y^{2} - 4 \cdot O_x \cdot (2 \cdot O_y \cdot r_x + P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \\
 &\cdot r_y + 4 \cdot O_y^{2} \cdot r_x^{2} + 4 \cdot O_y \cdot (P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \cdot r_x + P_x^{2} \cdot (r_x^{2} + r_y^{2}) \\
 &- 2 \cdot P_x \cdot (Q_x \cdot (r_x^{2} - r_y^{2}) + 2 \cdot Q_y \cdot r_x \cdot r_y) + P_y^{2} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot P_y \cdot (2 \cdot Q_x \cdot r_x \cdot r_y \\
-&- Q_y \cdot (r_x^{2} - r_y^{2})) + (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) \cdot (P_x^{2} - 2 \cdot P_x \cdot Q_x + P_y^{2} - 2 \cdot P_y \cdot Q_y + Q_x^{2} + Q_y^{2})]^{\dfrac{1}{2}} \\
+&- Q_y \cdot (r_x^{2} - r_y^{2})) + (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) \cdot (P_x^{2} - 2 \cdot P_x \cdot Q_x + P_y^{2} - 2 \cdot P_y \cdot Q_y + Q_x^{2} + Q_y^{2})]^{\frac{1}{2}} \\
 &- e^{2} \cdot (2 \cdot O_x \cdot r_x + 2 \cdot O_y \cdot r_y - P_x \cdot r_x - P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y) + (2 \cdot O_x \cdot (P_x - Q_x) \\
 &+ 2 \cdot O_y \cdot (P_y - Q_y) - P_x^{2} - P_y^{2} + Q_x^{2} + Q_y^{2}) \cdot (P_x \cdot r_x + P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y)
 \end{aligned}
 \end{equation*}
+
+Daraus ergibt sich aus $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$ der Schnittpunkt S. Nun muss lediglich nach dem im Kapitel \ref{sec:weitereGeometrien} beschriebenen Verfahren eine Tangente durch $S$ an das Oval angelegt werden und daran die Reflexion durchgeführt werden.
 
 
 
