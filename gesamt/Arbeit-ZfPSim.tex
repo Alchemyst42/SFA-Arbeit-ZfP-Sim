@@ -19,6 +19,7 @@
 \usepackage{dsfont}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{mathtools}
 \usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{ulem}
@@ -514,7 +515,7 @@ Somit erhalten wir das Ergebnis $s'$ mit:
 \begin{figure}[h]
 \centering
 \includegraphics[scale=1]{pictures/OvalRef.png}
-\caption{Reflexion an einem Kreis}
+\caption{Reflexion an einem Oval}
 \end{figure}
 
 gegeben:
@@ -546,6 +547,26 @@ Um das Oval mit dem Strahl zu schneiden, müssen diese beiden Gleichgesetzt werd
 \end{equation*}
 Für dieses findet man zwei Lösungen, die sich wie bei den anderen Geometrien auch durch umformen und schrittweise ineinander Einsetzen der Ausgangsgleichungen ergeben. Jedoch verzichten wir aufgrund der Größe der Formel jeden Teilschritt mitzuführen und beschränken uns lediglich auf das Ergebnis.
 
+\begin{equation*}
+\lambda_1 = \dfrac{M_1}{2 \cdot (e^{2} \cdot (xv^{2} + yv^{2}) - (px \cdot xv + py \cdot yv - qx \cdot xv - qy \cdot yv)^{2})}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+M_1 &= −e \cdot [e^{4} \cdot (xv^{2} + yv^{2}) - 2 \cdot e^{2} \cdot (2 \cdot Ox^{2} \cdot yv^{2} \\
+&- 2 \cdot Ox \cdot (2 \cdot Oy \cdot xv + px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot yv \\
+&+ 2 \cdot Oy^{2} \cdot xv^{2} + 2 \cdot Oy \cdot (px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot xv \\
+&+ px^{2} \cdot (xv^{2} + yv^{2}) - 2 \cdot px \cdot (qx \cdot xv + qy \cdot yv) \cdot xv + py^{2} \cdot (xv^{2} + yv^{2}) \\
+&- 2 \cdot py \cdot (qx \cdot xv + qy \cdot yv) \cdot yv + (qx^{2} + qy^{2}) \cdot (xv^{2} + yv^{2})) \\
+&+ (4 \cdot Ox^{2} \cdot yv^{2} - 4 \cdot Ox \cdot (2 \cdot Oy \cdot xv + px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot yv \\
+&+ 4 \cdot Oy^{2} \cdot xv^{2} + 4 \cdot Oy \cdot (px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot xv \\
+&+ px^{2} \cdot (xv^{2} + yv^{2}) - 2 \cdot px \cdot (qx \cdot (xv^{2} - yv^{2}) + 2 \cdot qy \cdot xv \cdot yv) \\
+&+ py^{2} \cdot (xv^{2} + yv^{2}) - 2 \cdot py \cdot (2 \cdot qx \cdot xv \cdot yv - qy \cdot (xv^{2} - yv^{2})) \\
+&+ (qx^{2} + qy^{2}) \cdot (xv^{2} + yv^{2})) \cdot (px^{2} - 2 \cdot px \cdot qx + py^{2} - 2 \cdot py \cdot qy + qx^{2} + qy^{2})]^{\frac{1}{2}} \\
+&+ e^{2} \cdot (2 \cdot Ox \cdot xv + 2 \cdot Oy \cdot yv - px \cdot xv - py \cdot yv - qx \cdot xv - qy \cdot yv) \\
+&- (2 \cdot Ox \cdot (px - qx) + 2 \cdot Oy \cdot (py - qy) - px^{2} - py^{2} + qx^{2} + qy^{2}) \\
+&\cdot (px \cdot xv + py \cdot yv - qx \cdot xv - qy \cdot yv)
+\end{aligned}
+\end{equation*}
 
 
 

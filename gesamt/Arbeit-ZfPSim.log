@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  17 DEC 2018 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  17 DEC 2018 11:27
 entering extended mode
 **./Arbeit-ZfPSim.tex
 (Arbeit-ZfPSim.tex
@@ -542,30 +542,50 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count157
+\l_MT_multwidth_dim=\dimen150
+\origjot=\skip93
+\l_MT_shortvdotswithinadjustabove_dim=\dimen151
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen152
+\l_MT_above_intertext_sep=\dimen153
+\l_MT_below_intertext_sep=\dimen154
+\l_MT_above_shortintertext_sep=\dimen155
+\l_MT_below_shortintertext_sep=\dimen156
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
-\c@subfigure=\count157
-\c@subtable=\count158
+\c@subfigure=\count158
+\c@subtable=\count159
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
 \UL@box=\box32
 \UL@hyphenbox=\box33
-\UL@skip=\skip93
+\UL@skip=\skip94
 \UL@hook=\toks33
-\UL@height=\dimen150
-\UL@pe=\count159
-\UL@pixel=\dimen151
+\UL@height=\dimen157
+\UL@pe=\count160
+\UL@pixel=\dimen158
 \ULC@box=\box34
 Package: ulem 2012/05/18
-\ULdepth=\dimen152
+\ULdepth=\dimen159
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
-\wrapoverhang=\dimen153
-\WF@size=\dimen154
-\c@WF@wrappedlines=\count160
+\wrapoverhang=\dimen160
+\WF@size=\dimen161
+\c@WF@wrappedlines=\count161
 \WF@box=\box35
 \WF@everypar=\toks34
 Package: wrapfig 2003/01/31  v 3.6
@@ -573,20 +593,20 @@ Package: wrapfig 2003/01/31  v 3.6
 (Arbeit-ZfPSim.aux)
 \openout1 = `Arbeit-ZfPSim.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -626,7 +646,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 38.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -634,11 +654,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count161
+\c@section@level=\count162
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 (Arbeit-ZfPSim.out) (Arbeit-ZfPSim.out)
 \@outlinefile=\write4
@@ -650,16 +670,16 @@ Package caption Info: End \AtBeginDocument code.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count162
-\scratchdimen=\dimen155
+\scratchcounter=\count163
+\scratchdimen=\dimen162
 \scratchbox=\box37
-\nofMPsegments=\count163
-\nofMParguments=\count164
+\nofMPsegments=\count164
+\nofMParguments=\count165
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count165
-\MPscratchDim=\dimen156
-\MPnumerator=\count166
-\makeMPintoPDFobject=\count167
+\MPscratchCnt=\count166
+\MPscratchDim=\dimen163
+\MPnumerator=\count167
+\makeMPintoPDFobject=\count168
 \everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -677,12 +697,12 @@ G,.JBIG2,.JB2,.eps]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -697,67 +717,67 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 \newpage
+l.47 \newpage
               [1]
-Underfull \hbox (badness 6625) in paragraph at lines 52--65
+Underfull \hbox (badness 6625) in paragraph at lines 53--66
 \OT1/cmr/m/n/12 Das Ver-fah-ren der zerst[]orungsfreien Ma-te-ri-al-pr[]ufung w
 ird im Ge-gen-satz zur
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66 \newpage
+l.67 \newpage
               [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
 LaTeX Warning: Citation `schallgeschwindigkeiten' on page 3 undefined on input 
-line 116.
+line 117.
 
 
-LaTeX Warning: Citation `karldeutsch' on page 3 undefined on input line 132.
+LaTeX Warning: Citation `karldeutsch' on page 3 undefined on input line 133.
 
 [3] [4] [5]
 
-LaTeX Warning: Reference `sec:sim' on page 6 undefined on input line 203.
+LaTeX Warning: Reference `sec:sim' on page 6 undefined on input line 204.
 
 <pictures/LineRef.png, id=176, 719.68875pt x 500.62032pt>
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 230.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 231.
 (pdftex.def)             Requested size: 287.87039pt x 200.24457pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--233
+Underfull \hbox (badness 10000) in paragraph at lines 228--234
 
  []
 
 [6]
-Underfull \hbox (badness 7558) in paragraph at lines 233--237
+Underfull \hbox (badness 7558) in paragraph at lines 234--238
 []\OT1/cmr/m/n/12 Um die Be-rech-nung des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--237
+Underfull \hbox (badness 10000) in paragraph at lines 234--238
 \OT1/cmr/m/n/12 zuf[]uhren m[]ussen so-wohl
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 233--237
+Underfull \hbox (badness 1072) in paragraph at lines 234--238
 \OT1/cmr/m/n/12 der Rich-tungs-vek-tor $[]$ des
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 233--237
+Underfull \hbox (badness 1158) in paragraph at lines 234--238
 \OT1/cmr/m/n/12 an $\OML/cmm/m/it/12 AB$\OT1/cmr/m/n/12 . Wei-ter-hin ist der
  []
 
@@ -765,25 +785,25 @@ Underfull \hbox (badness 1158) in paragraph at lines 233--237
 <pictures/CircleRef.png, id=189, 538.26094pt x 463.7325pt>
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 255.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 256.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
 
-Overfull \hbox (27.28139pt too wide) in paragraph at lines 255--256
+Overfull \hbox (27.28139pt too wide) in paragraph at lines 256--257
 [][] 
  []
 
 <pictures/OvalRef.png, id=190, 304.9794pt x 267.76035pt>
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 280.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 281.
 (pdftex.def)             Requested size: 213.48412pt x 187.43095pt.
 
-Underfull \hbox (badness 1067) in paragraph at lines 285--289
+Underfull \hbox (badness 1067) in paragraph at lines 286--290
 [][]\OT1/cmr/m/n/12 Als letz-te Form ha-ben wir die El-lip-se
  []
 
 [8 <./pictures/CircleRef.png> <./pictures/OvalRef.png>] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 362--379
+Underfull \hbox (badness 10000) in paragraph at lines 363--380
 
  []
 
@@ -791,59 +811,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--379
 <pictures/Strahlenbuendel.png, id=215, 293.59688pt x 472.01344pt>
 File: pictures/Strahlenbuendel.png Graphic file (type png)
 <use pictures/Strahlenbuendel.png>
-Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 384.
+Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 385.
 (pdftex.def)             Requested size: 73.39903pt x 118.00307pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--386
+Underfull \hbox (badness 10000) in paragraph at lines 387--387
 []\OT1/cmr/m/n/12 Abbildung 4:
  []
 
 
-Package caption Warning: \label without proper reference on input line 385.
+Package caption Warning: \label without proper reference on input line 386.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:Wegunterschied' on page 12 undefined on input lin
-e 390.
+e 391.
 
 <pictures/Flowchart_processScan.png, id=217, 1096.095pt x 1186.4325pt>
 File: pictures/Flowchart_processScan.png Graphic file (type png)
 <use pictures/Flowchart_processScan.png>
 Package pdftex.def Info: pictures/Flowchart_processScan.png  used on input line
- 396.
+ 397.
 (pdftex.def)             Requested size: 328.83104pt x 355.9325pt.
 
-Overfull \hbox (1.62436pt too wide) in paragraph at lines 396--398
+Overfull \hbox (1.62436pt too wide) in paragraph at lines 397--399
 [][] 
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 399--408
+Underfull \hbox (badness 1521) in paragraph at lines 400--409
 \OT1/cmr/m/n/12 net und in zeit-li-cher
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 399--408
+Underfull \hbox (badness 1968) in paragraph at lines 400--409
 \OT1/cmr/m/n/12 an der der Quo-ti-ent
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 399--408
+Underfull \hbox (badness 4072) in paragraph at lines 400--409
 \OT1/cmr/m/n/12 ge-nann-ter Zeit-be-reich
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 399--408
+Underfull \hbox (badness 2617) in paragraph at lines 400--409
 \OT1/cmr/m/n/12 de-fi-niert. Die-ser sagt
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 399--408
+Underfull \hbox (badness 2469) in paragraph at lines 400--409
 \OT1/cmr/m/n/12 aus, in wel-chen Ab-
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 399--408
+Underfull \hbox (badness 1603) in paragraph at lines 400--409
 \OT1/cmr/m/n/12 stand von ei-nem ge-
  []
 
@@ -851,9 +871,9 @@ Underfull \hbox (badness 1603) in paragraph at lines 399--408
 [13] [14]
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 429.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 430.
 (pdftex.def)             Requested size: 359.84349pt x 250.30954pt.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 438.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 439.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
@@ -863,21 +883,21 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.449 \newpage
+l.450 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {equation.6.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.449 \newpage
+l.450 \newpage
               ] [16]
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 507.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 508.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 516.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 517.
 (pdftex.def)             Requested size: 304.97865pt x 267.75967pt.
 
 
@@ -887,36 +907,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.526 \end{align}
+l.527 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.6.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.526 \end{align}
+l.527 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.6.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.534 \end{align}
+l.535 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.6.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.534 \end{align}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{equation.6.1}) has been already used, duplicate ignored
+l.535 \end{align}
+                  ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-34.def"
+File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
+)
+[17]pdfTeX warning (ext4): destination with the same identifier (name{equation.
+6.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.561 \end{align}
-                  [17] [18] [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
+l.582 \end{align}
+                  [18] [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 599.
  [20
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 599.
  (Arbeit-ZfPSim.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 599.
 Package rerunfilecheck Info: File `Arbeit-ZfPSim.out' has not changed.
 (rerunfilecheck)             Checksum: 486C7F7612B4FDF08A07B510DF231F3B;2283.
 
@@ -925,10 +948,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11926 strings out of 492970
- 176131 string characters out of 3135854
- 320491 words of memory out of 3000000
- 15483 multiletter control sequences out of 15000+200000
+ 12951 strings out of 492970
+ 190933 string characters out of 3135854
+ 334107 words of memory out of 3000000
+ 16498 multiletter control sequences out of 15000+200000
  12010 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,21n,92p,1029b,610s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -947,7 +970,7 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Arbeit-ZfPSim.pdf (22 pages, 452963 bytes).
+Output written on Arbeit-ZfPSim.pdf (22 pages, 454583 bytes).
 PDF statistics:
  337 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
