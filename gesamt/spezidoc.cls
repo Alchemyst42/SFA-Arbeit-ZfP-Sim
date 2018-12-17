@@ -23,7 +23,7 @@
 \RequirePackage{ifthen}
 \RequirePackage{xifthen}
 \RequirePackage[ngerman]{babel}
-\RequirePackage[utf8x]{inputenc}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage{datetime}
 
 %% elementary components
