@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  17 DEC 2018 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  17 DEC 2018 11:43
 entering extended mode
 **./Arbeit-ZfPSim.tex
 (Arbeit-ZfPSim.tex
@@ -719,185 +719,206 @@ been already used, duplicate ignored
                    \relax 
 l.47 \newpage
               [1]
-Underfull \hbox (badness 6625) in paragraph at lines 53--66
+Underfull \hbox (badness 6625) in paragraph at lines 53--78
 \OT1/cmr/m/n/12 Das Ver-fah-ren der zerst[]orungsfreien Ma-te-ri-al-pr[]ufung w
 ird im Ge-gen-satz zur
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 \newpage
-              [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+l.78 
+      [1] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-LaTeX Warning: Citation `schallgeschwindigkeiten' on page 3 undefined on input 
-line 117.
+LaTeX Warning: Citation `schallgeschwindigkeiten' on page 4 undefined on input 
+line 129.
 
 
-LaTeX Warning: Citation `karldeutsch' on page 3 undefined on input line 133.
+LaTeX Warning: Citation `karldeutsch' on page 4 undefined on input line 145.
 
-[3] [4] [5]
+[4] [5] [6]
 
-LaTeX Warning: Reference `sec:sim' on page 6 undefined on input line 204.
+LaTeX Warning: Reference `sec:sim' on page 7 undefined on input line 216.
 
-<pictures/LineRef.png, id=176, 719.68875pt x 500.62032pt>
+<pictures/LineRef.png, id=180, 719.68875pt x 500.62032pt>
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 231.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 243.
 (pdftex.def)             Requested size: 287.87039pt x 200.24457pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--234
+Underfull \hbox (badness 10000) in paragraph at lines 240--246
 
  []
 
-[6]
-Underfull \hbox (badness 7558) in paragraph at lines 234--238
+[7]
+Underfull \hbox (badness 7558) in paragraph at lines 246--250
 []\OT1/cmr/m/n/12 Um die Be-rech-nung des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--238
+Underfull \hbox (badness 10000) in paragraph at lines 246--250
 \OT1/cmr/m/n/12 zuf[]uhren m[]ussen so-wohl
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 234--238
+Underfull \hbox (badness 1072) in paragraph at lines 246--250
 \OT1/cmr/m/n/12 der Rich-tungs-vek-tor $[]$ des
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 234--238
+Underfull \hbox (badness 1158) in paragraph at lines 246--250
 \OT1/cmr/m/n/12 an $\OML/cmm/m/it/12 AB$\OT1/cmr/m/n/12 . Wei-ter-hin ist der
  []
 
-[7 <./pictures/LineRef.png>]
-<pictures/CircleRef.png, id=189, 538.26094pt x 463.7325pt>
+[8 <./pictures/LineRef.png>]
+<pictures/CircleRef.png, id=193, 538.26094pt x 463.7325pt>
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 256.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 268.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
 
-Overfull \hbox (27.28139pt too wide) in paragraph at lines 256--257
+Overfull \hbox (27.28139pt too wide) in paragraph at lines 268--269
 [][] 
  []
 
-<pictures/OvalRef.png, id=190, 304.9794pt x 267.76035pt>
+<pictures/OvalRef.png, id=194, 304.9794pt x 267.76035pt>
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 281.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 293.
 (pdftex.def)             Requested size: 213.48412pt x 187.43095pt.
 
-Underfull \hbox (badness 1067) in paragraph at lines 286--290
+Underfull \hbox (badness 1067) in paragraph at lines 298--302
 [][]\OT1/cmr/m/n/12 Als letz-te Form ha-ben wir die El-lip-se
  []
 
-[8 <./pictures/CircleRef.png> <./pictures/OvalRef.png>] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 363--380
+[9 <./pictures/CircleRef.png> <./pictures/OvalRef.png>] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 375--392
 
  []
 
-[11]
-<pictures/Strahlenbuendel.png, id=215, 293.59688pt x 472.01344pt>
+[12]
+<pictures/Strahlenbuendel.png, id=219, 293.59688pt x 472.01344pt>
 File: pictures/Strahlenbuendel.png Graphic file (type png)
 <use pictures/Strahlenbuendel.png>
-Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 385.
+Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 397.
 (pdftex.def)             Requested size: 73.39903pt x 118.00307pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []\OT1/cmr/m/n/12 Abbildung 4:
  []
 
 
-Package caption Warning: \label without proper reference on input line 386.
+Package caption Warning: \label without proper reference on input line 398.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:Wegunterschied' on page 12 undefined on input lin
-e 391.
+LaTeX Warning: Reference `fig:Wegunterschied' on page 13 undefined on input lin
+e 403.
 
-<pictures/Flowchart_processScan.png, id=217, 1096.095pt x 1186.4325pt>
+<pictures/Flowchart_processScan.png, id=221, 1096.095pt x 1186.4325pt>
 File: pictures/Flowchart_processScan.png Graphic file (type png)
 <use pictures/Flowchart_processScan.png>
 Package pdftex.def Info: pictures/Flowchart_processScan.png  used on input line
- 397.
+ 409.
 (pdftex.def)             Requested size: 328.83104pt x 355.9325pt.
 
-Overfull \hbox (1.62436pt too wide) in paragraph at lines 397--399
+Overfull \hbox (1.62436pt too wide) in paragraph at lines 409--411
 [][] 
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 400--409
+Underfull \hbox (badness 1521) in paragraph at lines 412--421
 \OT1/cmr/m/n/12 net und in zeit-li-cher
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 400--409
+Underfull \hbox (badness 1968) in paragraph at lines 412--421
 \OT1/cmr/m/n/12 an der der Quo-ti-ent
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 400--409
+Underfull \hbox (badness 4072) in paragraph at lines 412--421
 \OT1/cmr/m/n/12 ge-nann-ter Zeit-be-reich
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 400--409
+Underfull \hbox (badness 2617) in paragraph at lines 412--421
 \OT1/cmr/m/n/12 de-fi-niert. Die-ser sagt
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 400--409
+Underfull \hbox (badness 2469) in paragraph at lines 412--421
 \OT1/cmr/m/n/12 aus, in wel-chen Ab-
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 400--409
+Underfull \hbox (badness 1603) in paragraph at lines 412--421
 \OT1/cmr/m/n/12 stand von ei-nem ge-
  []
 
-[12 <./pictures/Strahlenbuendel.png> <./pictures/Flowchart_processScan.png>]
-[13] [14]
+[13 <./pictures/Strahlenbuendel.png> <./pictures/Flowchart_processScan.png>]
+<pictures/MainWindow.png, id=231, 1445.4pt x 764.10469pt>
+File: pictures/MainWindow.png Graphic file (type png)
+<use pictures/MainWindow.png>
+Package pdftex.def Info: pictures/MainWindow.png  used on input line 426.
+(pdftex.def)             Requested size: 455.30342pt x 240.69424pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--446
+
+ []
+
+[14 <./pictures/MainWindow.png>]
+<pictures/EditorWindow.png, id=238, 1445.4pt x 765.6103pt>
+File: pictures/EditorWindow.png Graphic file (type png)
+<use pictures/EditorWindow.png>
+Package pdftex.def Info: pictures/EditorWindow.png  used on input line 449.
+(pdftex.def)             Requested size: 455.30342pt x 241.16852pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--474
+
+ []
+
+[15 <./pictures/EditorWindow.png>] [16] [17]
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 430.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 492.
 (pdftex.def)             Requested size: 359.84349pt x 250.30954pt.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 439.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 501.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-[15pdfTeX warning (ext4): destination with the same identifier (name{equation.6
-.1}) has been already used, duplicate ignored
+) [18pdfTeX warning (ext4): destination with the same identifier (name{equation
+.6.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.450 \newpage
+l.512 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {equation.6.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.450 \newpage
-              ] [16]
+l.512 \newpage
+              ] [19]
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 508.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 570.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 517.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 579.
 (pdftex.def)             Requested size: 304.97865pt x 267.75967pt.
 
 
@@ -907,39 +928,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.527 \end{align}
+l.589 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.6.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.527 \end{align}
+l.589 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.6.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.535 \end{align}
+l.597 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.6.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.535 \end{align}
+l.597 \end{align}
                   ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-34.def"
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
-[17]pdfTeX warning (ext4): destination with the same identifier (name{equation.
+[20]pdfTeX warning (ext4): destination with the same identifier (name{equation.
 6.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.582 \end{align}
-                  [18] [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 599.
- [20
+l.644 \end{align}
+                  [21] [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 661.
+ [23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 599.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 661.
  (Arbeit-ZfPSim.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 599.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 661.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 661.
 Package rerunfilecheck Info: File `Arbeit-ZfPSim.out' has not changed.
 (rerunfilecheck)             Checksum: 486C7F7612B4FDF08A07B510DF231F3B;2283.
 
@@ -948,11 +969,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12951 strings out of 492970
- 190933 string characters out of 3135854
+ 12968 strings out of 492970
+ 191268 string characters out of 3135854
  334107 words of memory out of 3000000
- 16498 multiletter control sequences out of 15000+200000
- 12010 words of font info for 47 fonts, out of 3000000 for 9000
+ 16507 multiletter control sequences out of 15000+200000
+ 12357 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,21n,92p,1029b,610s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\morit\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\doublestroke
@@ -967,12 +988,13 @@ onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 sfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Arbeit-ZfPSim.pdf (22 pages, 454583 bytes).
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Arbeit-ZfPSim.pdf (25 pages, 652513 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
