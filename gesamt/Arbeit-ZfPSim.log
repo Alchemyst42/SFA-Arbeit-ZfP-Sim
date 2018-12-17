@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.10.13)  15 DEC 2018 21:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  17 DEC 2018 09:11
 entering extended mode
 **./Arbeit-ZfPSim.tex
 (Arbeit-ZfPSim.tex
 LaTeX2e <2018-04-01> patch level 5
 (spezidoc.cls
 Document Class: spezidoc 2016/03/28 Standard spezi-documents
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xifthen\xifthen.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\xifthen\xifthen.sty"
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
- ("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count80
 \calc@Bcount=\count81
@@ -24,56 +24,52 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count82
 \calc@Cskip=\skip43
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifmtarg\ifmtarg.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifmtarg\ifmtarg.sty"
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2018/09/02 3.23 The Babel package
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
-"
-File: switch.def 2018/09/02 3.23 Babel switching mechanism
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2018/10/03 3.25 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2018/10/03 3.25 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\ngerm
-an.ldf"
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\ngerman.ldf"
 Language: ngerman 2018/03/29 v2.10 German support for babel (post-1996 orthogra
 phy)
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\ngerm
-anb.ldf"
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\ngermanb.ldf"
 Language: ngermanb 2018/03/29 v2.10 German support for babel (post-1996 orthogr
 aphy)
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2018/09/02 3.23 Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/10/03 3.25 Babel common definitions
 \babel@savecnt=\count83
 \U@D=\dimen104
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
-ef")
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\txtbabel.def")
 \bbl@dirlevel=\count84
 )
 Package babel Info: Making " an active character on input line 121.
 )))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-global.def
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-global.def"
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
 \uc@secondtry=\count85
@@ -81,46 +77,36 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@combtoksb=\toks17
 \uc@temptokena=\toks18
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\datetime\datetime.sty"
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count86
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.sty"
 Package: fmtcount 2017/12/24 v3.05
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
-tex"
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
-.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
 \XKV@toks=\toks19
 \XKV@tempa@toks=\toks20
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\keyval.t
-ex"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))
 \XKV@depth=\count87
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.sty"
 Package: fcprefix 2012/09/28
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcnumpars
-er.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fcnumparser.sty"
 Package: fcnumparser 2017/06/15
 \fc@digit@counter=\count88
 ))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
 \ex@=\dimen105
@@ -128,20 +114,16 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \c@padzeroesN=\count89
 \fc@tmpcatcode=\count90
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngerma
-n.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fc-ngerman.def"
 File: fc-ngerman.def 2012/06/18
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-german
-.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fc-german.def"
 File: fc-german.def 2016/01/12
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-german
-b.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fc-germanb.def"
 File: fc-germanb.def 2013/08/17
 ))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngerma
-nb.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fc-ngermanb.def"
 File: fc-ngermanb.def 2013/08/17
 ))
 \@DT@modctr=\count91
@@ -152,8 +134,7 @@ File: fc-ngermanb.def 2013/08/17
 \@DT@loopN=\count96
 \@DT@X=\count97
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-
-defaults.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty"
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count98
@@ -174,8 +155,7 @@ put line 308.
 \dayofyear=\count111
 \dayofweek=\count112
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\dt-ngerma
-n.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\datetime\dt-ngerman.def"
 File: dt-ngerman.def 2013/09/10
 LaTeX Info: Redefining \datengerman on input line 86.
 )
@@ -185,9 +165,9 @@ LaTeX Info: Redefining \datengerman on input line 86.
 \c@spezidoc@type=\count113
 \c@spezidoc@tmpYear=\count114
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count115
@@ -202,21 +182,17 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip45
 \bibindent=\dimen106
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count123
@@ -232,19 +208,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen114
 \Gm@dimlist=\toks24
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
-cfg"))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bigfoot\perpage.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\bigfoot\perpage.sty"
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
 \c@abspage=\count126
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textpos\textpos.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\textpos\textpos.sty"
 Package: textpos 2016/06/07 v1.8
 
 Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
 \TP@textbox=\box26
@@ -261,9 +234,7 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TP@tbargs=\toks25
 \TP@prevdepth=\dimen122
 TextBlockOrigin set to 0pt x 0pt
-)
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.
-sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box28
 \beforetitleunit=\skip46
@@ -275,8 +246,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen126
 \titlewidthfirst=\dimen127
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocloft\tocloft.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
 \cftparskip=\skip48
@@ -313,28 +283,26 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cfttabindent=\skip77
 \cfttabnumwidth=\skip78
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
-sty"
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
-hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
-generic.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -372,82 +340,75 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen128
 \Hy@linkcounter=\count129
 \Hy@pagecounter=\count130
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
-f"
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count131
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
-cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
+Package hyperref Info: Bookmarks ON on input line 4788.
 \c@Hy@tempcnt=\count132
- ("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5115.
+LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen129
 \Fld@menulength=\count133
 \Field@Width=\dimen130
 \Fld@charsize=\dimen131
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
+Package hyperref Info: Hyper figures OFF on input line 6396.
+Package hyperref Info: Link nesting OFF on input line 6401.
+Package hyperref Info: Hyper index ON on input line 6404.
+Package hyperref Info: backreferencing OFF on input line 6411.
+Package hyperref Info: Link coloring OFF on input line 6416.
+Package hyperref Info: Link coloring with OCG OFF on input line 6421.
+Package hyperref Info: PDF/A mode OFF on input line 6426.
+LaTeX Info: Redefining \ref on input line 6466.
+LaTeX Info: Redefining \pageref on input line 6470.
 \Hy@abspage=\count134
 \c@Item=\count135
 \c@Hfootnote=\count136
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
-ef"
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
 \Fld@listcount=\count137
 \c@bookmark@seq@number=\count138
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
-check.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip79
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\block.tss
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\block.tss"
 File: block.tss 2016/03/15
 )
 \c@pp@a@footnote=\count139
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2018/11/30 v3.6 Customized lists
 \enitkv@toks@=\toks27
 \labelindent=\skip80
@@ -456,8 +417,7 @@ Package: enumitem 2018/11/30 v3.6 Customized lists
 \enit@inbox=\box29
 \enitdp@description=\count140
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip81
@@ -470,42 +430,34 @@ s
 \f@nch@O@olf=\skip88
 \f@nch@O@orf=\skip89
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.st
-y"
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.
-tex"
+("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
 \@xs@message=\write3
 \integerpart=\count141
 \decimalpart=\count142
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 ))
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip90
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen133
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count143
@@ -546,16 +498,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen141
@@ -570,41 +519,38 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@ContinuedFloat=\count156
 Package caption Info: hyperref package is loaded.
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\dsfont.sty"
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
-ics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
-x.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 \c@subfigure=\count157
 \c@subtable=\count158
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
 \UL@box=\box32
 \UL@hyphenbox=\box33
 \UL@skip=\skip93
@@ -616,33 +562,32 @@ Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 Package: ulem 2012/05/18
 \ULdepth=\dimen152
 )
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
 \wrapoverhang=\dimen153
 \WF@size=\dimen154
 \c@WF@wrappedlines=\count160
 \WF@box=\box35
 \WF@everypar=\toks34
 Package: wrapfig 2003/01/31  v 3.6
-) (Arbeit-ZfPSim.aux)
+)
+(Arbeit-ZfPSim.aux)
 \openout1 = `Arbeit-ZfPSim.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 *geometry* driver: auto-detecting
@@ -681,22 +626,21 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 37.
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
-estring.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
- (Arbeit-ZfPSim.out) (Arbeit-ZfPSim.out)
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
+
+(Arbeit-ZfPSim.out) (Arbeit-ZfPSim.out)
 \@outlinefile=\write4
 \openout4 = `Arbeit-ZfPSim.out'.
 
@@ -704,8 +648,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
-ii"
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count162
 \scratchdimen=\dimen155
@@ -718,13 +661,10 @@ ii"
 \MPnumerator=\count166
 \makeMPintoPDFobject=\count167
 \everyMPtoPDFconversion=\toks36
-)
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
-base.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -733,480 +673,250 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) ("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
- ("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 38.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 38.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 38.
-[1
+) [1
 
-{C:/Users/morit/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(Arbeit-ZfPSim.toc)
+{C:/Users/morit/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Arbeit-ZfP
+Sim.toc)
 \tf@toc=\write5
 \openout5 = `Arbeit-ZfPSim.toc'.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 44.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 44.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \newpage
+l.46 \newpage
               [1]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
-
-Underfull \hbox (badness 6625) in paragraph at lines 50--59
+Underfull \hbox (badness 6625) in paragraph at lines 52--62
 \OT1/cmr/m/n/12 Das Ver-fah-ren der zerst[]orungsfreien Ma-te-ri-al-pr[]ufung w
 ird im Ge-gen-satz zur
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
-("C:\Users\morit\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 60.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \newpage
-              [1]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 62.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 62.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 63.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 63.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 91.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 91.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+l.63 \newpage
+              [1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
 LaTeX Warning: Citation `schallgeschwindigkeiten' on page 3 undefined on input 
-line 110.
+line 113.
 
 
-LaTeX Warning: Citation `karldeutsch' on page 3 undefined on input line 126.
+LaTeX Warning: Citation `karldeutsch' on page 3 undefined on input line 129.
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 128.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 128.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 159.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 159.
-[3]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 160.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 160.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 160.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 160.
- [4]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 162.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 162.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 164.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 164.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 171.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 171.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 178.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 178.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
- [5]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 198.
+[3] [4] [5]
 
+LaTeX Warning: Reference `sec:sim' on page 6 undefined on input line 200.
 
-LaTeX Warning: Reference `sec:sim' on page 6 undefined on input line 202.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 208.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 208.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 221.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 221.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 225.
-<pictures/LineRef.png, id=171, 719.68875pt x 500.62032pt>
+<pictures/LineRef.png, id=176, 719.68875pt x 500.62032pt>
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 229.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 227.
 (pdftex.def)             Requested size: 287.87039pt x 200.24457pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--232
+Underfull \hbox (badness 10000) in paragraph at lines 224--230
 
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 232.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 232.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 232.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 232.
 [6]
-Underfull \hbox (badness 7558) in paragraph at lines 232--236
+Underfull \hbox (badness 7558) in paragraph at lines 230--234
 []\OT1/cmr/m/n/12 Um die Be-rech-nung des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--236
+Underfull \hbox (badness 10000) in paragraph at lines 230--234
 \OT1/cmr/m/n/12 zuf[]uhren m[]ussen so-wohl
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 232--236
+Underfull \hbox (badness 1072) in paragraph at lines 230--234
 \OT1/cmr/m/n/12 der Rich-tungs-vek-tor $[]$ des
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 232--236
+Underfull \hbox (badness 1158) in paragraph at lines 230--234
 \OT1/cmr/m/n/12 an $\OML/cmm/m/it/12 AB$\OT1/cmr/m/n/12 . Wei-ter-hin ist der
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 248.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 248.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 252.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 252.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 252.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 252.
 [7 <./pictures/LineRef.png>]
-<pictures/CircleRef.png, id=184, 538.26094pt x 463.7325pt>
+<pictures/CircleRef.png, id=189, 538.26094pt x 463.7325pt>
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 254.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 252.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
 
-Overfull \hbox (27.28139pt too wide) in paragraph at lines 254--255
+Overfull \hbox (27.28139pt too wide) in paragraph at lines 252--253
 [][] 
  []
 
-<pictures/OvalRef.png, id=185, 304.9794pt x 267.76035pt>
+<pictures/OvalRef.png, id=190, 304.9794pt x 267.76035pt>
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 279.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 277.
 (pdftex.def)             Requested size: 213.48412pt x 187.43095pt.
 
-Underfull \hbox (badness 1067) in paragraph at lines 284--288
+Underfull \hbox (badness 1067) in paragraph at lines 282--286
 [][]\OT1/cmr/m/n/12 Als letz-te Form ha-ben wir die El-lip-se
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 302.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 302.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 302.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 302.
-[8 <./pictures/CircleRef.png> <./pictures/OvalRef.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 322.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 322.
- [9]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 324.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 324.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 326.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 326.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 351.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 351.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 354.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 354.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 358.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 358.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 358.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 358.
- [10]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 359.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 359.
-
-Underfull \hbox (badness 10000) in paragraph at lines 361--378
+[8 <./pictures/CircleRef.png> <./pictures/OvalRef.png>] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 359--376
 
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 379.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 379.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 379.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 379.
 [11]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 380.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 380.
-<pictures/Strahlenbuendel.png, id=210, 293.59688pt x 472.01344pt>
+<pictures/Strahlenbuendel.png, id=215, 293.59688pt x 472.01344pt>
 File: pictures/Strahlenbuendel.png Graphic file (type png)
 <use pictures/Strahlenbuendel.png>
-Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 383.
+Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 381.
 (pdftex.def)             Requested size: 73.39903pt x 118.00307pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--385
+Underfull \hbox (badness 10000) in paragraph at lines 383--383
 []\OT1/cmr/m/n/12 Abbildung 4:
  []
 
 
-Package caption Warning: \label without proper reference on input line 384.
+Package caption Warning: \label without proper reference on input line 382.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:Wegunterschied' on page 12 undefined on input lin
-e 389.
+e 387.
 
-<pictures/Flowchart_processScan.png, id=212, 1096.095pt x 1186.4325pt>
+<pictures/Flowchart_processScan.png, id=217, 1096.095pt x 1186.4325pt>
 File: pictures/Flowchart_processScan.png Graphic file (type png)
 <use pictures/Flowchart_processScan.png>
 Package pdftex.def Info: pictures/Flowchart_processScan.png  used on input line
- 395.
+ 393.
 (pdftex.def)             Requested size: 328.83104pt x 355.9325pt.
 
-Overfull \hbox (1.62436pt too wide) in paragraph at lines 395--397
+Overfull \hbox (1.62436pt too wide) in paragraph at lines 393--395
 [][] 
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 398--407
+Underfull \hbox (badness 1521) in paragraph at lines 396--405
 \OT1/cmr/m/n/12 net und in zeit-li-cher
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 398--407
+Underfull \hbox (badness 1968) in paragraph at lines 396--405
 \OT1/cmr/m/n/12 an der der Quo-ti-ent
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 398--407
+Underfull \hbox (badness 4072) in paragraph at lines 396--405
 \OT1/cmr/m/n/12 ge-nann-ter Zeit-be-reich
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 398--407
+Underfull \hbox (badness 2617) in paragraph at lines 396--405
 \OT1/cmr/m/n/12 de-fi-niert. Die-ser sagt
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 398--407
+Underfull \hbox (badness 2469) in paragraph at lines 396--405
 \OT1/cmr/m/n/12 aus, in wel-chen Ab-
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 398--407
+Underfull \hbox (badness 1603) in paragraph at lines 396--405
 \OT1/cmr/m/n/12 stand von ei-nem ge-
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 407.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 407.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 407.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 407.
 [12 <./pictures/Strahlenbuendel.png> <./pictures/Flowchart_processScan.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 409.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 409.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 412.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 412.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 412.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 412.
+[13] [14]
+File: pictures/LineRef.png Graphic file (type png)
+<use pictures/LineRef.png>
+Package pdftex.def Info: pictures/LineRef.png  used on input line 426.
+(pdftex.def)             Requested size: 359.84349pt x 250.30954pt.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 435.
 
-[13]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 413.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 413.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 417.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 417.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 417.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 417.
- [14]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 418.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 418.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 420.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 420.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 422.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 422.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 430.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 430.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 430.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 430.
- [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 432.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 432.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 432.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 432.
- [16
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+[15pdfTeX warning (ext4): destination with the same identifier (name{equation.6
+.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.458 \end{equation*}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{equation.6.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.458 \end{equation*}
+                     ]pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.6.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.508 \end{align}
+                  [16] [17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 525.
+ [18
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 525.
  (Arbeit-ZfPSim.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 432.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 432.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 525.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 525.
 Package rerunfilecheck Info: File `Arbeit-ZfPSim.out' has not changed.
-(rerunfilecheck)             Checksum: 39F7B555E55C83CF0269AB4544016064;2209.
+(rerunfilecheck)             Checksum: 486C7F7612B4FDF08A07B510DF231F3B;2283.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11873 strings out of 492972
- 179721 string characters out of 3126621
- 321565 words of memory out of 3000000
- 15450 multiletter control sequences out of 15000+200000
- 11722 words of font info for 44 fonts, out of 3000000 for 9000
+ 11920 strings out of 492970
+ 176061 string characters out of 3135854
+ 320491 words of memory out of 3000000
+ 15483 multiletter control sequences out of 15000+200000
+ 12010 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,21n,92p,1029b,610s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmcsc10.pfb><C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/morit/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/morit/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mo
-rit/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr6.pfb><C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsl12.pfb><C:/Users/morit/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/morit/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/morit/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Use
-rs/morit/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
-2.pfb><C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
-onts/symbols/msam10.pfb><C:/Users/morit/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Arbeit-ZfPSim.pdf (18 pages, 438461 bytes).
+ <C:\Users\morit\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\doublestroke
+\dpi600\dsrom12.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Arbeit-ZfPSim.pdf (20 pages, 448446 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 234 words of extra memory for PDF output out of 10000 (max. 10000000)
 
