@@ -74,8 +74,7 @@ Unser besonderer Dank gilt dabei unserem Fachbetreuer Herrn B. Gramsch für sein
 \section{Theorie der Zerstörungsfreien Prüfung}
 \subsection{Definition zerstörungsfreier Prüfung}
 Das Gebiet der Material- oder Werkstoffprüfung befasst sich mit der Ermittlung der Kenngrößen und des Verhaltens fertiger Bauteile, z.B. einer Eisenbahnschiene, und Werkstoffproben, etwa eines Steinblocks. 
-Getestet werden können zum Beispiel Dehnbarkeit, Hitzebeständigkeit oder Fehlerfreiheit.\\ 
-%TODO [https://de.wikipedia.org/wiki/Werkstoffpr%C3%BCfung]
+Getestet werden können zum Beispiel Dehnbarkeit, Hitzebeständigkeit oder Fehlerfreiheit. \footcite{theorie}\\ 
 Man unterscheidet weiterhin bei der Werkstoffprüfung zwischen zerstörenden und zerstörungsfreien Verfahren. 
 Zu ersterer Kategorie zählen unter anderem Stresstests, bei denen die Grenzen eines Prüflings getestet werden. 
 Ein Test der Reißfestigkeit eines Seils etwa ist dann beendet, wenn es reißt. 
@@ -86,7 +85,7 @@ Anders als die Ermittlung allgemeiner Informationen über ein Produkt müssen Fe
 Man nehme zum Beispiel eine Halterung für Flugzeugturbinen. 
 Die Belastbarkeit des Bauteils ist hier eine entscheidende Information und wird daher genau (zerstörend) gemessen, was zur Zerstörung des Bauteils führt. 
 Wenn man einige Bauteile verwendet um den Test durchzuführen und starke Abweichungen streicht erhält man sehr wahrscheinlich einen Wert, der die zu erwartende Belastbarkeit des Bauteils widerspiegelt und Kunden zur Information dienen kann. %TODO , vor um?
-Die dabei zerstörte Menge an Halterungen ist ein vernachlässigbarer Verlust.\\
+Die dabei zerstörte Menge an Halterungen ist ein vernachlässigbarer Verlust. \footcite{zfp-abgrenzung}\\
 Möchte man jedoch wissen, wie die weiteren produzierten Bauteile beschaffen sind, muss man nicht mehr den genauen Wert ermitteln, sondern nur auf Abweichungen von der Norm prüfen, also auf Fehler. 
 Ein naheliegender Einfall ist, Stichproben zu nehmen, was jedoch zwei Nachteile hat. Zum einen ist selbst der Verlust einzelner Teile noch ein Verlust, und damit nicht wünschenswert.
 Zum anderen ist eine Stichprobe nicht sicher, da diese nur zuverlässige Fehler, hervorgerufen durch eine dauerhafte Fehlfunktion in der Fertigung, eindeutig feststellt.\\
@@ -107,6 +106,7 @@ Diese Messungen werden dann in einem sogenannten Oszillogramm dargestellt.
 \label{oszillogramme}
 \includegraphics[width=0.72\textwidth]{pictures/Oszillogramme.jpg}
 \caption{Oszillogramme (beispielhaft, Nummer eins bis fünf von links nach rechts)}
+%TODO Quelle erneut angeben
 \end{center}\end{figure} \\
 Je höher dabei eine Spitze (auch Peak) ist, desto stärker war das zugehörige Echo. 
 Hierbei wird ausgenutzt, dass beim Übergang der Ultraschallwellen von einem Material zum anderen ein bestimmter Anteil reflektiert wird, während ein anderer Anteil (unter einem anderen Winkel) sich weiter durch den Körper bewegt. 
@@ -114,7 +114,7 @@ Trifft eine Schallwelle, die sich in einem festen Körper bewegt, auf Luft, so w
 So erscheint das erste Echo schon direkt zu Beginn der Messung, wie im ersten Oszillogramm zu sehen: es entsteht, wenn die ausgesandten Wellen in den Probekörper eintreten, denn zwischen Prüfkopf und Prüfkörper befindet sich immer eine (meist sehr dünne) Luftschicht; daher wird der Schall schon einmal reflektiert, bevor der relevante Teil des Verfahrens beginnt. 
 Um dies in der Praxis zu minimieren, wird eine Kopplungsflüssigkeit verwendet, welche den Schall mit möglichst wenig Reflexionen zwischen Werkstück und Prüfkopf transportiert. 
 Das zweite Echo stellt in diesem Fall das sogenannte Rückwandecho dar, bei welchem die Wellen von der dem Prüfkopf gegenüberliegenden Seite zurückgeworfen werden. 
-Mithilfe dessen kann auch Tiefe des Prüfkörpers ermittelt werden: da der Schall stets eine materialspezifische Geschwindigkeit $c_\mathrm{Material}$  \cite{schallgeschwindigkeiten}  %TODO Quelle
+Mithilfe dessen kann auch Tiefe des Prüfkörpers ermittelt werden: da der Schall stets eine materialspezifische Geschwindigkeit $c_\mathrm{Material}$  \footcite{schallgeschwindigkeiten}  %TODO Quelle
 besitzt, gilt für die Stärke des Körpers: $d = \dfrac{c_{\mathrm{Material}} \cdot t}{2}$. 
 Dies ist vor allem hilfreich, wenn Probeköper nur von einer Seite erreichbar sind und ihre Dimensionen daher nicht mit herkömmlichen Werkzeugen bestimmt werden können.\\
 Für die zerstörungsfreie Prüfung ist diese Möglichkeit jedoch eher von geringerer Bedeutung. 
@@ -130,7 +130,7 @@ Diese Interpretation wäre allerdings falsch, denn wie man sehen kann, gibt es n
 An dieser Stelle muss man anmerken, dass in diesem Fall kein gutes Kopplungsmittel verwendet wurde, da sonst das Echo sehr viel schneller abschwächen würde. 
 Der Grund dafür, dass es dennoch schwächer wird, ist einerseits der Fakt, dass die Wellen teilweise die Fehlstelle passieren und somit ein wenig ihrer Stärke verlieren, andererseits aber auch die Streuung der Schallwellen im Körper, sodass das Signal stetig schwächer wird.\\
 Im Detail kann die Verfahrensweise der zerstörungsfreien Materialprüfung mit Ultraschall nachgelesen werden in Quelle 
-\cite{karldeutsch}. %TODO Quelle
+\footcite{karldeutsch}. 
 
 \subsection{Abgrenzung von anderen Testverfahren}
 
@@ -151,8 +151,7 @@ Um dies durchzuführen stehen ebenfalls mehrere Methoden zur Verfügung.
 Abhängig von Größe und Material des Prüflings sind manche Testverfahren besser geeignet als andere. 
 So basieren z.B. manche Verfahren auf der elektrischen Leitfähigkeit des Prüfkörpers und sind daher auf bestimmte Materialien beschränkt.
 Andere hingehen erfordern geschlossene Sicherheitsräume, wie z.B. die Röntgenprüfung, und können daher schlecht zur Prüfung von bereits verbauten Teilen verwendet werden.\\
-Allerdings kann auch durch die verwendete Methode selbst eine Einschränkung erfolgen. So ist z.B. beim Prüfen mit Ultraschall die Materialdicke abhängig vom verwendeten Prüfgerät auf fünf bis acht Meter beschränkt, da sonst Ungenauigkeiten entstehen könnten.\\
-%TODO Quelle dafür: PDF Ultraschallprüfung von TU Kaiserslautern
+Allerdings kann auch durch die verwendete Methode selbst eine Einschränkung erfolgen. So ist z.B. beim Prüfen mit Ultraschall die Materialdicke abhängig vom verwendeten Prüfgerät auf fünf bis acht Meter beschränkt, da sonst Ungenauigkeiten entstehen könnten. \footcite{ultraschall} \\
 Das Ultraschallverfahren, dessen Simulation Thema dieser Arbeit ist, bietet insgesamt eine gute Kombination praxisrelevanter
 %TODO praktikabler? praktischer? sonstiges?
  Eigenschaften. So können bei relativ geringem technischen Aufwand und unter Verwendung mobiler Prüfgeräte kleine bis mittelgroße Prüfkörper relativ genau auf innere Fehler untersucht werden.
@@ -286,7 +285,7 @@ Zur Bestimmung des Schnittpunkts $S$ wird nun folgendes Gleichungssystem nach $\
 \end{equation*}
 Daraus ergibt sich folgend der Punkt $S$ mit $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$.\\
 Um nun am Schnittpunkt eine Reflexion durchzuführen, ist es erneut notwendig, eine Tangente an das Oval anzulegen. 
-Dies erfolgt unter Ausnutzung der Brennpunkteigenschaft. %TODO Quelle
+Dies erfolgt unter Ausnutzung der Brennpunkteigenschaft. \footcite{beweis-ellipse}
 Nach dem Satz vom Flüstergewölbe gilt für Brennstrahlen in Ellipsen, im Beispiel aus Abbildung \ref{fig:Ellipse} $\overline{PS}$ und $\overline{QS}$, dass die Winkelhalbierende der beiden Strahlen die Normale zur Tangente im Punkt der Ellipsenperipherie, hier $S$, ist.
 Unter Ausnutzung dieser Eigenschaft lässt sich für Ellipsen eine Gleichung zu Herleitung einer Tangente $T(S)$ aufstellen.\\
 Um die Winkelhalbierende $\vec{n}$ zwischen den Brennstrahlen zu erhalten, werden diese normiert und aufaddiert.
@@ -307,7 +306,7 @@ Damit lässt sich auch die Reflexion an einer Ellipse auf die an einer Geraden z
 Aus Platzgründen mussten wir die ausführliche Herleitung einiger Formeln hier auslassen, diese sind im Kapitel \ref{sec:AnhangHerlFormel} zu finden.
 
 \newpage
-\section{Erstellen eines Programms zur Prüfungssimulation }
+\section{Erstellen eines Programms zur Prüfungssimulation }\label{sec:sim}
 
 \subsection{Anforderungen an das Programm}
 
@@ -345,18 +344,18 @@ Mithilfe dessen ist der Verlauf des Strahls durch den Prüfkörper eindeutig nac
 
 \subsubsection{Scansimulation mit Einfach- und Mehrfachstrahl} %TODO besserer Titel?
 Die Simulation der Scanverfahren und die finale Berechnung und Auswertung der Reflexionen wird in der Klasse \textsc{Scan} umgesetzt. %TODO einheitlich Klassen anders
-Basierend auf den von Raytracer ermittelten Punkten, an welchen die Strahlen reflektiert werden, errechnet man, welche Zeit zwischen den einzelnen Reflexionen vergeht.
+Basierend auf den von \textsc{Raytracer} ermittelten Punkten, an welchen die Strahlen reflektiert werden, errechnet man, welche Zeit zwischen den einzelnen Reflexionen vergeht.
 Weiterhin wird für jeden Auftreffpunkt geprüft, ob dieser im Messbereich des Senders liegt. 
 Ist dies der Fall, so wird in Abhängigkeit von der bereits verstrichenen Zeit die Intensität ermittelt. 
 Insgesamt geht man hierbei von einer über die Zeit exponentiell fallenden Intensität aus.\\
 Ähnlich verhält es sich auch bei der Simulation mit mehreren Strahlen. 
 Hierfür werden die Strahlen gleichmäßig über den gegebenen Streuwinkel verteilt und für jeden Strahl die zuvor erklärte Prozedur durchgeführt. 
-Final werden alle ermittelten Wertepaare aus Zeit und Auftreffintensität zusammengefasst.\\
+Schließlich werden alle ermittelten Wertepaare aus Zeit und Auftreffintensität zusammengefasst.\\
 Das Verfahren kann dabei von zwei verschiedenen Größen abhängig gemacht werden. 
 Zum einen der maximalen Anzahl an Reflexionen, die für alle Strahlen gleichermaßen festgelegt wird. Hierbei liegt der Vorteil darin, dass die benötigte Speichermenge und Rechenzeit limitiert ist und vom Benutzer besser gesteuert werden kann. 
 Nachteilig ist hingegen, dass einzelne Strahlen, die in einem engen Bereich zwischen zwei begrenzenden Flächen oft reflektiert werden damit insgesamt kürzere Strecken zurücklegen, als Strahlen die nur auf den Begrenzungsflächen des Prüfkörpers auftreffen. 
-Dies führt zu eventuellen Verlusten von Messwerten, die in einer realen Anwendung wahrnehmbar gewesen wären, da die Strahlen mit kürzerem Weg noch eine höhere Intensität haben und eventuell nach weiteren Reflexionen den Sender noch erreichen könnte.\\
-Um diesen Fall ebenfalls abzudecken ist eine zweite Version dieser Prozedur verfasst. 
+Dies führt zu eventuellen Verlusten von Messwerten, die in einer realen Anwendung wahrnehmbar gewesen wären, da die Strahlen, die einen kürzeren Weg zurücklegen mussten, eine höhere Intensität haben und eventuell nach weiteren Reflexionen den Sender noch erreichen könnten.\\
+Um diesen Fall ebenfalls abzudecken, ist eine zweite Version dieser Prozedur verfasst. 
 Hierfür wird statt einer maximalen Anzahl an Reflexionen die maximale Weglänge eingelesen. 
 Damit legt jeder Strahl im Material die gleiche, vom Benutzer ausgewählte Strecke zurück, wodurch das Problem der Messwertverluste gelöst wird. 
 Der Nachteil hierbei liegt allerdings darin, dass man für einen Strahl nie voraussehen kann, wann die Maximalweglänge überschritten wird. 
@@ -364,18 +363,18 @@ Daher kann es hierbei zu einer hohen Anzahl an Reflexionen kommen, welche propor
 Insgesamt muss hier für jeden Anwendungszweck separat entschieden werden, welches Verfahren aufgrund seiner Vor- und Nachteile gewählt wird.\\
 
 \newpage
-\subsubsection{Auswertung der Scanergebnisse} %TODO verweis Struktogramm Anhang -> wenn eingefügt
+\subsubsection{Auswertung der Messergebnisse} %TODO verweis Struktogramm Anhang -> wenn eingefügt
 \begin{wrapfigure}[15]{lH}{2.8cm}
 \includegraphics[scale=0.25]{pictures/Strahlenbuendel.png} 
 \caption{Darstellung Wegunterschied}
 \label{fig:Wegunters}
 \end{wrapfigure} 
-Ungeachtet des gewählten Verfahrens kommt es bei der Darstellung der Messwerte eines Scans, der auf einem Strahlenbündel basiert, immer zu dem Problem, dass Strahlen, welche einen ähnlichen Verlauf haben sehr kleine zeitliche Differenzen zwischen ihrem Auftreffen auf dem Sender haben. 
+Ungeachtet des gewählten Verfahrens kommt es bei der Darstellung der Messwerte eines \textsc{Scans}, der auf einem Strahlenbündel basiert, immer zu dem Problem, dass Strahlen, welche einen ähnlichen Verlauf haben sehr kleine zeitliche Differenzen zwischen ihrem Auftreffen auf dem Sender haben. 
 Wie in der Nebenstehenden Abbildung \ref{fig:Wegunters} zu erkennen ist, sind die zurückgelegten Strecken, und damit die benötigte Zeit der einzelnen Strahlen, besonders wenn man noch kleinere Streuwinkel wählt, gering. 
 Die im Diagramm dargestellten Werte überlappen sich, doch dies entspricht nicht der Realität. 
 Durch die Annahme, dass jeder Strahl einen gewissen Teil der kinetischen Energie, die in Form der Schallwelle in den Körper abgegeben wird, repräsentiert sollten fast gleichzeitige Treffer nicht als solche wahrgenommen werden, sondern als ein Treffer mit höherer Intensität. %%todo ohne erklärung Welle?
 Die Notwendigkeit einer weiteren Zusammenfassung der Messwerte ist dadurch gegeben. 
-Dies erfolgt in der Methode \textsl{processScan}. \par %%todo einheitliche Schriftart für funktionen, Satz notwendig?
+Dies erfolgt in der Methode \texttt{processScan}. \par %%todo einheitliche Schriftart für funktionen, Satz notwendig?
 \begin{wrapfigure}[28]{rH}{11.5cm}
 \includegraphics[scale=0.3]{pictures/Flowchart_processScan.png}
 \caption{Ablauf der Funktion \texttt{processScan}}
@@ -383,7 +382,7 @@ Dies erfolgt in der Methode \textsl{processScan}. \par %%todo einheitliche Schri
 Zuerst werden dabei alle Wertepaare aus Zeit und Intensität errechnet und in zeitlicher Abfolge sortiert. 
 Zwischen zwei Wertepaaren liegt eine Zeitdifferenz, die für alle Paare errechnet wird und in eine Liste einsortiert wird.
 Nun wird aus dieser Liste an Differenzen die Stelle gesucht, an der der Quotient aus zwei aufeinanderfolgenden Zeitdifferenzen am größten ist und der größere Wert der Zeitdifferenzen als sogenannter Zeitbereich definiert. 
-Dieser sagt aus, in welchen Abstand von einem gegebene Treffer weitere Treffer nicht separat in das Diagramm für A-Scans eingetragen, sondern als ein Treffer zusammengefasst werden.\\
+Dieser sagt aus, in welchem Abstand von einem gegebenen Treffer weitere Treffer nicht separat in das Diagramm für A-Scans eingetragen, sondern als ein Treffer zusammengefasst werden.\\
 Auf Basis des Zeitbereichs werden nun alle Scanwerte in Gruppen eingeteilt. 
 Ausgehend von einem Startwert werden alle folgenden Werte überprüft und solang der selben Gruppe zugeordnet, bis sie nicht mehr innerhalb des Zeitbereichs liegen. 
 Die Gruppe wird dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durchschnittszeit errechnet wird. 
@@ -565,6 +564,75 @@ Somit erhalten wir das Ergebnis $s'$ mit:
 \caption{Reflexion an einem Kreis}
 \end{figure}
 
+gegeben:
+\begin{subequations}
+\begin{align}
+K:~ \vec{x} &= \vec{m} + \vec{c} \label{eq:Kg1}\\
+|\vec{v}| &= r \label{eq:Kg2} \\
+s:~ \vec{x} &= \vec{o} + \lambda \cdot \vec{r} \label{eq:Kg3}
+\end{align}
+\end{subequations}
+
+gesucht:
+\begin{subequations}
+\begin{align}
+S(&S_x|S_y) \nonumber \\
+s':~ \vec{x} &= \vec{s} + \lambda \cdot \vec{r'} \nonumber 
+\end{align}
+\end{subequations}
+
+Lösung:
+\begin{equation*}
+\begin{split}
+\ref{eq:Kg1}: &\\
+s_x &= m_x + v_x \\
+ &= o_x + \lambda \cdot r_x \\
+v_x &= s_x - m_x \\
+s_y &= m_y + v_y \\
+ &= o_y + \lambda \cdot r_y \\
+v_y &= s_y - m_y \\
+\ref{eq:Kg2}: & \\
+r &= \sqrt{{v_x}^2 + {v_y}^2} \\
+r^2 &= {v_x}^2 + {v_y}^2 \\
+ &= {(s_x - m_x)}^2 + {(m_y - s_y)}^2 
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+r^2 &= {(o_x + \lambda \cdot r_x - m_x)}^2 + {(o_y + \lambda \cdot r_y - m_y)}^2 \\
+ &= {o_x}^2 + 2\lambda\cdot r_x \cdot o_x - 2 \cdot o_x \cdot m_x + \lambda^2 \cdot {r_x}^2 - 2\lambda \cdot m_x \cdot r_x + {m_x}^2 \\
+ & ~~~+{o_y}^2 + 2\lambda\cdot r_y \cdot o_y - 2 \cdot o_y \cdot m_y + \lambda^2 \cdot {r_y}^2 - 2\lambda \cdot m_y \cdot r_y + {m_y}^2 \\
+0 &= \lambda^2 \cdot ({r_x}^2 + {r_y}^2) + \lambda \cdot (2 \cdot r_x \cdot o_x - 2 \cdot r_x \cdot m_x + 2 \cdot r_y \cdot m_y - 2 \cdot r_y \cdot m_y) \\
+ & ~~~+({o_x}^2 - 2 \cdot o_x \cdot m_x + {m_x}^2 + {o_y}^2 - 2 \cdot o_y \cdot m_y + {m_y}^2 - r^2) \\
+ &= \lambda^2 \cdot ({r_x}^2 + {r_y}^2) + \lambda \cdot (2 \cdot r_x \cdot (o_x - m_x) + 2 \cdot r_y \cdot (o_y - m_y)) + ({(o_x - m_x)}^2 + {(o_y - m_y)}^2 - r^2) \\
+ &= \lambda^2 + \lambda \cdot \dfrac{2 \cdot r_x \cdot (o_x - m_x) + 2 \cdot r_y \cdot (o_y - m_y)}{{r_x}^2 + {r_y}^2} + \dfrac{{(o_x - m_x)}^2 + {(o_y - m_y)}^2 - r^2}{{r_x}^2 + {r_y}^2}
+\end{split}
+\end{equation*}
+
+Mit der Lösungsformel für binomische Gleichungen 
+\begin{equation*}
+x_1 = \dfrac{-p}{2} \pm \sqrt{{(\dfrac{p}{2})}^2 - q}
+\end{equation*}
+ergibt sich als Lösung für $\lambda_{1/2}$ mit
+\begin{equation*}
+\begin{split}
+p_{bin} &= \dfrac{2 \cdot r_x \cdot (o_x - m_x) + 2 \cdot r_y \cdot (o_y - m_y)}{{r_x}^2 + {r_y}^2} \\
+q_{bin} &= \dfrac{{(o_x - m_x)}^2 + {(o_y - m_y)}^2 - r^2}{{r_x}^2 + {r_y}^2}
+\end{split}
+\end{equation*}
+falls ${(\dfrac{p_{bin}}{2})}^2 - q_{bin} \geq 0$ gilt:
+\begin{equation*}
+\begin{split}
+\lambda_1 &= \dfrac{-p_{bin}}{2} + \sqrt{{(\dfrac{p_{bin}}{2})}^2 - q_{bin}} \\
+\lambda_2 &= \dfrac{-p_{bin}}{2} - \sqrt{{(\dfrac{p_{bin}}{2})}^2 - q_{bin}}
+\end{split}
+\end{equation*}
+Daraus ergeben sich zwei Schnittpunkt $S_{1/2}$ mit $\vec{s_{1/2}} = \vec{o} + \lambda_{1/2} \cdot \vec{r}$ für die der Schnittpunkt mit dem kleineren Abstand $d(S_{1/2}, O) = \sqrt{{(S_{1/2, x} - Ox)}^2 + {(S_{1/2, y} - Oy)}^2}$ ausgewählt wird, um daran eine Tangente anzulegen, an welcher nach der Formel für Geradenreflexion der Strahl $s$ zu $s'$ reflektiert wird.
+
+
+
+
 \newpage
 \subsubsection*{Herleitung der Formel für Ovale}
 
@@ -586,7 +654,7 @@ e &= |\vec{u}| + |\vec{v}| \nonumber
 gesucht:
 \begin{subequations}
 \begin{align}
-S(Sx|Sy)~~~~~~ \nonumber  \\
+S(Sx|Sy)~~~~~~~~~~ \nonumber  \\
 t:~ \vec{x} = \vec{s} + h \cdot \vec{t} \wedge h \in \mathds{R} \nonumber 
 \end{align}
 \end{subequations}
@@ -639,8 +707,9 @@ M_2 &= e \cdot [e^{4} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot e^{2} \cdot (2 \cdot O
 \end{aligned}
 \end{equation*}
 
-Daraus ergibt sich aus $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$ der Schnittpunkt S. Nun muss lediglich nach dem im Kapitel \ref{sec:weitereGeometrien} beschriebenen Verfahren eine Tangente durch $S$ an das Oval angelegt werden und daran die Reflexion durchgeführt werden.
-%TODO fall radikant negativ erwähnen
+Für die Wurzel in den beiden Gleichungen gilt, dass ihr Radikant einen negativen Wert hat, wenn der Strahl das Oval nicht schneidet. Daher muss dieser Wert zuerst ausgerechnet und überprüft werden.\\
+Ist der Radikant hingegen positiv ergibt sich daraus mit $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$ der Schnittpunkt $S$. Nun muss lediglich nach dem im Kapitel \ref{sec:weitereGeometrien} beschriebenen Verfahren eine Tangente durch $S$ an das Oval angelegt werden und daran die Reflexion durchgeführt werden.
+
 
 
 \begin{equation*}
@@ -654,9 +723,10 @@ Daraus ergibt sich aus $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$ der Schnittpu
 \end{subequations}
 
 \subsubsection*{Funktion zur Berechnung gerichteter Winkel}
-
+%TODO vervollständigen
 
 \subsection{Programmdokumentation und -benutzungsanleitung}
+%TODO vervollständigen
 
 \newpage
 \nocite{*}
