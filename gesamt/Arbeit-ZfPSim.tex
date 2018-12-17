@@ -152,7 +152,7 @@ Allerdings kann auch durch die verwendete Methode selbst eine Einschränkung erf
 %TODO Quelle dafür: PDF Ultraschallprüfung von TU Kaiserslautern
 Das Ultraschallverfahren, dessen Simulation Thema dieser Arbeit ist, bietet insgesamt eine gute Kombination praxisrelevanter
 %TODO praktikabler? praktischer? sonstiges?
- Eigenschaften. So können bei relativ geringem Technischen Aufwand und unter Verwendung mobiler Prüfgeräte kleine bis mittelgroße Prüfkörper relativ genau auf innere Fehler untersucht werden.
+ Eigenschaften. So können bei relativ geringem technischen Aufwand und unter Verwendung mobiler Prüfgeräte kleine bis mittelgroße Prüfkörper relativ genau auf innere Fehler untersucht werden.
 
 \newpage
 
@@ -308,7 +308,7 @@ Aus Platzgründen mussten wir die ausführliche Herleitung einiger Formeln hier 
 
 \subsection{Anforderungen an das Programm}
 
-Das im Rahmen der Arbeit entstandene Programm soll in erster Linie für zwei Zwecke eingesetzt werden können: Die Findung eines Prüfansatzes für komplexe Prüfkörper und die Validierung uneindeutiger Hypothesen basierend auf Messungen an solchen Prüfkörpern.
+Das im Rahmen der Arbeit entstandene Programm soll in erster Linie für zwei Zwecke eingesetzt werden können: Das Finden eines Prüfansatzes für komplexe Prüfkörper und die Validierung uneindeutiger Hypothesen basierend auf Messungen an solchen Prüfkörpern.
 Um dies zu ermöglichen muss das Programm beliebige, komplexe, zweidimensionale Geometrien umsetzen können. 
 Dies geschieht im sogenannten Körpereditor, in dem der Nutzer aus einer Reihe von Figuren wie Ovalen, Kreisen und Polygonen sowohl die geplante Form des Prüflings - im Programm \textit{Outline} - als auch eventuelle Fehler - im Programm \textit{Defects} - zusammenfügen kann. \\
 Daraus ergibt sich eine naheliegende Begrenzung des Programms. 
@@ -330,16 +330,22 @@ Weiterhin wird für die Berechnungen eine Python-Bibliothek mit gleichem Funktio
 \subsection{Simulation und Darstellung der Ultraschallprüfung}
 
 \subsubsection{Raytracer und und die trace-Funktion}
-Die im vorangegangenen Kapitel hergeleiteten Formeln sind in der Klasse \textsc{Raytracer} implementiert. Daher existiert für jede geometrische Form eine Methode zum Berechnen des Schnittpunktes mit dem Strahl und eine zur Berechnung des reflektierten Vektors und somit des neuen Strahls. Weiterhin gibt es spezielle Prozeduren um das Problem der Reflexion in einer Ecke zu behandeln.\\
-Das Kernstück der Klasse ist jedoch die \texttt{trace}-Funktion, welche dazu dient, den gesamten Verlauf eines Strahls im Prüfkörper zu ermitteln. Dazu wird mithilfe der Schnittpunkt-Funktionen der Schnittpunkt mit jedem Objekt in dem Körper ermittelt, sofern existent. Anschließend wird die Reflexionsmethode für dasjenige Objekt aufgerufen, welches tatsächlich vom Strahl getroffen wird, also dessen Schnittpunkt mit dem Strahl am nächsten an dem Ausgangspunkt des Strahls liegt. Sind mehrere Objekte gleich weit entfernt, wird die Funktion zur Reflexion an Ecken aufgerufen, sodass in jedem Fall ein eindeutiger neuer Strahl entsteht.\\
-Bei jeder einzelnen Reflexion wird der vorherige Strahl in einer Liste gespeichert, sodass am Ende sämtliche Strahlen mit Anfangspunkt und Richtungsvektor geordnet in dieser Liste stehen. Mithilfe dessen ist der Verlauf des Strahls durch den Prüfkörper eindeutig nachvollziehbar, indem die Reflexionspunkte in der gegebenen Reihenfolge betrachtet werden.
+Die im vorangegangenen Kapitel hergeleiteten Formeln sind in der Klasse \textsc{Raytracer} implementiert. 
+Daher existiert für jede geometrische Form eine Methode zum Berechnen des Schnittpunktes mit dem Strahl und eine zur Berechnung des reflektierten Vektors und somit des neuen Strahls. 
+Weiterhin gibt es spezielle Prozeduren um das Problem der Reflexion in einer Ecke zu behandeln.\\
+Das Kernstück der Klasse ist jedoch die \texttt{trace}-Funktion, welche dazu dient, den gesamten Verlauf eines Strahls im Prüfkörper zu ermitteln. 
+Dazu wird mithilfe der Schnittpunkt-Funktionen der Schnittpunkt mit jedem Objekt in dem Körper ermittelt, sofern existent. 
+Anschließend wird die Reflexionsmethode für dasjenige Objekt aufgerufen, welches tatsächlich vom Strahl getroffen wird, also dessen Schnittpunkt mit dem Strahl am nächsten an dem Ausgangspunkt des Strahls liegt. 
+Sind mehrere Objekte gleich weit entfernt, wird die Funktion zur Reflexion an Ecken aufgerufen, sodass in jedem Fall ein eindeutiger neuer Strahl entsteht.\\
+Bei jeder einzelnen Reflexion wird der vorherige Strahl in einer Liste gespeichert, sodass am Ende sämtliche Strahlen mit Anfangspunkt und Richtungsvektor geordnet in dieser Liste stehen. 
+Mithilfe dessen ist der Verlauf des Strahls durch den Prüfkörper eindeutig nachvollziehbar, indem die Reflexionspunkte in der gegebenen Reihenfolge betrachtet werden.
 
 \subsubsection{Scansimulation mit Einfach- und Mehrfachstrahl} %TODO besserer Titel?
 Die Simulation der Scanverfahren und die finale Berechnung und Auswertung der Reflexionen wird in der Klasse \textsc{Scan} umgesetzt. %TODO einheitlich Klassen anders
 Basierend auf den von Raytracer ermittelten Punkten, an welchen die Strahlen reflektiert werden, errechnet man, welche Zeit zwischen den einzelnen Reflexionen vergeht.
 Weiterhin wird für jeden Auftreffpunkt geprüft, ob dieser im Messbereich des Senders liegt. 
-Ist dies der Fall, so wird in Abhängigkeit der bereits verstrichenen Zeit die Intensität ermittelt. 
-Insgesamt geht man hierbei von einer über die Zeit exponential fallenden Intensität aus.\\
+Ist dies der Fall, so wird in Abhängigkeit von der bereits verstrichenen Zeit die Intensität ermittelt. 
+Insgesamt geht man hierbei von einer über die Zeit exponentiell fallenden Intensität aus.\\
 Ähnlich verhält es sich auch bei der Simulation mit mehreren Strahlen. 
 Hierfür werden die Strahlen gleichmäßig über den gegebenen Streuwinkel verteilt und für jeden Strahl die zuvor erklärte Prozedur durchgeführt. 
 Final werden alle ermittelten Wertepaare aus Zeit und Auftreffintensität zusammengefasst.\\
@@ -349,7 +355,7 @@ Nachteilig ist hingegen, dass einzelne Strahlen, die in einem engen Bereich zwis
 Dies führt zu eventuellen Verlusten von Messwerten, die in einer realen Anwendung wahrnehmbar gewesen wären, da die Strahlen mit kürzerem Weg noch eine höhere Intensität haben und eventuell nach weiteren Reflexionen den Sender noch erreichen könnte.\\
 Um diesen Fall ebenfalls abzudecken ist eine zweite Version dieser Prozedur verfasst. 
 Hierfür wird statt einer maximalen Anzahl an Reflexionen die maximale Weglänge eingelesen. 
-Damit legt jeder Strahl im Material die gleiche, vom Benutzer ausgewählte Strecke zurück, womit das Problem von Messwertverlusten gelöst wird. 
+Damit legt jeder Strahl im Material die gleiche, vom Benutzer ausgewählte Strecke zurück, wodurch das Problem der Messwertverluste gelöst wird. 
 Der Nachteil hierbei liegt allerdings darin, dass man für einen Strahl nie voraussehen kann, wann die Maximalweglänge überschritten wird. 
 Daher kann es hierbei zu einer hohen Anzahl an Reflexionen kommen, welche proportional zu Speicherbedarf und Rechenzeit sind. 
 Insgesamt muss hier für jeden Anwendungszweck separat entschieden werden, welches Verfahren aufgrund seiner Vor- und Nachteile gewählt wird.\\
@@ -361,8 +367,8 @@ Insgesamt muss hier für jeden Anwendungszweck separat entschieden werden, welch
 \caption{Darstellung Wegunterschied}
 \label{fig:Wegunters}
 \end{wrapfigure} 
-Ungeachtet des gewählten Verfahrens kommt es bei der Darstellung der Messwerte eines Scans der auf einem Strahlenbündel basiert immer zu dem Problem, dass Strahlen die einen ähnlichen Verlauf haben sehr kleine zeitliche Differenzen zwischen ihrem Auftreffen auf dem Sender haben. 
-Wie in der Nebenstehenden Abbildung \ref{fig:Wegunters} zu erkennen ist sind die zurückgelegten Strecken und damit die benötigte Zeit der einzelnen Strahlen, besonders wenn man noch kleinere Streuwinkel wählt, gering. 
+Ungeachtet des gewählten Verfahrens kommt es bei der Darstellung der Messwerte eines Scans, der auf einem Strahlenbündel basiert, immer zu dem Problem, dass Strahlen, welche einen ähnlichen Verlauf haben sehr kleine zeitliche Differenzen zwischen ihrem Auftreffen auf dem Sender haben. 
+Wie in der Nebenstehenden Abbildung \ref{fig:Wegunters} zu erkennen ist, sind die zurückgelegten Strecken, und damit die benötigte Zeit der einzelnen Strahlen, besonders wenn man noch kleinere Streuwinkel wählt, gering. 
 Die im Diagramm dargestellten Werte überlappen sich, doch dies entspricht nicht der Realität. 
 Durch die Annahme, dass jeder Strahl einen gewissen Teil der kinetischen Energie, die in Form der Schallwelle in den Körper abgegeben wird, repräsentiert sollten fast gleichzeitige Treffer nicht als solche wahrgenommen werden, sondern als ein Treffer mit höherer Intensität. %%todo ohne erklärung Welle?
 Die Notwendigkeit einer weiteren Zusammenfassung der Messwerte ist dadurch gegeben. 
@@ -375,9 +381,9 @@ Zuerst werden dabei alle Wertepaare aus Zeit und Intensität errechnet und in ze
 Zwischen zwei Wertepaaren liegt eine Zeitdifferenz, die für alle Paare errechnet wird und in eine Liste einsortiert wird.
 Nun wird aus dieser Liste an Differenzen die Stelle gesucht, an der der Quotient aus zwei aufeinanderfolgenden Zeitdifferenzen am größten ist und der größere Wert der Zeitdifferenzen als sogenannter Zeitbereich definiert. 
 Dieser sagt aus, in welchen Abstand von einem gegebene Treffer weitere Treffer nicht separat in das Diagramm für A-Scans eingetragen, sondern als ein Treffer zusammengefasst werden.\\
-Auf Basis des Zeitbereichs werden nun alle Scanwerte durchgegangen und in Gruppen eingeteilt. 
+Auf Basis des Zeitbereichs werden nun alle Scanwerte in Gruppen eingeteilt. 
 Ausgehend von einem Startwert werden alle folgenden Werte überprüft und solang der selben Gruppe zugeordnet, bis sie nicht mehr innerhalb des Zeitbereichs liegen. 
-Die Gruppe wir dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durchschnittszeit errechnet wird. 
+Die Gruppe wird dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durchschnittszeit errechnet wird. 
 Dieses Teilergebnis ist eines der neuen Wertepaare, welche dann im Diagramm für A-Scans dargestellt werden. 
 Die Gruppe wird daraufhin geleert, ein neuer Wert hinzugefügt und das Verfahren wiederholt bis alle Scanergebnisse einer Gruppe zugeordnet wurden.
 
@@ -468,7 +474,7 @@ Diesen Prozess möchten wir unterstützen.\\ %TODO vllt besser zur Zusammenfassu
 
 \subsection{Vollständige Herleitung aller verwendeten Berechnungsformeln} \label{sec:AnhangHerlFormel}
 Grundbestandteil unseres Programms ist es, Strahlen mit regelmäßigen zweidimensionalen Körpern zu schneiden. Viele Verfahren sind dafür bereits bekannt, für die Anwendung innerhalb eines Simulationsprogramms sind diese allerdings eher selten geeignet.\\
-Für die Berechnung gibt es im allgemeinen gegebene Größen, aus denen sich die Ergebnisse ableiten lassen. Doch im Gegensatz zum Menschen sind Computer nicht in der Lage, einfache Fälle selbst zu erkennen, sondern benötigen im Idealfall eine Berechnungsformel zur Bestimmung eines Wertes um laufzeiteffizient arbeiten zu können.
+Für die Berechnung gibt es im Allgemeinen gegebene Größen, aus denen sich die Ergebnisse ableiten lassen. Doch im Gegensatz zum Menschen sind Computer nicht in der Lage, einfache Fälle selbst zu erkennen, sondern benötigen im Idealfall eine Berechnungsformel zur Bestimmung eines Wertes um laufzeiteffizient arbeiten zu können.
 
 \subsubsection*{Herleitung der Formel für Geraden}
 

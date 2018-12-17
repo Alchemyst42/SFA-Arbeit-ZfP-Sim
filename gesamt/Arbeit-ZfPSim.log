@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  17 DEC 2018 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  17 DEC 2018 18:07
 entering extended mode
 **./Arbeit-ZfPSim.tex
 (Arbeit-ZfPSim.tex
@@ -809,7 +809,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 272--276
  []
 
 [8 <./pictures/CircleRef.png> <./pictures/OvalRef.png>] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 338--356
+Underfull \hbox (badness 10000) in paragraph at lines 344--362
 
  []
 
@@ -817,20 +817,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--356
 <pictures/Strahlenbuendel.png, id=219, 293.59688pt x 472.01344pt>
 File: pictures/Strahlenbuendel.png Graphic file (type png)
 <use pictures/Strahlenbuendel.png>
-Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 360.
+Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 366.
 (pdftex.def)             Requested size: 73.39903pt x 118.00307pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
 []\OT1/cmr/m/n/12 Abbildung 5:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
 |\OT1/cmr/m/n/12 Dar-stel-lung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
 \OT1/cmr/m/n/12 Weg-un-ter-
  []
 
@@ -838,40 +838,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--361
 File: pictures/Flowchart_processScan.png Graphic file (type png)
 <use pictures/Flowchart_processScan.png>
 Package pdftex.def Info: pictures/Flowchart_processScan.png  used on input line
- 371.
+ 377.
 (pdftex.def)             Requested size: 328.83104pt x 355.9325pt.
 
-Overfull \hbox (1.62436pt too wide) in paragraph at lines 371--372
+Overfull \hbox (1.62436pt too wide) in paragraph at lines 377--378
 [][] 
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 374--383
+Underfull \hbox (badness 1521) in paragraph at lines 380--389
 \OT1/cmr/m/n/12 net und in zeit-li-cher
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 374--383
+Underfull \hbox (badness 1968) in paragraph at lines 380--389
 \OT1/cmr/m/n/12 an der der Quo-ti-ent
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 374--383
+Underfull \hbox (badness 4072) in paragraph at lines 380--389
 \OT1/cmr/m/n/12 ge-nann-ter Zeit-be-reich
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 374--383
+Underfull \hbox (badness 2617) in paragraph at lines 380--389
 \OT1/cmr/m/n/12 de-fi-niert. Die-ser sagt
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 374--383
+Underfull \hbox (badness 2469) in paragraph at lines 380--389
 \OT1/cmr/m/n/12 aus, in wel-chen Ab-
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 374--383
+Underfull \hbox (badness 1603) in paragraph at lines 380--389
 \OT1/cmr/m/n/12 stand von ei-nem ge-
  []
 
@@ -879,10 +879,10 @@ Underfull \hbox (badness 1603) in paragraph at lines 374--383
 <pictures/MainWindow.png, id=231, 1445.4pt x 764.10469pt>
 File: pictures/MainWindow.png Graphic file (type png)
 <use pictures/MainWindow.png>
-Package pdftex.def Info: pictures/MainWindow.png  used on input line 388.
+Package pdftex.def Info: pictures/MainWindow.png  used on input line 394.
 (pdftex.def)             Requested size: 455.30342pt x 240.69424pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--408
+Underfull \hbox (badness 10000) in paragraph at lines 397--414
 
  []
 
@@ -890,25 +890,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 391--408
 <pictures/EditorWindow.png, id=237, 1445.4pt x 765.6103pt>
 File: pictures/EditorWindow.png Graphic file (type png)
 <use pictures/EditorWindow.png>
-Package pdftex.def Info: pictures/EditorWindow.png  used on input line 411.
+Package pdftex.def Info: pictures/EditorWindow.png  used on input line 417.
 (pdftex.def)             Requested size: 455.30342pt x 241.16852pt.
  [14 <./pictures/EditorWindow.png>]
-Underfull \hbox (badness 1448) in paragraph at lines 440--464
+Underfull \hbox (badness 1448) in paragraph at lines 446--470
 \OT1/cmr/m/n/12 Im-ple-men-tie-rung von ver-schie-de-nen Ma-te-ria-li-en so-wie
  die da-zu-geh[]origen Schall-ge-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--464
+Underfull \hbox (badness 10000) in paragraph at lines 446--470
 
  []
 
 [15]
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 477.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 483.
 (pdftex.def)             Requested size: 359.84349pt x 250.30954pt.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 486.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 492.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
@@ -917,32 +917,32 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.497 \newpage
+l.503 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {equation.6.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.497 \newpage
+l.503 \newpage
               ] [17]
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 555.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 561.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
  [18]
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 564.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 570.
 (pdftex.def)             Requested size: 304.97865pt x 267.75967pt.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-34.def"
 File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
-Overfull \hbox (55.97383pt too wide) detected at line 614
+Overfull \hbox (55.97383pt too wide) detected at line 620
 [][]
  []
 
 [19]
-Overfull \hbox (55.97383pt too wide) detected at line 631
+Overfull \hbox (55.97383pt too wide) detected at line 637
 [][]
  []
 
@@ -950,16 +950,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.644 \end{align}
+l.650 \end{align}
                   [20] [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 663.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 669.
  [22
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 663.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 669.
  (Arbeit-ZfPSim.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 663.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 663.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 669.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 669.
 Package rerunfilecheck Info: File `Arbeit-ZfPSim.out' has not changed.
 (rerunfilecheck)             Checksum: 9ABBC0EE6CD8EDB20B242EB46AF128E4;2343.
 
@@ -991,7 +991,7 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Arbeit-ZfPSim.pdf (24 pages, 1418785 bytes).
+Output written on Arbeit-ZfPSim.pdf (24 pages, 1418786 bytes).
 PDF statistics:
  358 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
