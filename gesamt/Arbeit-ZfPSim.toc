@@ -4,24 +4,24 @@
 \contentsline {subsection}{\numberline {2.1}Definition zerst\IeC {\"o}rungsfreier Pr\IeC {\"u}fung}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Ultraschall-basierte Werkstoffpr\IeC {\"u}fung}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Abgrenzung von anderen Testverfahren}{5}{subsection.2.3}
-\contentsline {section}{\numberline {3}Berechnung der Strahlenverl\IeC {\"a}ufe}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Grundbegriffe und Notation der Vektorrechnung}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Erkl\IeC {\"a}rung und Begr\IeC {\"u}ndung der vorgenommenen Vereinfachungen}{6}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Betrachtung der Ultraschallwellen als Strahlenb\IeC {\"u}ndel}{6}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Berechnung der Intensit\IeC {\"a}t eines einzelnen Strahls}{7}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Vernachl\IeC {\"a}ssigung der Material\IeC {\"u}berg\IeC {\"a}nge und Annahme der Totalreflexion}{7}{subsubsection.3.2.3}
-\contentsline {subsection}{\numberline {3.3}Herleitung der Formeln}{8}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Reflexion an einer Geraden}{8}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Reflexion an weiteren regelm\IeC {\"a}\IeC {\ss }igen Geometrien}{8}{subsubsection.3.3.2}
-\contentsline {section}{\numberline {4}Programm Programm Programm Programm }{11}{section.4}
-\contentsline {subsection}{\numberline {4.1}Anforderungen an das Programm}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Simulation und Darstellung der Ultraschallpr\IeC {\"u}fung}{11}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Raytracer und und die trace-Funktion}{11}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Scanverfahren}{12}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Auswertung der Scanergebnisse}{13}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}Verwendung des Programms}{14}{subsection.4.3}
-\contentsline {section}{\numberline {5}Zusammenfassung}{17}{section.5}
-\contentsline {section}{\numberline {6}Anhang}{18}{section.6}
-\contentsline {subsection}{\numberline {6.1}Vollst\IeC {\"a}ndige Herleitung aller verwendeten Berechnungsformeln}{18}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Programmdokumentation und -benutzungsanleitung}{22}{subsection.6.2}
-\contentsline {section}{\numberline {7}Literatur- und Bildquellenverzeichnis}{23}{section.7}
+\contentsline {section}{\numberline {3}Berechnung der Strahlenverl\IeC {\"a}ufe}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Grundbegriffe und Notation der Vektorrechnung}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Erkl\IeC {\"a}rung und Begr\IeC {\"u}ndung der vorgenommenen Vereinfachungen}{7}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Betrachtung der Ultraschallwellen als Strahlenb\IeC {\"u}ndel}{7}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Berechnung der Intensit\IeC {\"a}t eines einzelnen Strahls}{8}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Vernachl\IeC {\"a}ssigung der Material\IeC {\"u}berg\IeC {\"a}nge und Annahme der Totalreflexion}{8}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}Herleitung der Formeln}{9}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Reflexion an einer Geraden}{9}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Reflexion an weiteren regelm\IeC {\"a}\IeC {\ss }igen Geometrien}{9}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}Programm Programm Programm Programm }{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Anforderungen an das Programm}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Simulation und Darstellung der Ultraschallpr\IeC {\"u}fung}{12}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Raytracer und und die trace-Funktion}{12}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Scanverfahren}{13}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Auswertung der Scanergebnisse}{14}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Verwendung des Programms}{15}{subsection.4.3}
+\contentsline {section}{\numberline {5}Zusammenfassung}{18}{section.5}
+\contentsline {section}{\numberline {6}Anhang}{19}{section.6}
+\contentsline {subsection}{\numberline {6.1}Vollst\IeC {\"a}ndige Herleitung aller verwendeten Berechnungsformeln}{19}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Programmdokumentation und -benutzungsanleitung}{23}{subsection.6.2}
+\contentsline {section}{\numberline {7}Literatur- und Bildquellenverzeichnis}{24}{section.7}
