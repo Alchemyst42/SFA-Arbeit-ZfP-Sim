@@ -50,7 +50,6 @@
 
 \section{Einleitung}
 %TODO nur eine Idee
-%TODO das hier löschen
 Ein gebrochener Arm, ein verstauchtes Handgelenk oder eine andere vermutete Knochenfraktur. 
 All diese Symptome sind häufig anzutreffen und werden zumeist durch das Röntgenverfahren eindeutig diagnostiziert. 
 Dieses Verfahren bietet sowohl für Patient als auch für Arzt entscheidende Vorteile, denn der Patient nimmt dadurch keinen Schaden und trotzdem erhält der Arzt die Möglichkeit, auch Unstimmigkeiten im Inneren des Körpers wahrzunehmen, ohne dafür erst eine aufwendige Operation durchführen zu müssen.\\
@@ -283,7 +282,7 @@ r^2 & = \vec{v}_x^{~2} + \vec{v}_y^{~2}
 \end{equation*}
 Das so ermittelte $\lambda$ wird in die Formel $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$  eingesetzt, um den Schnittpunkt $S$ zu berechnen. 
 %oldDurch diesen wird anschließend eine Tangente gelegt, welche sich leicht über den Vektor $\vec{n} = \vec{MS}$ zwischen Kreismittelpunkt und Schnittpunkt ermitteln lässt. 
-Durch den Vektor $\vec{n} = \vec{MS}$ zwischen Kreismittelpunkt und Schnittpunkt lässt sich leicht die Tangente in $S$ mit $T: ~\vec{x} = \vec{s} + \lambda \cdot \begin{pmatrix} -ny \\ nx \end{pmatrix}$ ermitteln.
+Durch den Vektor $\vec{n} = \vec{MS}$ zwischen Kreismittelpunkt und Schnittpunkt lässt sich leicht die Tangente in $S$ mit $T: ~\vec{x} = \vec{s} + \lambda \cdot \begin{pmatrix} -n_y \\ n_x \end{pmatrix}$ ermitteln.
 Somit kann die Reflexion am Kreis auf eine Reflexion an einer Geraden zurückgeführt werden.\\
 Die Reflexion an Kreisbögen funktioniert analog, aus einem Kreisbogen wird der entsprechende vollständige Kreis gebildet, an welchem wie beschrieben reflektiert wird. 
 Jedoch muss zusätzlich noch überprüft werden, ob der Schnittpunkt mit dem \glqq Hilfskreis\grqq{} auch auf dem Teil des Kreises liegt, den dieser mit dem Kreisbogen teilt. 
@@ -324,7 +323,7 @@ Um die Winkelhalbierende $\vec{n}$ zwischen den Brennstrahlen zu erhalten, werde
 Schließlich ist die Tangente lediglich der Vektor senkrecht auf der Normalen, der durch den Schnittpunkt $S$ verläuft.
 \begin{equation*}
 \begin{split}
-T: \vec{x} & = \vec{s} + \lambda \cdot \begin{pmatrix} -ny \\ nx \end{pmatrix}
+T: \vec{x} & = \vec{s} + \lambda \cdot \begin{pmatrix} -n_y \\ n_x \end{pmatrix}
 \end{split}
 \end{equation*}
 Damit lässt sich auch die Reflexion an einer Ellipse auf die an einer Geraden zurückführen.
@@ -421,7 +420,7 @@ Dieses Teilergebnis ist eines der neuen Wertepaare, welche dann im Diagramm für
 Die Gruppe wird daraufhin geleert, ein neuer Wert hinzugefügt und das Verfahren wiederholt bis alle Scanergebnisse einer Gruppe zugeordnet wurden.
 
 
-\subsection{Verwendung des Programms}
+\subsection{Verwendung des Programms} %TODO für Programm neu kompilieren
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.315]{pictures/MainWindow.png}
@@ -522,22 +521,22 @@ Lösung:
 \end{equation*}
 \begin{equation*}
 \begin{split}
-h_1 &= \frac{ax + f \cdot vx - ox}{rx} \\
-h_2 &= \frac{ay + f \cdot vy - oy}{ry} \\
+h_1 &= \frac{a_x + f \cdot v_x - o_x}{r_x} \\
+h_2 &= \frac{a_y + f \cdot v_y - o_y}{r_y} \\
 \end{split}
 \end{equation*}
 \begin{equation*}
 \begin{split}
 h_1 &= h_2 \\
-\frac{ax + f \cdot vx - ox}{rx} &= \frac{ay + f \cdot vy - oy}{ry} \\
-f \cdot \frac{vx}{rx} - f \cdot \frac{vy}{ry} &= \frac{ay - oy}{ry} - \frac{ax - ox}{rx} \\
-f(\frac{vx \cdot ry - vy \cdot rx}{rx \cdot ry}) &= \frac{ay \cdot rx - oy \cdot rx - ax \cdot ry + ox \cdot ry}{rx \cdot ry} 
+\frac{a_x + f \cdot v_x - o_x}{r_x} &= \frac{a_y + f \cdot v_y - o_y}{r_y} \\
+f \cdot \frac{v_x}{r_x} - f \cdot \frac{v_y}{r_y} &= \frac{a_y - o_y}{r_y} - \frac{a_x - o_x}{r_x} \\
+f(\frac{v_x \cdot r_y - v_y \cdot r_x}{r_x \cdot r_y}) &= \frac{a_y \cdot r_x - o_y \cdot r_x - a_x \cdot r_y + o_x \cdot r_y}{r_x \cdot r_y} 
 \end{split}
 \end{equation*}
 
 \begin{equation*}
 \begin{split}
-f &= \frac{ay \cdot rx - oy \cdot rx - ax \cdot ry + ox \cdot ry}{vx \cdot ry - vy \cdot rx} \\
+f &= \frac{a_y \cdot r_x - o_y \cdot r_x - a_x \cdot r_y + o_x \cdot r_y}{v_x \cdot r_y - v_y \cdot r_x} \\
 \vec{s} &= \vec{a} + f \cdot \vec{v}
 \end{split}
 \end{equation*}
@@ -545,7 +544,7 @@ Um nun an der Geraden reflektieren zu können muss der Lotfußpunkt $L$ von $O$ 
 \begin{equation*}
 \begin{split}
 \vec{n} &\bot \vec{v} \\
-\vec{n} &= \begin{matrix} -vy \\ vx \end{matrix} \\
+\vec{n} &= \begin{matrix} -v_y \\ v_x \end{matrix} \\
 \end{split}
 \end{equation*}
 Durch das Schneiden der beiden Geraden $g$ und $n: \vec{x} = \vec{o} + f \cdot \vec{n}$ ergibt sich der Faktor $f$, woraus $L$ und $O'$ folgen.
@@ -572,7 +571,7 @@ Somit erhalten wir das Ergebnis $s'$ mit:
 \caption{Reflexion an einem Kreis}
 \end{figure}
 
-
+\newpage
 \subsubsection*{Herleitung der Formel für Ovale}
 
 \begin{figure}[h]
@@ -584,8 +583,8 @@ Somit erhalten wir das Ergebnis $s'$ mit:
 gegeben:
 \begin{subequations}
 \begin{align}
-s:~ \vec{x} &= \vec{o} + \lambda \cdot \vec{r} \wedge f \in \mathds{R}\\
-E:~ \vec{x} &= \vec{p} + \vec{u} = \vec{q} + \vec{v} \\
+s:~ \vec{x} &= \vec{o} + \lambda \cdot \vec{r} \wedge f \in \mathds{R} \nonumber \\
+E:~ \vec{x} &= \vec{p} + \vec{u} = \vec{q} + \vec{v} \nonumber  \\
 e &= |\vec{u}| + |\vec{v}| \nonumber
 \end{align}
 \end{subequations}
@@ -593,8 +592,8 @@ e &= |\vec{u}| + |\vec{v}| \nonumber
 gesucht:
 \begin{subequations}
 \begin{align}
-S(Sx|Sy)~~~~~~ \\
-t:~ \vec{x} = \vec{s} + h \cdot \vec{t} \wedge h \in \mathds{R}
+S(Sx|Sy)~~~~~~ \nonumber  \\
+t:~ \vec{x} = \vec{s} + h \cdot \vec{t} \wedge h \in \mathds{R} \nonumber 
 \end{align}
 \end{subequations}
 
@@ -610,28 +609,41 @@ Um das Oval mit dem Strahl zu schneiden, müssen diese beiden Gleichgesetzt werd
 \end{equation*}
 Für dieses findet man zwei Lösungen, die sich wie bei den anderen Geometrien auch durch umformen und schrittweise ineinander Einsetzen der Ausgangsgleichungen ergeben. Jedoch verzichten wir aufgrund der Größe der Formel jeden Teilschritt mitzuführen und beschränken uns lediglich auf das Ergebnis.
 
+
+
 \begin{equation*}
-\lambda_1 = \dfrac{M_1}{2 \cdot (e^{2} \cdot (xv^{2} + yv^{2}) - (px \cdot xv + py \cdot yv - qx \cdot xv - qy \cdot yv)^{2})}
+\lambda_1 = \dfrac{− M_1}{2 \cdot (e^{2} \cdot (r_x^{2} + r_y^{2}) - (P_x \cdot r_x + P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y)^{2})}
 \end{equation*}
 \begin{equation*}
 \begin{aligned}
-M_1 &= −e \cdot [e^{4} \cdot (xv^{2} + yv^{2}) - 2 \cdot e^{2} \cdot (2 \cdot Ox^{2} \cdot yv^{2} \\
-&- 2 \cdot Ox \cdot (2 \cdot Oy \cdot xv + px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot yv \\
-&+ 2 \cdot Oy^{2} \cdot xv^{2} + 2 \cdot Oy \cdot (px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot xv \\
-&+ px^{2} \cdot (xv^{2} + yv^{2}) - 2 \cdot px \cdot (qx \cdot xv + qy \cdot yv) \cdot xv + py^{2} \cdot (xv^{2} + yv^{2}) \\
-&- 2 \cdot py \cdot (qx \cdot xv + qy \cdot yv) \cdot yv + (qx^{2} + qy^{2}) \cdot (xv^{2} + yv^{2})) \\
-&+ (4 \cdot Ox^{2} \cdot yv^{2} - 4 \cdot Ox \cdot (2 \cdot Oy \cdot xv + px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot yv \\
-&+ 4 \cdot Oy^{2} \cdot xv^{2} + 4 \cdot Oy \cdot (px \cdot yv - py \cdot xv + qx \cdot yv - qy \cdot xv) \cdot xv \\
-&+ px^{2} \cdot (xv^{2} + yv^{2}) - 2 \cdot px \cdot (qx \cdot (xv^{2} - yv^{2}) + 2 \cdot qy \cdot xv \cdot yv) \\
-&+ py^{2} \cdot (xv^{2} + yv^{2}) - 2 \cdot py \cdot (2 \cdot qx \cdot xv \cdot yv - qy \cdot (xv^{2} - yv^{2})) \\
-&+ (qx^{2} + qy^{2}) \cdot (xv^{2} + yv^{2})) \cdot (px^{2} - 2 \cdot px \cdot qx + py^{2} - 2 \cdot py \cdot qy + qx^{2} + qy^{2})]^{\frac{1}{2}} \\
-&+ e^{2} \cdot (2 \cdot Ox \cdot xv + 2 \cdot Oy \cdot yv - px \cdot xv - py \cdot yv - qx \cdot xv - qy \cdot yv) \\
-&- (2 \cdot Ox \cdot (px - qx) + 2 \cdot Oy \cdot (py - qy) - px^{2} - py^{2} + qx^{2} + qy^{2}) \\
-&\cdot (px \cdot xv + py \cdot yv - qx \cdot xv - qy \cdot yv)
+M_1 &= e \cdot [e^{4} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot e^{2} \cdot (2 \cdot O_x^{2} \cdot r_y^{2} - 2 \cdot O_x \cdot (2 \cdot O_y \cdot r_x + P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \\
+& \cdot r_y + 2 \cdot O_y^{2} \cdot r_x^{2} + 2 \cdot O_y \cdot (P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \cdot r_x + P_x^{2} \cdot (r_x^{2} + r_y^{2}) \\
+&- 2 \cdot P_x \cdot (Q_x \cdot r_x + Q_y \cdot r_y) \cdot r_x + P_y^{2} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot P_y \cdot (Q_x \cdot r_x + Q_y \cdot r_y) \cdot r_y \\
+&+ (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) + (4 \cdot O_x^{2} \cdot r_y^{2} - 4 \cdot O_x \cdot (2 \cdot O_y \cdot r_x + P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \\
+&\cdot r_y + 4 \cdot O_y^{2} \cdot r_x^{2} + 4 \cdot O_y \cdot (P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \cdot r_x + P_x^{2} \cdot (r_x^{2} + r_y^{2}) \\
+&- 2 \cdot P_x \cdot (Q_x \cdot (r_x^{2} - r_y^{2}) + 2 \cdot Q_y \cdot r_x \cdot r_y) + P_y^{2} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot P_y \cdot (2 \cdot Q_x \cdot r_x \cdot r_y \\
+&- Q_y \cdot (r_x^{2} - r_y^{2})) + (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) \cdot (P_x^{2} - 2 \cdot P_x \cdot Q_x + P_y^{2} - 2 \cdot P_y \cdot Q_y + Q_x^{2} + Q_y^{2})]^{frac{1}{2}} \\
+&+ e^{2} \cdot (2 \cdot O_x \cdot r_x + 2 \cdot O_y \cdot r_y - P_x \cdot r_x - P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y) - (2 \cdot O_x \cdot (P_x - Q_x) \\
+&+ 2 \cdot O_y \cdot (P_y - Q_y) - P_x^{2} - P_y^{2} + Q_x^{2} + Q_y^{2}) \cdot (P_x \cdot r_x + P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y)
 \end{aligned}
 \end{equation*}
 
-
+\begin{equation*}
+lambda_2 = \dfrac{M_2}{2 \cdot (e^{2} \cdot (r_x^{2}+r_y^{2})-(P_x \cdot r_x+P_y \cdot r_y-Q_x \cdot r_x-Q_y \cdot r_y)^{2})}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+M_2 &= e \cdot [e^{4} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot e^{2} \cdot (2 \cdot O_x^{2} \cdot r_y^{2} - 2 \cdot O_x \cdot (2 \cdot O_y \cdot r_x + P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \\
+& \cdot r_y + 2 \cdot O_y^{2} \cdot r_x^{2} + 2 \cdot O_y \cdot (P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \cdot r_x + P_x^{2} \cdot (r_x^{2} + r_y^{2}) \\
+& - 2 \cdot P_x \cdot (Q_x \cdot r_x + Q_y \cdot r_y) \cdot r_x + P_y^{2} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot P_y \cdot (Q_x \cdot r_x + Q_y \cdot r_y) \cdot r_y \\
+&+ (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) + (4 \cdot O_x^{2} \cdot r_y^{2} - 4 \cdot O_x \cdot (2 \cdot O_y \cdot r_x + P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \\
+&\cdot r_y + 4 \cdot O_y^{2} \cdot r_x^{2} + 4 \cdot O_y \cdot (P_x \cdot r_y - P_y \cdot r_x + Q_x \cdot r_y - Q_y \cdot r_x) \cdot r_x + P_x^{2} \cdot (r_x^{2} + r_y^{2}) \\
+&- 2 \cdot P_x \cdot (Q_x \cdot (r_x^{2} - r_y^{2}) + 2 \cdot Q_y \cdot r_x \cdot r_y) + P_y^{2} \cdot (r_x^{2} + r_y^{2}) - 2 \cdot P_y \cdot (2 \cdot Q_x \cdot r_x \cdot r_y \\
+&- Q_y \cdot (r_x^{2} - r_y^{2})) + (Q_x^{2} + Q_y^{2}) \cdot (r_x^{2} + r_y^{2})) \cdot (P_x^{2} - 2 \cdot P_x \cdot Q_x + P_y^{2} - 2 \cdot P_y \cdot Q_y + Q_x^{2} + Q_y^{2})]^{\dfrac{1}{2}} \\
+&- e^{2} \cdot (2 \cdot O_x \cdot r_x + 2 \cdot O_y \cdot r_y - P_x \cdot r_x - P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y) + (2 \cdot O_x \cdot (P_x - Q_x) \\
+&+ 2 \cdot O_y \cdot (P_y - Q_y) - P_x^{2} - P_y^{2} + Q_x^{2} + Q_y^{2}) \cdot (P_x \cdot r_x + P_y \cdot r_y - Q_x \cdot r_x - Q_y \cdot r_y)
+\end{aligned}
+\end{equation*}
 
 
 
@@ -644,6 +656,8 @@ M_1 &= −e \cdot [e^{4} \cdot (xv^{2} + yv^{2}) - 2 \cdot e^{2} \cdot (2 \cdot 
 \begin{align}
 \end{align}
 \end{subequations}
+
+\subsubsection*{Funktion zur Berechnung gerichteter Winkel}
 
 
 \subsection{Programmdokumentation und -benutzungsanleitung}
