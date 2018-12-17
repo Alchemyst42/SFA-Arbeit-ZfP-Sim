@@ -24,6 +24,8 @@
 \usepackage{subcaption}
 \usepackage{ulem}
 \usepackage{wrapfig}
+\usepackage{csquotes}
+\usepackage[style=reading, entrykey=false, backend=biber, dateabbrev=false, urldate=long]{biblatex}
 
 
 
@@ -31,6 +33,8 @@
 \setlength{\parskip}{\baselineskip}
 \newcommand{\vect}[2]{\begin{pmatrix}#1\\#2\end{pmatrix}}
 \DeclareMathOperator{\atantwo}{atan2d}
+
+\bibliography{Arbeit-ZfPSim}
 
 
 
@@ -138,7 +142,6 @@ Grundsätzlich unterscheiden sich diese Verfahren in ihren Anforderungen an tech
 Diese versucht man natürlich, möglichst gering zu halten, um viele Bauteile effizient prüfen zu können.
 Daher sind die am meisten verwendeten Verfahren die Sichtprüfung und die Farbeindringprüfung. 
 Bei diesen wird entweder mit bloßem Auge oder mithilfe von farbigen Flüssigkeiten die Oberfläche von Prüflingen auf Fehler begutachtet. 
-%Entscheidend ist dabei, den Vorgang schnell, einfach und ohne technischen Aufwand durchführen zu können. 
 Dies kann schnell, einfach und ohne technischen Aufwand durchgeführt werden.
 Doch durch den Ablauf beim Prüfen werden auch die Nachteile dieser Verfahren klar, denn unter Verwendung des Auges oder von Kameras kann nur die Oberfläche von Prüfkörpern beurteilt werden. \\
 Dies ist für einige Teile ausreichend, doch besonders stark beanspruchte oder sicherheitsrelevante Teile dürfen auf keinen Fall versagen. 
@@ -656,8 +659,10 @@ Daraus ergibt sich aus $\vec{s} = \vec{o} + \lambda \cdot \vec{r}$ der Schnittpu
 \subsection{Programmdokumentation und -benutzungsanleitung}
 
 \newpage
-\section{Literatur- und Bildquellenverzeichnis}
-
+\nocite{*}
+\section{Literatur- und Quellenverzeichnis}
+\printbibliography[type=book, title=Buchquellen]
+\printbibliography[type=online, title=Internetquellen]
 
 %TODO
 %Gliederungspunkte überarbeite
