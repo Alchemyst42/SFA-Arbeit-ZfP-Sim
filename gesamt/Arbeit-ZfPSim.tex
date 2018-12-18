@@ -25,7 +25,7 @@
 \usepackage{ulem}
 \usepackage{wrapfig}
 \usepackage{csquotes}
-\usepackage[style=reading, entrykey=false, backend=biber, dateabbrev=false, urldate=long]{biblatex}
+\usepackage[style=science, entrykey=false, backend=biber, dateabbrev=false, urldate=long]{biblatex}
 
 
 
@@ -53,41 +53,41 @@
 \setcounter{page}{1}
 
 \section{Einleitung}
-Ein gebrochener Arm, ein verstauchtes Handgelenk oder eine andere vermutete Knochenfraktur. 
-All diese Symptome sind häufig anzutreffen und werden zumeist durch das Röntgenverfahren eindeutig diagnostiziert. 
-Dieses Verfahren bietet sowohl für den Patienten als auch für den Arzt entscheidende Vorteile, denn der Patient nimmt dadurch keinen Schaden und trotzdem bietet sich die Möglichkeit, auch Unstimmigkeiten im Inneren des Körpers zu erfassen, ohne dafür erst eine aufwendige Operation durchführen zu müssen.\\
+Ein gebrochener Arm, ein verstauchtes Handgelenk oder eine andere Knochenfraktur. 
+All diese Verletzungen sind häufig anzutreffen und werden zumeist durch das Röntgenverfahren eindeutig diagnostiziert. %TODO anderes Wort als diagnostiziert?
+Dieses Verfahren bietet sowohl für den Patienten als auch für den Arzt entscheidende Vorteile, denn der Patient nimmt dadurch keinen Schaden und trotzdem bietet sich die Möglichkeit, auch Unregelmäßgikeiten im Inneren des Körpers zu erfassen, ohne dafür erst eine aufwendige Operation durchführen zu müssen.\\
 Das Verfahren der zerstörungsfreien Materialprüfung wird im Gegensatz zur Röntgendiagnostik nicht am Menschen durchgeführt, sondern zur Prüfung von Gegenständen aller Art verwendet. 
-Trotzdem kommt diesem Verfahren keine kleinere Bedeutung zu, denn es kann, wie die Röntgendiagnostik auch, Menschenleben retten und dies auf eine effiziente und materialschonende Weise.\\ 
+Trotzdem kommt diesem Verfahren keine geringere Bedeutung zu, denn es kann, wie die Röntgendiagnostik auch, Menschenleben retten und dies auf eine effiziente und materialschonende Weise.\\ 
 Auch bei der zerstörungsfreien Materialprüfung spielt das Röntgenverfahren eine Rolle, doch im Gegensatz zu Menschen, die in ihrer Beschaffenheit immer recht ähnlich sind, können die zu prüfenden Körper vielfältige Eigenschaften aufweisen. 
 Besonders wenn man von Metallen großer Ausdehnung spricht, oder Bauteilen, die stationär sind und nicht in einen aufwendigen Röntgenapparat passen, muss auf andere Verfahren zurückgegriffen werden.\\
 Ein solches Verfahren ist die Materialprüfung mittels Ultraschall, welcher wir uns in unserer Seminarfacharbeit, \glqq Simulation Ultraschall-basierter zerstörungsfreier Materialprüfung\grqq , genauer widmen wollen. 
 Ziel ist dabei, die Prüfmethode zu verstehen und die Unterschiede zu anderen Verfahren zu erfassen.\\
-Während beim Röntgen aufwendige Apparate mit großer Leistung betrieben werden, um die Vorteile einer Durchstrahlung auszunutzen, ist die Messung mittels Ultraschall auch mit sehr kleinen und mobilen Geräten gut möglich. \\ 
+Während beim Röntgen aufwendige Apparate mit großer Leistung betrieben werden müssen, um die Vorteile einer Durchstrahlung auszunutzen, ist die Messung mittels Ultraschall auch mit sehr kleinen und mobilen Geräten gut möglich. \\ 
 Im Gegensatz zum Röntgen ist es bei der Prüfung mittels Ultraschall notwendig, genau zu wissen, wo auf der Körperoberfläche die Messergebnisse aufgenommen werden können. 
 Daher wird vor jeder Prüfung ein Prüfplan erstellt, der die Vorgehensweise erläutert und die Interpretation der Ergebnisse vorgibt.\\
 Wir setzen uns daher das Ziel, ein Programm zur Simulation von Ultraschallprüfverfahren zu planen und zu implementieren. Unseren Fokus legen wir darauf, die Vorbereitung einer Prüfung grundsätzlich zu erleichtern und auch dabei zu helfen, unerwartete Messergebnisse in bereits durchgeführten Prüfungen besser interpretieren und verstehen zu können.\\
-Unser besonderer Dank gilt dabei unserem Fachbetreuer Herrn B. Gramsch für seine Hilfe bei der Einarbeitung in das Gebiet der Vektorrechnung, welches wir als Modell für die Ultraschallwellen verwenden. Ebenfalls danken wir Herrn Dr. F. Römer von der T.U. Ilmenau, der selbst forschend auf dem Gebiet der zerstörungsfreien Prüfung aktiv ist, für seine Unterstützung beim Eindringen in die Welt der Ultraschallprüfung sowie seine fachliche Beratung bei Fragen zur Gestaltung des Programms. %TODO T.U. abkürzen oder nicht?
+Unser besonderer Dank gilt dabei unserem Fachbetreuer Herrn B. Gramsch für seine Hilfe bei der Einarbeitung in das Gebiet der Vektorrechnung, welches wir als Modell für die Ultraschallwellen verwenden. Ebenfalls danken wir Herrn Dr. F. Römer von der T.U. Ilmenau für seine Unterstützung bei der Einarbeitung in das Gebiet der Ultraschallprüfung sowie seine fachliche Beratung bei Fragen zur Gestaltung des Programms. %TODO T.U. abkürzen oder nicht?
 %TODO Kriterien Einleitung überprüfen
 
 \newpage
 
-\section{Theorie der Zerstörungsfreien Prüfung}
+\section{Theorie der zerstörungsfreien Prüfung}
 \subsection{Definition zerstörungsfreier Prüfung}
 Das Gebiet der Material- oder Werkstoffprüfung befasst sich mit der Ermittlung der Kenngrößen und des Verhaltens fertiger Bauteile, z.B. einer Eisenbahnschiene, und Werkstoffproben, etwa eines Steinblocks. 
 Getestet werden können zum Beispiel Dehnbarkeit, Hitzebeständigkeit oder Fehlerfreiheit. \footcite{theorie}\\ 
 Man unterscheidet weiterhin bei der Werkstoffprüfung zwischen zerstörenden und zerstörungsfreien Verfahren. 
-Zu ersterer Kategorie zählen unter anderem Stresstests, bei denen die Grenzen eines Prüflings getestet werden. 
+Zur ersten Kategorie zählen unter anderem Stresstests, bei denen die Grenzen eines Prüflings getestet werden. 
 Ein Test der Reißfestigkeit eines Seils etwa ist dann beendet, wenn es reißt. 
 Mit ähnlichen Verfahren lassen sich viele Informationen ermitteln und die zerstörenden Verfahren decken ein entsprechend breites Spektrum ab. 
 Sie versagen allerdings in einem sehr wichtigen Anwendungsgebiet der Materialprüfung - der Fehlerprüfung.\\
 Unter Fehlern versteht man dabei Unregelmäßigkeiten beziehungsweise Abweichungen von der Norm auf der Oberfläche oder im Inneren des Bauteils oder Werkstoffs (im Weiteren: Prüfkörper), welche die Verwendbarkeit desselben beeinträchtigen. 
 Anders als die Ermittlung allgemeiner Informationen über ein Produkt müssen Fehlerprüfungen regelmäßig durchgeführt werden. 
 Man nehme zum Beispiel eine Halterung für Flugzeugturbinen. 
-Die Belastbarkeit des Bauteils ist hier eine entscheidende Information und wird daher genau (zerstörend) gemessen, was zur Zerstörung des Bauteils führt. 
-Wenn man einige Bauteile verwendet, um den Test durchzuführen, und starke Abweichungen streicht, erhält man sehr wahrscheinlich einen Wert, der die zu erwartende Belastbarkeit des Bauteils widerspiegelt und Kunden zur Information dienen kann.
+Die Belastbarkeit des Bauteils ist hier eine entscheidende Information und wird daher genau, also zerstörend, gemessen.
+Wenn man einige Bauteile verwendet, um den Test durchzuführen, und starke Abweichungen auslässt, erhält man sehr wahrscheinlich einen Wert, der die zu erwartende Belastbarkeit des Bauteils widerspiegelt und Kunden als Information dienen kann.
 Die dabei zerstörte Menge an Halterungen ist ein vernachlässigbarer Verlust. \footcite{zfp-abgrenzung}\\
 Möchte man jedoch wissen, wie die weiteren produzierten Bauteile beschaffen sind, muss man nicht mehr den genauen Wert ermitteln, sondern nur auf Abweichungen von der Norm prüfen, also auf Fehler. 
-Ein naheliegender Einfall ist, Stichproben zu nehmen, was jedoch zwei Nachteile hat. Zum einen ist selbst der Verlust einzelner Teile noch ein Verlust, und damit nicht wünschenswert.
+Eine naheliegende Vorgehensweise ist, Stichproben zu nehmen, was jedoch zwei Nachteile hat. Zum einen ist selbst der Verlust einzelner Teile noch ein Verlust und damit nicht wünschenswert.
 Zum anderen ist eine Stichprobe nicht sicher, da diese nur zuverlässige Fehler, hervorgerufen durch eine dauerhafte Fehlfunktion in der Fertigung, eindeutig feststellt.\\
 Beide Probleme werden durch zerstörungsfreie Materialprüfung gelöst. 
 Wie der Name schon sagt, wird der Prüfkörper bei diesen Verfahren nicht verbraucht, was diverse Vorteile hat. 
@@ -95,7 +95,7 @@ So kann man nun alle Bauteile prüfen und dennoch verkaufen.
 Weiterhin  eignen sich diese Prüfverfahren für eine Prüfung lange nach der Fertigung, bei der festgestellt werden soll, ob durch den Gebrauch Fehler entstanden sind. 
 Hier wäre eine Stichprobe gänzlich nutzlos und eine vollständige Zerstörung ginge gegen den Sinn der Prüfung. 
 Zerstörungsfreie Verfahren dagegen ermöglichen es, festzustellen, ob Teile ersetzt werden müssen und falls nicht, fallen nur die Kosten für die eigentliche Prüfung an.\\
-Ein Nachteil dieser Methoden ist jedoch, dass sie nur auf Fehler aufmerksam machen, anstatt ihre Wirkung einzuschätzen. 
+Ein Nachteil dieser Methoden ist jedoch, dass sie nur auf Fehler aufmerksam machen, nicht jedoch ihre Wirkung einschätzen. 
 Die Ablösung der zerstörenden Prüfung auf dem Gebiet der Bestimmung von Kenngrößen ist also zumindest mit den momentan bekannten Methoden der zerstörungsfreien Prüfung noch nicht möglich.
 
 \subsection{Ultraschall-basierte Werkstoffprüfung}
@@ -114,7 +114,7 @@ Trifft eine Schallwelle, die sich in einem festen Körper bewegt, auf Luft, so w
 So erscheint das erste Echo schon direkt zu Beginn der Messung, wie im ersten Oszillogramm zu sehen: es entsteht, wenn die ausgesandten Wellen in den Probekörper eintreten, denn zwischen Prüfkopf und Prüfkörper befindet sich immer eine (meist sehr dünne) Luftschicht; daher wird der Schall schon einmal reflektiert, bevor der relevante Teil des Verfahrens beginnt. 
 Um dies in der Praxis zu minimieren, wird eine Kopplungsflüssigkeit verwendet, welche den Schall mit möglichst wenig Reflexionen zwischen Werkstück und Prüfkopf transportiert. 
 Das zweite Echo stellt in diesem Fall das sogenannte Rückwandecho dar, bei welchem die Wellen von der dem Prüfkopf gegenüberliegenden Seite zurückgeworfen werden. 
-Mithilfe dessen kann auch Tiefe des Prüfkörpers ermittelt werden: da der Schall stets eine materialspezifische Geschwindigkeit $c_\mathrm{Material}$  \footcite{schallgeschwindigkeiten}  %TODO Quelle
+Mithilfe dessen kann auch Tiefe des Prüfkörpers ermittelt werden: da der Schall stets eine materialspezifische Geschwindigkeit $c_\mathrm{Material}$  \footcite{schallgeschwindigkeiten}
 besitzt, gilt für die Stärke des Körpers: $d = \dfrac{c_{\mathrm{Material}} \cdot t}{2}$. 
 Dies ist vor allem hilfreich, wenn Probeköper nur von einer Seite erreichbar sind und ihre Dimensionen daher nicht mit herkömmlichen Werkzeugen bestimmt werden können.\\
 Für die zerstörungsfreie Prüfung ist diese Möglichkeit jedoch eher von geringerer Bedeutung. 
@@ -151,12 +151,10 @@ Um dies durchzuführen, stehen ebenfalls mehrere Methoden zur Verfügung.
 Abhängig von Größe und Material des Prüflings sind manche Testverfahren besser geeignet als andere. 
 So basieren z.B. manche Verfahren auf der elektrischen Leitfähigkeit des Prüfkörpers und sind daher auf bestimmte Materialien beschränkt.
 Andere hingehen erfordern geschlossene Sicherheitsräume, wie z.B. die Röntgenprüfung, und können daher schlecht zur Prüfung von bereits verbauten Teilen verwendet werden.\\
-Allerdings kann auch durch die verwendete Methode selbst eine Einschränkung erfolgen. So ist z.B. beim Prüfen mit Ultraschall die Materialdicke - abhängig vom verwendeten Prüfgerät - auf fünf bis acht Meter beschränkt, da sonst Ungenauigkeiten entstehen könnten. \footcite{ultraschall} \\ %TODO bessere Form Gedankenstrich oder Satz umstellen
+Allerdings kann auch durch die verwendete Methode selbst eine Einschränkung erfolgen. So ist z.B. beim Prüfen mit Ultraschall die Materialdicke -- abhängig vom verwendeten Prüfgerät -- auf fünf bis acht Meter beschränkt, da sonst Ungenauigkeiten entstehen könnten. \footcite{ultraschall} \\ 
 Das Ultraschallverfahren, dessen Simulation Thema dieser Arbeit ist, bietet insgesamt eine gute Kombination praxisrelevanter
 %TODO praktikabler? praktischer? sonstiges?
  Eigenschaften. So können bei relativ geringem technischen Aufwand und unter Verwendung mobiler Prüfgeräte kleine bis mittelgroße Prüfkörper relativ genau auf innere Fehler untersucht werden.
-
-\newpage
 
 \section{Berechnung der Strahlenverläufe}
 
@@ -168,6 +166,8 @@ Zudem verweist ein tiefgestelltes $x$ auf die Komponente eines Vektors beziehung
 Auf das soeben genannte Beispiel bezogen gilt $O_x = \vec{o}_x = 4$ und $O_y = \vec{o}_y = 2$.
 
 \subsection{Erklärung und Begründung der vorgenommenen Vereinfachungen}
+
+\subsubsection{Die Notwendigkeit von Vereinfachungen} %TODO Wir verwenden "Körper" statt Formen/ Flächen
 Da das Programm die Berechnungen in akzeptabler Zeit durchführen können soll, dürfen die verwendeten Formeln nicht zu umfangreich sein. 
 Außerdem ist eine exakte Simulation nicht nötig, da der Nutzer den jeweiligen Prüfkörper ohnehin nur annähernd digitalisieren kann, weshalb berechnete Ergebnisse unabhängig von der Berechnung meist nicht genau mit den realen Messwerten übereinstimmen werden. 
 Daher ist es legitim, einige mathematische und physikalische Vereinfachungen vorzunehmen, um die \hyperref[sec:herleitung]{Herleitung der Formeln} möglichst unkompliziert zu gestalten. 
@@ -194,7 +194,7 @@ Neben der Anzahl der zurückgekommenen Strahlen gibt es für den Sender einen we
 Aus der Länge des Weges jedes Strahls wird berechnet, wie groß seine Intensität bei der Rückkehr ist. 
 Näher beleuchtet wird dies in Kapitel \ref{sec:sim}.\\
 Durch die auftretende Reibung zwischen den schwingenden Teilchen kommt es dazu, dass die Ultraschallwellen abhängig von der zurückgelegten Strecke an Energie verlieren.
-Für unsere Simulation sind wir dabei von einer exponentiellen Funktion $I = \frac{I_0}{1.05^{\tfrac{s}{c}}}$ zur Berechnung der Intensität $I$, mit $I_0$ als Ausgangsintensität, $s$ als den zurückgelegten Weg und $c$ für die materialspezifische Schallgeschwindigkeit, ausgegangen.  %TODO den Weg oder dem Weg
+Für unsere Simulation sind wir dabei von einer exponentiellen Funktion $I = \frac{I_0}{1.05^{\tfrac{s}{c}}}$ zur Berechnung der Intensität $I$, mit $I_0$ als Ausgangsintensität, $s$ als den zurückgelegten Weg und $c$ für die materialspezifische Schallgeschwindigkeit, ausgegangen.
 
 %old
 %Dieser zusätzliche Parameter ist notwendig, da Ultraschallwellen in der Realität ebenfalls abhängig von der zurückgelegten Strecke Energie (welche gleichbedeutend mit der Intensität ist) verlieren. 
@@ -244,8 +244,7 @@ und damit auch der neue Strahl von $S$ in Richtung $r'$.
 Neben der Reflexion der Strahlen an einer einfachen Geraden haben wir uns auch entschieden, dies für Kreise, Kreisbögen und Ovale herzuleiten und zu implementieren. 
 Grundsätzlich erfolgt dabei auch die Reflexion an einer Geraden, doch diese muss in Abhängigkeit der Form erst einmal bestimmt werden. 
 Für folgende Herleitungen wird erneut von einem Strahl, der in $O$ beginnt und sich in Richtung $\vec{r}$ ausbreitet, ausgegangen.
-\newpage
-\begin{wrapfigure}[16]{rH}{8.5cm}
+\begin{wrapfigure}[18]{rH}{8.5cm}
 \includegraphics[scale=0.5]{pictures/CircleRef.png}
 \caption{Reflexion an einem Kreis}
 \end{wrapfigure}
@@ -265,7 +264,7 @@ Die Reflexion an Kreisbögen funktioniert analog, aus einem Kreisbogen wird der 
 Jedoch muss zusätzlich noch überprüft werden, ob der Schnittpunkt mit dem \glqq Hilfskreis\grqq{} auch auf dem Teil des Kreises liegt, den dieser mit dem Kreisbogen teilt. 
 Dies geschieht derart, dass festgestellt wird, ob der Winkel des Kreissektors vom Startpunkt des Kreisbogens bis zum Schnittpunkt kleiner ist als der Winkel des Kreissektors, welchem der Kreisbogen insgesamt entspricht. 
 Dazu wird eine Formel zur Berechnung des Winkels in mathematisch positiver Richtung von einem Vektor $v$ zu einem anderen Vektor $w$ $\sphericalangle(\vec{v}, \vec{w}) = -\atantwo(\vec{v}_x\cdot\vec{w}_y-\vec{v}_y\cdot\vec{w}_x,~\vec{v}_x\cdot\vec{w}_x+\vec{v}_y\cdot\vec{w}_y)$  verwendet.
-\par
+\newpage
 \begin{wrapfigure}[14]{rH}{9cm}
 \includegraphics[scale=0.7]{pictures/OvalRef.png}
 \caption{Reflexion an einer Ellipse}
@@ -311,7 +310,7 @@ Aus Platzgründen mussten wir die ausführliche Herleitung einiger Formeln hier 
 \subsection{Anforderungen an das Programm}
 
 Das im Rahmen der Arbeit entstandene Programm soll in erster Linie für zwei Zwecke eingesetzt werden können: Das Finden eines Prüfansatzes für komplexe Prüfkörper und die Validierung uneindeutiger Hypothesen basierend auf Messungen an solchen Prüfkörpern.
-Um dies zu ermöglichen, muss das Programm beliebige, komplexe und zweidimensionale Geometrien umsetzen können. %TODO Kommas und und ganz rauslassen -> alles Attribute
+Um dies zu ermöglichen, muss das Programm beliebig komplexe zweidimensionale Geometrien umsetzen können. 
 Dies geschieht im sogenannten Körpereditor, in dem der Nutzer aus einer Reihe von Figuren wie Ovalen, Kreisen und Polygonen sowohl die geplante Form des Prüflings - im Programm \textit{Outline} - als auch eventuelle Fehler - im Programm \textit{Defects} - zusammenfügen kann. \\
 Daraus ergibt sich eine naheliegende Begrenzung des Programms. 
 In der Praxis hat ein Prüfer Kenntnis der Outline und der Messergebnisse und muss daraus auf die Position und Art der Defekte schließen. 
@@ -343,7 +342,7 @@ Bei jeder einzelnen Reflexion wird der vorherige Strahl in einer Liste gespeiche
 Mithilfe dessen ist der Verlauf des Strahls durch den Prüfkörper eindeutig nachvollziehbar, indem die Reflexionspunkte in der gegebenen Reihenfolge betrachtet werden.
 
 \subsubsection{Scansimulation mit Einfach- und Mehrfachstrahl} %TODO besserer Titel?
-Die Simulation der Scanverfahren und die finale Berechnung und Auswertung der Reflexionen wird in der Klasse \textsc{Scan} umgesetzt. %TODO einheitlich Klassen anders
+Die Simulation der Scanverfahren und die finale Berechnung und Auswertung der Reflexionen wird in der Klasse \textsc{Scan} umgesetzt.
 Basierend auf den von \textsc{Raytracer} ermittelten Punkten, an welchen die Strahlen reflektiert werden, errechnet man, welche Zeit zwischen den einzelnen Reflexionen vergeht.
 Weiterhin wird für jeden Auftreffpunkt geprüft, ob dieser im Messbereich des Senders liegt. 
 Ist dies der Fall, so wird in Abhängigkeit von der bereits verstrichenen Zeit die Intensität ermittelt. 
@@ -355,7 +354,7 @@ Das Verfahren kann dabei von zwei verschiedenen Größen abhängig gemacht werde
 Zum einen der maximalen Anzahl an Reflexionen, die für alle Strahlen gleichermaßen festgelegt wird. Hierbei liegt der Vorteil darin, dass die benötigte Speichermenge und Rechenzeit limitiert ist und vom Benutzer besser gesteuert werden kann. 
 Nachteilig ist hingegen, dass einzelne Strahlen, die in einem engen Bereich zwischen zwei begrenzenden Flächen oft reflektiert werden, damit insgesamt kürzere Strecken zurücklegen als Strahlen, die nur auf den äußeren Begrenzungsflächen des Prüfkörpers auftreffen.
 Dies führt zu eventuellen Verlusten von Messwerten, die in einer realen Anwendung wahrnehmbar gewesen wären, da die Strahlen, die einen kürzeren Weg zurücklegen mussten, eine höhere Intensität haben und eventuell nach weiteren Reflexionen den Sender noch erreichen könnten.\\
-Um diesen Fall ebenfalls abzudecken, ist eine zweite Version dieser Prozedur verfasst. %TODO Synonym verfasst -> Bedeutung nicht gleich offensichtlich?
+Um diesen Fall ebenfalls abzudecken, ist eine zweite Version dieser Prozedur implementiert. 
 Hierfür wird statt einer maximalen Anzahl an Reflexionen die maximale Weglänge eingelesen. 
 Damit legt jeder Strahl im Material die gleiche, vom Benutzer ausgewählte Strecke zurück, wodurch das Problem der Messwertverluste gelöst wird. 
 Der Nachteil hierbei liegt allerdings darin, dass man für einen Strahl nie voraussehen kann, wann die Maximalweglänge überschritten wird. 
@@ -372,20 +371,20 @@ Insgesamt muss hier für jeden Anwendungszweck separat entschieden werden, welch
 Ungeachtet des gewählten Verfahrens kommt es bei der Darstellung der Messwerte eines Scans, der auf einem Strahlenbündel basiert, immer zu dem Problem, dass Strahlen, welche einen ähnlichen Verlauf haben, sehr kleine zeitliche Differenzen zwischen ihrem Auftreffen auf dem Sender haben. 
 Wie in der nebenstehenden Abbildung \ref{fig:Wegunters} zu erkennen ist, sind die zurückgelegten Strecken, und damit die benötigte Zeit der einzelnen Strahlen, besonders wenn man noch kleinere Streuwinkel wählt, gering. 
 Die im Diagramm dargestellten Werte überlappen sich, doch dies entspricht nicht der Realität. 
-Durch die Annahme, dass jeder Strahl einen gewissen Teil der kinetischen Energie, die in Form einer Schallwelle in den Körper abgegeben wird, repräsentiert, sollten fast gleichzeitige Treffer nicht als solche wahrgenommen werden, sondern als ein Treffer mit höherer Intensität. %%todo ohne erklärung Welle?
+Durch die Annahme, dass jeder Strahl einen gewissen Teil der kinetischen Energie, die in Form einer Schallwelle in den Körper abgegeben wird, repräsentiert, sollten fast gleichzeitige Treffer nicht als solche wahrgenommen werden, sondern als ein Treffer mit höherer Intensität. 
 Die Notwendigkeit einer weiteren Zusammenfassung der Messwerte ist dadurch gegeben. 
-Dies erfolgt in der Methode \texttt{processScan}. \par %%todo einheitliche Schriftart für funktionen, Satz notwendig?
+Dies erfolgt in der Methode \texttt{processScan}. \par 
 \begin{wrapfigure}[28]{rH}{11.5cm}
 \includegraphics[scale=0.3]{pictures/Flowchart_processScan.png}
 \caption{Ablauf der Funktion \texttt{processScan}}
 \end{wrapfigure} 
 Zuerst werden dabei alle Wertepaare aus Zeit und Intensität errechnet und in zeitlicher Abfolge sortiert. 
 Zwischen zwei Wertepaaren liegt eine Zeitdifferenz, die für alle Paare errechnet und in eine Liste einsortiert wird.
-Nun wird aus dieser Liste an Differenzen die Stelle gesucht, an der der Quotient aus zwei aufeinanderfolgenden Zeitdifferenzen am größten ist und der größere Wert der Zeitdifferenzen als sogenannter Zeitbereich definiert. %TODO Wortwiederholung wird
+Anschließend wird aus dieser Liste an Differenzen die Stelle gesucht, an der der Quotient aus zwei aufeinanderfolgenden Zeitdifferenzen am größten ist und der größere Wert der Zeitdifferenzen als sogenannter Zeitbereich definiert. %TODO Wortwiederholung wird
 Dieser sagt aus, in welchem Abstand von einem gegebenen Treffer weitere Treffer nicht separat in das Diagramm für A-Scans eingetragen, sondern als ein Treffer zusammengefasst werden.\\
 Auf Basis des Zeitbereichs werden nun alle Scanwerte in Gruppen eingeteilt. 
-Ausgehend von einem Startwert werden alle folgenden Werte überprüft und so lange der selben Gruppe zugeordnet, bis sie nicht mehr innerhalb des Zeitbereichs liegen. %TODO derselben zusammen oder getrennt
-Die Gruppe wird dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durchschnittszeit errechnet wird. %TODO durchschnittszeit wird falsch getrennt
+Ausgehend von einem Startwert werden alle folgenden Werte überprüft und so lange der selben Gruppe zugeordnet, bis sie nicht mehr innerhalb des Zeitbereichs liegen. 
+Die Gruppe wird dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durch\-schnitts\-zeit errechnet wird. %TODO durchschnittszeit wird falsch getrennt
 Dieses Teilergebnis ist eines der neuen Wertepaare, welche dann im Diagramm für A-Scans dargestellt werden. 
 Die Gruppe wird daraufhin geleert, ein neuer Wert hinzugefügt und das Verfahren wiederholt, bis alle Scanergebnisse einer Gruppe zugeordnet wurden.
 
@@ -420,28 +419,37 @@ Im obigen Beispiel ist ein Echo bei ca. 2.1 Zeiteinheiten zu sehen: die blaue Li
 \caption{Körpereditorfenster (EditorWindow)}
 \end{figure}
 Ein Sidebar (1) listet sämtliche Körper der Outline sowie Defekte auf. 
-Diese Liste kann unter anderem genutzt werden, um Körper zu markieren (Linksklick), zu löschen (Entfernen) und ihre Eigenschaften zu bearbeiten (Rechtsklick).\\
+Diese Liste kann unter anderem genutzt werden, um Körper zu markieren (Linksklick), zu löschen (Entfernen) und ihre Eigenschaften zu bearbeiten (Rechtsklick oder P).\\
 Letzteres beinhaltet die Möglichkeit, die geometrischen Konstruktionseigenschaften, etwa die Position der Punkte eines Polygons, und Zeicheneigenschaften, wie Linien und Flächenfarbe des Körpers, anzupassen.\\
 Der Toolbar am oberen Rand (2) enthält die zur Verfügung stehenden Konstruktionstools. 
-Dazu gehören das \textit{Freie Maus} Tool, welches das Markieren, Verschieben und Rotieren von Körpern ermöglicht. 
-Rotieren kann man den markierten Körper mit der rechten und linken Pfeiltaste sowie der Alt-Taste. 
-Markiert wird ein Körper mit dem Klick auf einen der blauen Drag\& Drop-Punkte, etwa Zentrum und Eckpunkte für ein Viereck. 
-Diese werden einmal angeklickt, um sie auszuwählen. 
-Es werden dann der Punkt und der zugehörige Körper markiert. 
-Wenn man den Punkt dann verschiebt, werden seine Konstruktionseigenschaften entsprechend geändert. 
-Mehrfache Klicks auf denselben Punkt, der zu mehreren Körpern gehört, wechseln den markierten Körper.\\
-Bei der Verwendung des \textit{Polygon/Polyline} Tools fügt jeder Klick einen neuen Punkt hinzu und ein Klick auf den ersten Punkt schließt das Polygon.\\
-Die ersten zwei Klicks mit dem \textit{Rechteck} Tool konstruieren eine Linie. 
-Wird danach mit der mittleren Maustaste bestätigt, ist die Linie die Diagonale eines zu den Koordinatenachsen parallelen Rechtecks. 
-Ein dritter Klick macht sie zur Grundseite eines rotierten Rechtecks und der dritte Klick legt die Höhe fest.\\
-Das \textit{Kreis} Tool konstruiert einen Kreis um den Punkt des ersten Klicks. 
-Der zweite Punkt legt den Radius fest.
-Das \textit{Kreisbogen} Tool funktioniert wie das \textit{Kreis} Tool, wobei aber der zweite Klick auch den Startwinkel festlegt und ein dritter Klick festlegt, wie weit der Bogen (im mathematisch positiven Drehsinn) verläuft.\\
-Mit dem \textit{Ellipse} Tool wird eine Ellipse über ihre beiden Brennpunkte und die Exzentrizität konstruiert.
-Die beiden Radiobuttons legen fest, ob konstruierte Körper der Outline oder den Defekten hinzugefügt werden.
-Im Feld für exakte Eingabe (3) können die Koordinaten eines zu konstruierenden Punktes direkt eingegeben werden, anstatt auf die Zeichenfläche (4) zu klicken.
-%TODO aufpassen nicht allein auf seite
-%TODO schreibweise überarbeiten -> Ende wenig zusammenhängen
+Standardmäßig ist das \textit{Freie Maus} Tool ausgewählt, welches Änderungen an existierenden Körpern ermöglicht.
+Ein Klick auf einen der blauen Punkte eines Körpers markiert den Körper rot.
+Sollten mehrere Punkte übereinander liegen - etwa die Ecken zweier Polygone - kann der ausgewählte Körper durch mehrfaches Klicken auf den Punkt gewechselt werden.\\
+Jeder Punkt entspricht einer Eigenschaft des Körpers und das Verschieben hat entsprechende Effekte.
+Ein Polygon verfügt z.B. über eine beliebige Zahl an Eckpunkten und einen Mittelpunkt, der alle Eckpunkte in die selbe Richtung um die selbe Distanz verschiebt.
+Weiterhin kann man den gewählten Körper mit der linken und rechten Pfeiltaste sowie der Alt-Taste rotieren.\\
+Die anderen Tools werden verwendet, indem eine Reihe von Punkten auf der Zeichenfläche (4) angeklickt wird.
+Je nach Tool bestimmen diese dann die Konstruktion des Körpers.
+Im Fall des \textit{Polygon} Tools entspricht jeder Klick einem Eckpunkt und ein erneuter Klick auf den ersten Punkt oder ein Klick der mittleren Maustaste beendet die Konstruktion.
+In jedem Tool kann die Konstruktion außerdem mit der rechten Maustaste vorzeitig abzubrechen. \\
+Das \textit{Rechteck} Tool hilft bei der Konstruktion der gleichnamigen regelmäßigen Vierecke, was zwar theoretisch aber oft nur schwierig mit dem \textit{Polygon} Tool möglich ist. 
+Dazu wird eine Linie zwischen den ersten zwei Punkten konstruiert. 
+Das Klicken der mittleren Maustaste konstruiert dann ein Rechteck mit Seiten parallel zu den Koordinatenachsen und der Linie als Diagonale. 
+Fügt man jedoch einen dritten Punkt hinzu, wird ein schiefes Rechteck konstruiert.
+Die Höhe des dritten Punktes über besagter Linie ist die Höhe des Rechtecsk und die Linie dessen Grundseite.\\
+Die \textit{Kreis} und \textit{Kreisbogen} Tools funktionieren ähnlich.
+Der erste Punkt ist in beiden Fällen der Kreismittelpunkt.
+Der Abstand des zweiten Punktes vom Mittelpunkt legt den Radius fest.
+Konstruiert man lediglich einen Kreis, ist seine genaue Position egal.
+Bei einem Kreisbogen bestimmt die Position dieses Punktes jedoch den Startwinkel des Bogens und ein dritter Punkt die Größe des Winkels.
+Liegt etwa der zweite Punkt unter einem $45^{\circ}$-Winkel zum Mittelpunkt und der dritte unter einem $135^{\circ}$-Winkel, so beträgt der Startwinkel $45^{\circ}$ und der Winkelumfang $135-45=90^{\circ}$. \\
+Zuletzt ermöglicht das \textit{Ellipse} Tool die Konstruktion der gleichnamigen Körper.
+Die ersten beiden Punkte sind dabei die Brennpunkte der Ellipse und legen auch ihre längere Achse fest.
+Der dritte Punkt bestimmt dann ihre Exzentrizität, indem eine Ellipse ermittelt wird, auf der dieser liegt.
+Da die beiden Brennpunkte auf der längeren Achse liegen, ist die Exzentrizität jedoch durch den Abstand der Brennpunkte nach oben beschränkt.\\
+Unabhängig vom gewählten Tool muss gewählt werden, ob die konstuierten Körper der Outline oder den Defekten hinzugefügt werden sollen. 
+Dies kann über die beiden Radiobuttons rechts von den Tools festgelegt werden.
+Um Ungenauigkeiten durch beliebiges Klicken auf der Zeichenfläche zu vermeiden, existiert außerdem ein Feld für exakte Eingabe der Koordinaten eines Punktes (3). Der nebenstehende Knopf führt dann automatisch einen Klick bei den gegebenen Koordinaten aus.
 
 \newpage
 \section{Zusammenfassung}
@@ -541,11 +549,11 @@ Um nun an der Geraden reflektieren zu können, müssen der Lotfußpunkt $L$ von 
 \vec{n} &= \begin{pmatrix} -v_y \\ v_x \end{pmatrix} \\
 \end{split}
 \end{equation*}
-Durch das Schneiden der beiden Geraden $g$ und $n: \vec{x} = \vec{o} + f \cdot \vec{n}$ ergibt sich der Faktor $f$, woraus $L$ und $O'$ folgen.
+Durch das Schneiden der beiden Geraden $g$ (\ref{eq:Gg1}) und $n: \vec{x} = \vec{o} + f' \cdot \vec{n} \wedge f' \in \mathds{R}$ ergibt sich der Faktor $f'$, woraus $L$ und $O'$ folgen.
 \begin{equation*}
 \begin{split}
 g &= n \\
-\vec{l} &= \vec{o} + f \cdot \vec{n} \\
+\vec{l} &= \vec{o} + f' \cdot \vec{n} \\
 \vec{u} &= \vec{l} - \vec{o} \\
 \vec{o'} &= \vec{o} + 2 \cdot \vec{u} \\
 \vec{r'} &= \vec{o'} - \vec{s} \\
@@ -613,7 +621,7 @@ r^2 &= {(o_x + \lambda \cdot r_x - m_x)}^2 + {(o_y + \lambda \cdot r_y - m_y)}^2
 
 Mit der Lösungsformel für binomische Gleichungen 
 \begin{equation*}
-x_1 = \dfrac{-p}{2} \pm \sqrt{{(\dfrac{p}{2})}^2 - q}
+x_{1/2} = \dfrac{-p}{2} \pm \sqrt{{(\dfrac{p}{2})}^2 - q}
 \end{equation*}
 ergibt sich als Lösung für $\lambda_{1/2}$ mit
 \begin{equation*}
@@ -629,7 +637,7 @@ falls ${(\dfrac{p_{bin}}{2})}^2 - q_{bin} \geq 0$ gilt:
 \lambda_2 &= \dfrac{-p_{bin}}{2} - \sqrt{{(\dfrac{p_{bin}}{2})}^2 - q_{bin}}
 \end{split}
 \end{equation*}
-Daraus ergeben sich zwei Schnittpunkt $S_{1/2}$ mit $\vec{s_{1/2}} = \vec{o} + \lambda_{1/2} \cdot \vec{r}$, für die der Schnittpunkt mit dem kleineren Abstand $d(S_{1/2}, O) = \sqrt{{(S_{1/2, x} - Ox)}^2 + {(S_{1/2, y} - Oy)}^2}$ ausgewählt wird, um daran eine Tangente anzulegen, an welcher nach der Formel für Geradenreflexion der Strahl $s$ zu $s'$ reflektiert wird.
+Daraus ergeben sich zwei Schnittpunkt $S_{1/2}$ mit $\vec{s_{1/2}} = \vec{o} + \lambda_{1/2} \cdot \vec{r}$, für die der Schnittpunkt mit dem kleineren Abstand $d(S_{1/2}, O) = \sqrt{{(S_{1/2, x} - Ox)}^2 + {(S_{1/2, y} - Oy)}^2}$ ausgewählt wird, um daran eine Tangente anzulegen, an welcher nach der Formel für Geradenreflexion der Strahl $s$ zu $s'$ reflektiert wird. Falls die Ungleichung nicht stimmt, schneidet der Strahl die Gerade nicht.
 
 
 
@@ -714,19 +722,21 @@ Ist der Radikant hingegen positiv, ergibt sich daraus mit $\vec{s} = \vec{o} + \
 \subsubsection*{Funktion zur Berechnung gerichteter Winkel}
 %TODO vervollständigen
 
-\subsection{Programmdokumentation und -benutzungsanleitung}
+\subsection{Programmdokumentation und Benutzungsanleitung}
 %TODO vervollständigen
 
 \newpage
 \nocite{*}
 \section{Literatur- und Quellenverzeichnis}
-\printbibliography[type=book, title=Buchquellen]
 \printbibliography[type=online, title=Internetquellen]
-
+\printbibliography[type=book, title=Buchquellen]
+\printbibliography[type=misc, title=Bildquellen]
+Sämtliche anderen Bilder sind entweder Aufnahmen der Programmoberfläche oder mit GeoGebra erstellte geometrische Konstruktionen.
 %TODO
 %Gliederungspunkte überarbeite
 %Tipps von Florian überprüfen
 %Anhang fertig schreiben
+%TODO FINAL: Wortrennung an Zeilenende und Satztrennung an Seitenende prüfen -> notfalls manuell ändern
 
 \eidesstattlicheerklaerung
 
