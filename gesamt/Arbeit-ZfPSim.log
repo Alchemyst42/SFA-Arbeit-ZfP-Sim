@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  18 DEC 2018 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  18 DEC 2018 15:36
 entering extended mode
 **./Arbeit-ZfPSim.tex
 (Arbeit-ZfPSim.tex
@@ -668,7 +668,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'science.dbx' not found.
+Package biblatex Info: ... file 'reading.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count278
@@ -772,21 +772,11 @@ File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 \c@biburllcpenalty=\count351
 \c@smartand=\count352
 )
-Package biblatex Info: Trying to load bibliography style 'science'...
-Package biblatex Info: ... file 'science.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'reading'...
+Package biblatex Info: ... file 'reading.bbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-science\science.bbx"
-File: science.bbx 2018/10/18 v1.2 biblatex bibliography style
-Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.bbx' found.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric-comp.bbx"
-File: numeric-comp.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx"
-File: numeric.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\reading.bbx"
+File: reading.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -794,57 +784,39 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count353
 \c@bbx:relatedtotal=\count354
-))))
-Package biblatex Info: Trying to load citation style 'science'...
-Package biblatex Info: ... file 'science.cbx' found.
+))
+Package biblatex Info: Trying to load citation style 'reading'...
+Package biblatex Info: ... file 'reading.cbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-science\science.cbx"
-File: science.cbx 2018/10/18 v1.2 biblatex citation style
-Package biblatex Info: Trying to load citation style 'numeric-comp'...
-Package biblatex Info: ... file 'numeric-comp.cbx' found.
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\reading.cbx"
+File: reading.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
+Package biblatex Info: Trying to load citation style 'authortitle'...
+Package biblatex Info: ... file 'authortitle.cbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx"
-File: numeric-comp.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count355
-\c@cbx@tempcntb=\count356
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\authortitle.cbx"
+File: authortitle.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
 ))
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg"
 File: biblatex.cfg 
-)
-
-! Package xkeyval Error: `entrykey' undefined in families `blx@opt@pre'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14718 \blx@processoptions
-                           
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\ngerman.lbx"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\ngerman.lbx"
 File: ngerman.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
@@ -920,7 +892,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count357
+\c@section@level=\count355
 )
 LaTeX Info: Redefining \ref on input line 42.
 LaTeX Info: Redefining \pageref on input line 42.
@@ -936,16 +908,16 @@ Package caption Info: End \AtBeginDocument code.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
+\scratchcounter=\count356
 \scratchdimen=\dimen162
 \scratchbox=\box37
-\nofMPsegments=\count359
-\nofMParguments=\count360
+\nofMPsegments=\count357
+\nofMParguments=\count358
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count361
+\MPscratchCnt=\count359
 \MPscratchDim=\dimen163
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
 \everyMPtoPDFconversion=\toks34
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -992,31 +964,31 @@ been already used, duplicate ignored
                    \relax 
 l.51 \newpage
               [1]
-Underfull \hbox (badness 6625) in paragraph at lines 56--71
+Underfull \hbox (badness 6625) in paragraph at lines 56--69
 \OT1/cmr/m/n/12 Das Ver-fah-ren der zerst[]orungsfreien Ma-te-ri-al-pr[]ufung w
 ird im Ge-gen-satz zur
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 72.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 \newpage
+l.70 \newpage
               [1]
 
-LaTeX Warning: Citation 'theorie' on page 2 undefined on input line 77.
+LaTeX Warning: Citation 'theorie' on page 2 undefined on input line 75.
 
 
-LaTeX Warning: Citation 'zfp-abgrenzung' on page 2 undefined on input line 88.
+LaTeX Warning: Citation 'zfp-abgrenzung' on page 2 undefined on input line 86.
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 76--100
+Underfull \hbox (badness 1168) in paragraph at lines 74--98
 \OT1/cmr/m/n/12 Man un-ter-schei-det wei-ter-hin bei der Werk-stoff-pr[]ufung z
 wi-schen zerst[]orenden und
  []
@@ -1024,197 +996,246 @@ wi-schen zerst[]orenden und
 <pictures/Oszillogramme.jpg, id=157, 1586.92876pt x 975.645pt>
 File: pictures/Oszillogramme.jpg Graphic file (type jpg)
 <use pictures/Oszillogramme.jpg>
-Package pdftex.def Info: pictures/Oszillogramme.jpg  used on input line 107.
+Package pdftex.def Info: pictures/Oszillogramme.jpg  used on input line 105.
 (pdftex.def)             Requested size: 327.7763pt x 201.51212pt.
+! Argument of \caption@ydblarg has an extra }.
+<inserted text> 
+                \par 
+l.106 ...¼nf von links nach rechts)\footnotemark }
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\@caption \@captype }{\@xfootnotemark }\def \reserved@b {\stepcounter \ETC.
+! Paragraph ended before \caption@ydblarg was complete.
+<to be read again> 
+                   \par 
+l.106 ...¼nf von links nach rechts)\footnotemark }
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+LaTeX Warning: Citation 'img:oszillogramm' on page 2 undefined on input line 10
+8.
+
 
 LaTeX Warning: Citation 'schallgeschwindigkeiten' on page 2 undefined on input 
-line 117.
+line 116.
 
 
-LaTeX Warning: Citation 'karldeutsch' on page 2 undefined on input line 133.
+LaTeX Warning: Citation 'karldeutsch' on page 2 undefined on input line 132.
 
 [2] [3 <./pictures/Oszillogramme.jpg>]
 
-LaTeX Warning: Citation 'ultraschall' on page 4 undefined on input line 154.
+LaTeX Warning: Citation 'ultraschall' on page 4 undefined on input line 153.
 
 [4] [5] [6]
-<pictures/LineRef.png, id=200, 719.68875pt x 500.62032pt>
+<pictures/LineRef.png, id=203, 719.68875pt x 500.62032pt>
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 225.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 217.
 (pdftex.def)             Requested size: 287.87039pt x 200.24457pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--227
+Underfull \hbox (badness 10000) in paragraph at lines 214--219
 
  []
 
 
-Underfull \hbox (badness 7558) in paragraph at lines 227--231
+Underfull \hbox (badness 7558) in paragraph at lines 219--223
 []\OT1/cmr/m/n/12 Um die Be-rech-nung des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--231
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
 \OT1/cmr/m/n/12 zuf[]uhren, m[]ussen so-wohl
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 227--231
+Underfull \hbox (badness 1102) in paragraph at lines 219--223
 \OT1/cmr/m/n/12 zwei Punk-te der Ge-ra-den,
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 227--231
+Underfull \hbox (badness 1048) in paragraph at lines 219--223
 \OT1/cmr/m/n/12 des Vek-tors $[] = 2 \OMS/cmsy/m/n/12  []$
  []
 
-<pictures/CircleRef.png, id=202, 538.26094pt x 463.7325pt>
+<pictures/CircleRef.png, id=205, 538.26094pt x 463.7325pt>
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 248.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 238.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
 
-Overfull \hbox (27.28139pt too wide) in paragraph at lines 248--249
+Overfull \hbox (27.28139pt too wide) in paragraph at lines 238--239
 [][] 
  []
 
 [7 <./pictures/LineRef.png>] [8 <./pictures/CircleRef.png>]
-<pictures/OvalRef.png, id=217, 304.9794pt x 267.76035pt>
+<pictures/OvalRef.png, id=220, 304.9794pt x 267.76035pt>
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 269.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 259.
 (pdftex.def)             Requested size: 213.48412pt x 187.43095pt.
 
 
-LaTeX Warning: Citation 'beweis-ellipse' on page 9 undefined on input line 287.
+LaTeX Warning: Citation 'beweis-ellipse' on page 9 undefined on input line 277.
 
 
 [9 <./pictures/OvalRef.png>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 345--363
+Underfull \hbox (badness 10000) in paragraph at lines 335--353
 
  []
 
 [11]
-<pictures/Strahlenbuendel.png, id=239, 293.59688pt x 472.01344pt>
+<pictures/Strahlenbuendel.png, id=242, 293.59688pt x 472.01344pt>
 File: pictures/Strahlenbuendel.png Graphic file (type png)
 <use pictures/Strahlenbuendel.png>
-Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 367.
+Package pdftex.def Info: pictures/Strahlenbuendel.png  used on input line 357.
 (pdftex.def)             Requested size: 73.39903pt x 118.00307pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--368
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
 []\OT1/cmr/m/n/12 Abbildung 5:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--368
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
 |\OT1/cmr/m/n/12 Dar-stel-lung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--368
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
 \OT1/cmr/m/n/12 Weg-un-ter-
  []
 
-<pictures/Flowchart_processScan.png, id=241, 1096.095pt x 1186.4325pt>
+<pictures/Flowchart_processScan.png, id=244, 1096.095pt x 1186.4325pt>
 File: pictures/Flowchart_processScan.png Graphic file (type png)
 <use pictures/Flowchart_processScan.png>
 Package pdftex.def Info: pictures/Flowchart_processScan.png  used on input line
- 378.
+ 368.
 (pdftex.def)             Requested size: 328.83104pt x 355.9325pt.
 
-Overfull \hbox (1.62436pt too wide) in paragraph at lines 378--379
+Overfull \hbox (1.62436pt too wide) in paragraph at lines 368--369
 [][] 
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 381--390
+LaTeX Warning: Reference `sec:documentation' on page 12 undefined on input line
+ 380.
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 net und in zeit-li-cher
  []
 
 
-Underfull \hbox (badness 6300) in paragraph at lines 381--390
+Underfull \hbox (badness 6300) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 ren liegt ei-ne Zeit-
  []
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 381--390
+Underfull \hbox (badness 2351) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 dif-fe-renz, die f[]ur al-
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 381--390
+Underfull \hbox (badness 2512) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 in ei-ne Lis-te ein-sor-
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 381--390
+Underfull \hbox (badness 5374) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 tiert wird. An-schlie-
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 381--390
+Underfull \hbox (badness 6236) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 end wird aus die-
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 381--390
+Underfull \hbox (badness 1968) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 an der der Quo-ti-ent
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 381--390
+Underfull \hbox (badness 4072) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 ge-nann-ter Zeit-be-reich
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 381--390
+Underfull \hbox (badness 2617) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 de-fi-niert. Die-ser sagt
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 381--390
+Underfull \hbox (badness 1308) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 aus, in wel-chem Ab-
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 381--390
+Underfull \hbox (badness 1502) in paragraph at lines 371--381
 \OT1/cmr/m/n/12 be-nen Tref-fer wei-te-re
  []
 
 [12 <./pictures/Strahlenbuendel.png> <./pictures/Flowchart_processScan.png>]
-<pictures/MainWindow.png, id=250, 1445.4pt x 764.10469pt>
+<pictures/MainWindow.png, id=253, 1445.4pt x 764.10469pt>
 File: pictures/MainWindow.png Graphic file (type png)
 <use pictures/MainWindow.png>
-Package pdftex.def Info: pictures/MainWindow.png  used on input line 395.
+Package pdftex.def Info: pictures/MainWindow.png  used on input line 385.
 (pdftex.def)             Requested size: 455.30342pt x 240.69424pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--415
-
- []
-
 [13 <./pictures/MainWindow.png>]
-<pictures/EditorWindow.png, id=256, 1445.4pt x 765.6103pt>
+<pictures/EditorWindow.png, id=259, 1445.4pt x 765.6103pt>
 File: pictures/EditorWindow.png Graphic file (type png)
 <use pictures/EditorWindow.png>
-Package pdftex.def Info: pictures/EditorWindow.png  used on input line 418.
+Package pdftex.def Info: pictures/EditorWindow.png  used on input line 408.
 (pdftex.def)             Requested size: 455.30342pt x 241.16852pt.
  [14 <./pictures/EditorWindow.png>] [15]
-Underfull \hbox (badness 1448) in paragraph at lines 456--480
-\OT1/cmr/m/n/12 Im-ple-men-tie-rung von ver-schie-de-nen Ma-te-ria-li-en so-wie
- die da-zu-geh[]origen Schall-ge-
+! Missing number, treated as zero.
+<to be read again> 
+                   k
+l.486 ...chluss, Bezug zu Zulunft des Verfahrens?]
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   k
+l.486 ...chluss, Bezug zu Zulunft des Verfahrens?]
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 463--487
+\OT1/cmr/m/n/12 Die Kom-bi-na-ti-on die-ser Funk-tio-nen er-laubt den Ein-satz 
+des Pro-gramms f[]ur die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--480
+Underfull \hbox (badness 10000) in paragraph at lines 463--487
 
  []
 
 [16]
 File: pictures/LineRef.png Graphic file (type png)
 <use pictures/LineRef.png>
-Package pdftex.def Info: pictures/LineRef.png  used on input line 494.
+Package pdftex.def Info: pictures/LineRef.png  used on input line 499.
 (pdftex.def)             Requested size: 359.84349pt x 250.30954pt.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 503.
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 508.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
@@ -1223,81 +1244,90 @@ File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.514 \newpage
+l.519 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {equation.6.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.514 \newpage
+l.519 \newpage
               ] [18]
 File: pictures/CircleRef.png Graphic file (type png)
 <use pictures/CircleRef.png>
-Package pdftex.def Info: pictures/CircleRef.png  used on input line 572.
+Package pdftex.def Info: pictures/CircleRef.png  used on input line 577.
 (pdftex.def)             Requested size: 269.1298pt x 231.86568pt.
 pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.582 \end{align}
+l.587 \end{align}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{equation.6.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.582 \end{align}
+l.587 \end{align}
                  
-Overfull \hbox (38.70177pt too wide) detected at line 620
+Overfull \hbox (38.70177pt too wide) detected at line 625
 []
  []
 
 [19] [20]
 File: pictures/OvalRef.png Graphic file (type png)
 <use pictures/OvalRef.png>
-Package pdftex.def Info: pictures/OvalRef.png  used on input line 650.
+Package pdftex.def Info: pictures/OvalRef.png  used on input line 655.
 (pdftex.def)             Requested size: 304.97865pt x 267.75967pt.
 
-Overfull \hbox (55.97383pt too wide) detected at line 700
+Overfull \hbox (55.97383pt too wide) detected at line 705
 [][]
  []
 
 [21]
-Overfull \hbox (55.97383pt too wide) detected at line 717
+Overfull \hbox (55.97383pt too wide) detected at line 722
 [][]
  []
 
 [22]
 
-Package biblatex Warning: Type 'online' not found on input line 731.
+Package biblatex Warning: Type 'online' not found on input line 737.
 
 
-LaTeX Warning: Empty bibliography on input line 731.
+LaTeX Warning: Empty bibliography on input line 737.
 
 
-Package biblatex Warning: Type 'book' not found on input line 732.
+Package biblatex Warning: Type 'book' not found on input line 738.
 
 
-LaTeX Warning: Empty bibliography on input line 732.
+LaTeX Warning: Empty bibliography on input line 738.
 
 
-Package biblatex Warning: Type 'misc' not found on input line 733.
+Package biblatex Warning: Type 'misc' not found on input line 739.
 
 
-LaTeX Warning: Empty bibliography on input line 733.
+LaTeX Warning: Empty bibliography on input line 739.
 
 [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 743.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 746.
  [24
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 743.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 746.
  (Arbeit-ZfPSim.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 743.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 743.
-Package rerunfilecheck Info: File `Arbeit-ZfPSim.out' has not changed.
-(rerunfilecheck)             Checksum: 60F1F2277DCF323001BC64BB1030564B;2436.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 746.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 746.
 
+
+Package rerunfilecheck Warning: File `Arbeit-ZfPSim.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Arbeit-ZfPSim.out':
+(rerunfilecheck)             Before: 60F1F2277DCF323001BC64BB1030564B;2436
+(rerunfilecheck)             After:  88E8D208D7C12D423E8EF420B4802723;2414.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1309,15 +1339,18 @@ Package logreq Info: Writing requests to 'Arbeit-ZfPSim.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18554 strings out of 492970
- 306208 string characters out of 3135854
- 831696 words of memory out of 3000000
- 22031 multiletter control sequences out of 15000+200000
+ 18534 strings out of 492970
+ 305547 string characters out of 3135854
+ 830663 words of memory out of 3000000
+ 22017 multiletter control sequences out of 15000+200000
  12962 words of font info for 51 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 53i,21n,92p,1029b,2282s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exi
+ 53i,21n,92p,1029b,2276s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
 , replaced by a fixed one
@@ -1351,9 +1384,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Arbeit-ZfPSim.pdf (26 pages, 1442487 bytes).
+Output written on Arbeit-ZfPSim.pdf (26 pages, 1443771 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 75 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
  257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -25,7 +25,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.4}Vernachl\IeC {\"a}ssigung der Material\IeC {\"u}berg\IeC {\"a}nge und Annahme der Totalreflexion}{6}{subsubsection.3.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Herleitung der Berechnungsformeln}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Herleitung der Reflexiongleichungen}{7}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.1}Reflexion an einer Geraden}{7}{subsubsection.3.3.1}
 \defcounter {refsection}{0}\relax 
@@ -51,6 +51,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Vollst\IeC {\"a}ndige Herleitung aller verwendeten Berechnungsformeln}{17}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Programmdokumentation und Benutzungsanleitung}{22}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.2}Programmdokumentation}{22}{subsection.6.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Literatur- und Quellenverzeichnis}{23}{section.7}
