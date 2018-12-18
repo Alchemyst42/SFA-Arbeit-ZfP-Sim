@@ -53,8 +53,7 @@
 \setcounter{page}{1}
 
 \section{Einleitung}
-Ein gebrochener Arm, ein verstauchtes Handgelenk oder eine andere Knochenfraktur. 
-All diese Verletzungen sind häufig anzutreffen und werden zumeist durch das Röntgenverfahren eindeutig diagnostiziert. %TODO anderes Wort als diagnostiziert?
+Ein gebrochener Arm, ein verstauchtes Handgelenk oder eine andere Knochenfraktur - all diese Verletzungen sind häufig anzutreffen und werden zumeist durch das Röntgenverfahren eindeutig diagnostiziert.
 Dieses Verfahren bietet sowohl für den Patienten als auch für den Arzt entscheidende Vorteile, denn der Patient nimmt dadurch keinen Schaden und trotzdem bietet sich die Möglichkeit, auch Unregelmäßgikeiten im Inneren des Körpers zu erfassen, ohne dafür erst eine aufwendige Operation durchführen zu müssen.\\
 Das Verfahren der zerstörungsfreien Materialprüfung wird im Gegensatz zur Röntgendiagnostik nicht am Menschen durchgeführt, sondern zur Prüfung von Gegenständen aller Art verwendet. 
 Trotzdem kommt diesem Verfahren keine geringere Bedeutung zu, denn es kann, wie die Röntgendiagnostik auch, Menschenleben retten und dies auf eine effiziente und materialschonende Weise.\\ 
@@ -66,8 +65,7 @@ Während beim Röntgen aufwendige Apparate mit großer Leistung betrieben werden
 Im Gegensatz zum Röntgen ist es bei der Prüfung mittels Ultraschall notwendig, genau zu wissen, wo auf der Körperoberfläche die Messergebnisse aufgenommen werden können. 
 Daher wird vor jeder Prüfung ein Prüfplan erstellt, der die Vorgehensweise erläutert und die Interpretation der Ergebnisse vorgibt.\\
 Wir setzen uns daher das Ziel, ein Programm zur Simulation von Ultraschallprüfverfahren zu planen und zu implementieren. Unseren Fokus legen wir darauf, die Vorbereitung einer Prüfung grundsätzlich zu erleichtern und auch dabei zu helfen, unerwartete Messergebnisse in bereits durchgeführten Prüfungen besser interpretieren und verstehen zu können.\\
-Unser besonderer Dank gilt dabei unserem Fachbetreuer Herrn B. Gramsch für seine Hilfe bei der Einarbeitung in das Gebiet der Vektorrechnung, welches wir als Modell für die Ultraschallwellen verwenden. Ebenfalls danken wir Herrn Dr. F. Römer von der T.U. Ilmenau für seine Unterstützung bei der Einarbeitung in das Gebiet der Ultraschallprüfung sowie seine fachliche Beratung bei Fragen zur Gestaltung des Programms. %TODO T.U. abkürzen oder nicht?
-%TODO Kriterien Einleitung überprüfen
+Unser besonderer Dank gilt dabei unserem Fachbetreuer Herrn B. Gramsch für seine Hilfe bei der Einarbeitung in das Gebiet der Vektorrechnung, welches wir als Modell für die Ultraschallwellen verwenden. Ebenfalls danken wir Herrn Dr. F. Römer von der Technischen Universität Ilmenau für seine Unterstützung bei der Einarbeitung in das Gebiet der Ultraschallprüfung sowie seine fachliche Beratung bei Fragen zur Gestaltung des Programms. 
 
 \newpage
 
@@ -105,9 +103,9 @@ Diese Messungen werden dann in einem sogenannten Oszillogramm dargestellt.
 \begin{figure}[h]\begin{center}
 \label{oszillogramme}
 \includegraphics[width=0.72\textwidth]{pictures/Oszillogramme.jpg}
-\caption{Oszillogramme (beispielhaft, Nummer eins bis fünf von links nach rechts)}
-%TODO Quelle erneut angeben
-\end{center}\end{figure} \\
+\caption{Oszillogramme (beispielhaft, Nummer eins bis fünf von links nach rechts)\protect\footnotemark}
+%TODO Quelle funktionierend angeben
+\end{center}\end{figure}\footcitetext{img:oszillogramm} \\
 Je höher dabei eine Spitze (auch Peak) ist, desto stärker war das zugehörige Echo. 
 Hierbei wird ausgenutzt, dass beim Übergang der Ultraschallwellen von einem Material zum anderen ein bestimmter Anteil reflektiert wird, während ein anderer Anteil (unter einem anderen Winkel) sich weiter durch den Körper bewegt. 
 Trifft eine Schallwelle, die sich in einem festen Körper bewegt, auf Luft, so wird sie beinahe vollständig zurückgeworfen, weshalb etwaige passierende Schallwellen gering genug sind, um vernachlässigt werden zu können. 
@@ -135,27 +133,26 @@ Im Detail kann die Verfahrensweise der zerstörungsfreien Materialprüfung mit U
 
 \subsection{Abgrenzung von anderen Testverfahren}
 
-Obwohl die zerstörungsfreie Prüfung mittels Ultraschall in der heutigen Wirtschaftslage unverzichtbar ist, kann mithilfe der Ultraschallmesstechnik nicht jeder Materialtest durchgeführt werden, da auch diese durch die Grundlagen der Physik eingeschränkt wird.
+Obwohl die zerstörungsfreie Prüfung mittels Ultraschall in der heutigen Wirtschaft unverzichtbar ist, kann mithilfe der Ultraschallmesstechnik nicht jeder Materialtest durchgeführt werden, da auch diese durch die Grundlagen der Physik eingeschränkt wird.
 Um diese Grenzen zu überwinden, wird auf andere Materialeigenschaften zurückgegriffen.
 Dabei handelt es sich um optische, thermische, elektrische, magnetische und atomare Eigenschaften des Prüflings. 
 Jede der Methoden bietet dabei eigene Vor- und Nachteile und ist damit für spezielle Prüfvorgänge geeignet. \\ 
 Grundsätzlich unterscheiden sich diese Verfahren in ihren Anforderungen an technische Geräte und dem benötigten Fachwissen, diese zu bedienen und den Prüfvorgang ordnungsgemäß durchzuführen. 
 Diese versucht man natürlich möglichst gering zu halten, um viele Bauteile effizient prüfen zu können.
-Daher sind die am meisten verwendeten Verfahren die Sichtprüfung und die Farbeindringprüfung. 
+Daher sind die am häufigsten verwendeten Verfahren die Sichtprüfung und die Farbeindringprüfung. 
 Bei diesen wird entweder mit bloßem Auge oder mithilfe von farbigen Flüssigkeiten die Oberfläche von Prüflingen auf Fehler begutachtet. 
 Dies kann schnell, einfach und ohne technischen Aufwand durchgeführt werden.
 Doch durch den Ablauf beim Prüfen werden auch die Nachteile dieser Verfahren klar, denn unter Verwendung des Auges oder von Kameras kann nur die Oberfläche von Prüfkörpern beurteilt werden. \\
 Dies ist für einige Teile ausreichend, doch besonders stark beanspruchte oder sicherheitsrelevante Teile dürfen auf keinen Fall versagen. 
-Oft reicht dabei schon ein kleiner Riss im Inneren, um genau dieses Versagen herbeizuführen. 
+Oft reicht hier schon ein kleiner Riss im Inneren, um genau dieses Versagen herbeizuführen. 
 Daraus ergibt sich die Notwendigkeit, in diesen Fällen den Prüfkörper auch auf innere Beschädigungen zu untersuchen.
-Um dies durchzuführen, stehen ebenfalls mehrere Methoden zur Verfügung.
+Dazu stehen ebenfalls mehrere Methoden zur Verfügung.
 Abhängig von Größe und Material des Prüflings sind manche Testverfahren besser geeignet als andere. 
 So basieren z.B. manche Verfahren auf der elektrischen Leitfähigkeit des Prüfkörpers und sind daher auf bestimmte Materialien beschränkt.
-Andere hingehen erfordern geschlossene Sicherheitsräume, wie z.B. die Röntgenprüfung, und können daher schlecht zur Prüfung von bereits verbauten Teilen verwendet werden.\\
+Andere hingegen erfordern geschlossene Sicherheitsräume, wie z.B. die Röntgenprüfung, und können daher schlecht zur Prüfung von bereits verbauten Teilen verwendet werden.\\
 Allerdings kann auch durch die verwendete Methode selbst eine Einschränkung erfolgen. So ist z.B. beim Prüfen mit Ultraschall die Materialdicke -- abhängig vom verwendeten Prüfgerät -- auf fünf bis acht Meter beschränkt, da sonst Ungenauigkeiten entstehen könnten. \footcite{ultraschall} \\ 
-Das Ultraschallverfahren, dessen Simulation Thema dieser Arbeit ist, bietet insgesamt eine gute Kombination praxisrelevanter
-%TODO praktikabler? praktischer? sonstiges?
- Eigenschaften. So können bei relativ geringem technischen Aufwand und unter Verwendung mobiler Prüfgeräte kleine bis mittelgroße Prüfkörper relativ genau auf innere Fehler untersucht werden.
+Das Ultraschallverfahren, dessen Simulation Thema dieser Arbeit ist, bietet insgesamt eine gute Kombination praxisrelevanter Eigenschaften.
+So können bei relativ geringem technischen Aufwand und unter Verwendung mobiler Prüfgeräte kleine bis mittelgroße Prüfkörper relativ genau auf innere Fehler untersucht werden.
 
 \section{Berechnung der Strahlenverläufe}
 
@@ -170,20 +167,21 @@ Auf das soeben genannte Beispiel bezogen gilt $O_x = \vec{o}_x = 4$ und $O_y = \
 
 \subsubsection{Die Notwendigkeit von Vereinfachungen} %TODO Wir verwenden "Körper" statt Formen/ Flächen
 Da das Programm die Berechnungen in akzeptabler Zeit durchführen können soll, dürfen die verwendeten Formeln nicht zu umfangreich sein. 
-Außerdem ist eine exakte Simulation nicht nötig, da der Nutzer den jeweiligen Prüfkörper ohnehin nur annähernd digitalisieren kann, weshalb berechnete Ergebnisse unabhängig von der Berechnung meist nicht genau mit den realen Messwerten übereinstimmen werden. 
+Außerdem ist eine exakte Simulation nicht nötig, da der Nutzer den jeweiligen Prüfkörper ohnehin nur annähernd digitalisieren kann, weshalb berechnete Ergebnisse, unabhängig von der Art der Berechnung, meist nicht genau mit den realen Messwerten übereinstimmen werden. 
 Daher ist es legitim, einige mathematische und physikalische Vereinfachungen vorzunehmen, um die \hyperref[sec:herleitung]{Herleitung der Formeln} möglichst unkompliziert zu gestalten. 
 Welche Näherungen mit welcher Intention vorgenommen wurden, soll in diesem Kapitel näher beleuchtet werden.
 
 \subsubsection{Betrachtung der Ultraschallwellen als Strahlenbündel}
 Genau wie jede andere Art des Schalls ist Ultraschall eine mechanische Welle und breitet sich daher dem Huygens'schen Prinzip folgend allseitig aus. 
-Jedoch ist die Amplitude und somit auch die Intensität der Welle in einer Richtung wesentlicher stärker. Der Aufbau des Senders ermöglicht es, den Schall zu fokussieren, um spezifische Bereiche des Körpers prüfen zu können.
+Jedoch ist die Amplitude und somit auch die Intensität der Welle in einer Richtung wesentlicher stärker.
+Der Aufbau des Senders ermöglicht es, den Schall zu fokussieren, um spezifische Bereiche des Körpers prüfen zu können.
 Die Ausbreitung einer Welle, inklusive der Reflexion beim Übergang von einem Medium in ein anderes, zu berechnen ist sehr kompliziert, besonders da sie schlecht als Datenstruktur dargestellt werden kann.\\
 An dieser Stelle kommt die Vektorrechnung ins Spiel: Indem angenommen wird, dass sich der Schall in nur eine Richtung ausbreitet, kann man ihn als Strahl betrachten. 
 Mathematisch gesehen besteht er also aus einem Ortsvektor zum Startpunkt und einem Richtungsvektor. 
 Die vektorielle Darstellung eines Strahls $\vec{v}$, der in einem zweidimensionalen kartesischen Koordinatensystem mit dem Koordinatenursprung $O(0|0)$ am Punkt $P(0|3)$ beginnt und von dort aus in Richtung des Punktes $Q(1|4)$ verläuft, lautet also $\vec{v} = \overrightarrow{OP} + \lambda \cdot \overrightarrow{PQ} = \vect{0}{3} + \lambda \cdot \vect{1}{1}$, wobei $\lambda\in\mathbb{R}$ und $\lambda\geq0$ gilt. 
 Dieses Vorgehen bringt große Vorteile mit sich. Beispielsweise ist es mithilfe dessen sehr einfach, Schnittpunkte und Reflexionsvektoren auszurechnen, wie in Kapitel \ref{sec:herleitung} beschrieben.\\
 Natürlich muss die dadurch entstehende Vernachlässigung der allseitigen Ausbreitung kompensiert werden. 
-Aus diesem Grund wird nicht nur ein, sondern mehrere solcher Strahlen von der Quelle ausgesandt. 
+Aus diesem Grund werden nicht nur einer, sondern mehrere solcher Strahlen von der Quelle ausgesandt. 
 Somit entfällt einerseits die Problematik der Reflexion einer gesamten Wellenfront an einem Objekt, welche sehr umständlich ist, andererseits bleibt die Genauigkeit nahezu erhalten. 
 Wird in einem realen Prüfkörper ein großer Teil des Schalls zurück zum Sender reflektiert, passiert dasselbe auch in der Simulation. 
 Der Unterschied besteht allein darin, dass in einer realen Messung die registrierte Schallintensität analog ist, da sie auch von Feinheiten im Prüfling beeinflusst wird, während das Programm eine digitale Intensität feststellt, denn diese ist abhängig von der Anzahl der reflektierten Strahlen, welche selbstverständlich eine natürliche Zahl sein muss.\\
@@ -195,13 +193,7 @@ Neben der Anzahl der zurückgekommenen Strahlen gibt es für den Sender einen we
 Aus der Länge des Weges jedes Strahls wird berechnet, wie groß seine Intensität bei der Rückkehr ist. 
 Näher beleuchtet wird dies in Kapitel \ref{sec:sim}.\\
 Durch die auftretende Reibung zwischen den schwingenden Teilchen kommt es dazu, dass die Ultraschallwellen abhängig von der zurückgelegten Strecke an Energie verlieren.
-Für unsere Simulation sind wir dabei von einer exponentiellen Funktion $I = \frac{I_0}{1.05^{\tfrac{s}{c}}}$ zur Berechnung der Intensität $I$, mit $I_0$ als Ausgangsintensität, $s$ als den zurückgelegten Weg und $c$ für die materialspezifische Schallgeschwindigkeit, ausgegangen.
-
-%old
-%Dieser zusätzliche Parameter ist notwendig, da Ultraschallwellen in der Realität ebenfalls abhängig von der zurückgelegten Strecke Energie (welche gleichbedeutend mit der Intensität ist) verlieren. 
-%todo Komma statt Klammer?
-%Wie groß die verbleibende Intensität ist, berechnet das Programm mithilfe der Formel $I = \dfrac{I_0}{1.05^{\tfrac{s}{c}}}$. 
-%Dabei steht $I_0$ für die Anfangsintensität, $s$ für den zurückgelegten Weg und $c$ für die Schallgeschwindigkeit im jeweiligen Medium.
+Für unsere Simulation sind wir dabei von einer exponentiellen Funktion $I = \frac{I_0}{1.05^{\tfrac{s}{c}}}$ zur Berechnung der Intensität $I$, mit $I_0$ als Ausgangsintensität, $s$ als zurückgelegter Weg und $c$ als materialspezifische Schallgeschwindigkeit, ausgegangen.
 
 \subsubsection{Vernachlässigung der Materialübergänge und Annahme der Totalreflexion}
 In unserer Arbeit gehen wir davon aus, dass der gesamte Prüfkörper aus einem einzigen Material besteht. 
@@ -216,9 +208,8 @@ Näherungsweise ist dies gleichzusetzen mit einem Übergang zwischen dem Prüfk�
 Da sich die Schallgeschwindigkeit in Luft sehr stark von derjenigen in festen Stoffen unterscheidet, wird beinahe der gesamte Anteil des Strahls reflektiert, was aus Gründen der Berechenbarkeit als tatsächliche Totalreflexion angesehen wird. 
 Somit kann die Reflexion als rein mathematisches Problem der Vektorrechnung ohne physikalische Beschränkungen betrachtet werden.
 
-\subsection{Herleitung der Berechnungsformeln}\label{sec:herleitung}
+\subsection{Herleitung der Reflexiongleichungen}\label{sec:herleitung}
 
-%TODO bessere Überschrift: Grundlegend verwendete Prozedur zur Reflektion eines Strahls
 \subsubsection{Reflexion an einer Geraden}
 Durch die Verwendung der Vektorrechnung lässt sich für unsere Arbeit die Reflexion eines Strahls an einer beliebigen regelmäßigen Geometrie auf die Reflexion eines Strahls an einer Geraden zurückführen. 
 Diese ist damit ein essenzieller Prozess, der häufig durchgeführt werden muss.\\
@@ -239,11 +230,9 @@ $\vec{r'} = \vec{r'_1} = \overrightarrow{O'S}$
 \end{center}
 und damit auch der neue Strahl von $S$ in Richtung $r'$.
 
-
-%TODO Überschrift
 \subsubsection{Reflexion an weiteren regelmäßigen Geometrien} \label{sec:weitereGeometrien}
 Neben der Reflexion der Strahlen an einer einfachen Geraden haben wir uns auch entschieden, dies für Kreise, Kreisbögen und Ovale herzuleiten und zu implementieren. 
-Grundsätzlich erfolgt dabei auch die Reflexion an einer Geraden, doch diese muss in Abhängigkeit der Form erst einmal bestimmt werden. 
+Grundsätzlich erfolgt dabei auch die Reflexion an einer Geraden, doch diese muss in Abhängigkeit von der Form erst einmal bestimmt werden. 
 Für folgende Herleitungen wird erneut von einem Strahl, der in $O$ beginnt und sich in Richtung $\vec{r}$ ausbreitet, ausgegangen.
 \begin{wrapfigure}[18]{rH}{8.5cm}
 \includegraphics[scale=0.5]{pictures/CircleRef.png}
@@ -287,7 +276,7 @@ Daraus ergibt sich folgend der Punkt $S$ mit $\vec{s} = \vec{o} + \lambda \cdot 
 Um nun am Schnittpunkt eine Reflexion durchzuführen, ist es erneut notwendig, eine Tangente an das Oval anzulegen. 
 Dies erfolgt unter Ausnutzung der Brennpunkteigenschaft. \footcite{beweis-ellipse}
 Nach dem Satz vom Flüstergewölbe gilt für Brennstrahlen in Ellipsen, im Beispiel aus Abbildung \ref{fig:Ellipse} $\overline{PS}$ und $\overline{QS}$, dass die Winkelhalbierende der beiden Strahlen die Normale zur Tangente im Punkt der Ellipsenperipherie, hier $S$, ist.
-Unter Ausnutzung dieser Eigenschaft lässt sich für Ellipsen eine Gleichung zu Herleitung einer Tangente $T(S)$ aufstellen.\\
+Unter Ausnutzung dieser Eigenschaft lässt sich für Ellipsen eine Gleichung zur Herleitung einer Tangente $T(S)$ aufstellen.\\
 Um die Winkelhalbierende $\vec{n}$ zwischen den Brennstrahlen zu erhalten, werden diese normiert und aufaddiert.
 \begin{equation*}
 \begin{split}
@@ -342,7 +331,7 @@ Sind mehrere Objekte gleich weit entfernt, wird die Funktion zur Reflexion an Ec
 Bei jeder einzelnen Reflexion wird der vorherige Strahl in einer Liste gespeichert, sodass am Ende sämtliche Strahlen mit Anfangspunkt und Richtungsvektor geordnet in dieser Liste stehen. 
 Mithilfe dessen ist der Verlauf des Strahls durch den Prüfkörper eindeutig nachvollziehbar, indem die Reflexionspunkte in der gegebenen Reihenfolge betrachtet werden.
 
-\subsubsection{Scansimulation mit Einfach- und Mehrfachstrahl} %TODO besserer Titel?
+\subsubsection{Scansimulation mit Einfach- und Mehrfachstrahl}
 Die Simulation der Scanverfahren und die finale Berechnung und Auswertung der Reflexionen wird in der Klasse \textsc{Scan} umgesetzt.
 Basierend auf den von \textsc{Raytracer} ermittelten Punkten, an welchen die Strahlen reflektiert werden, errechnet man, welche Zeit zwischen den einzelnen Reflexionen vergeht.
 Weiterhin wird für jeden Auftreffpunkt geprüft, ob dieser im Messbereich des Senders liegt. 
@@ -352,18 +341,18 @@ Insgesamt geht man hierbei von einer über die Zeit exponentiell fallenden Inten
 Hierfür werden die Strahlen gleichmäßig über den gegebenen Streuwinkel verteilt und für jeden Strahl die zuvor erklärte Prozedur durchgeführt. 
 Schließlich werden alle ermittelten Wertepaare aus Zeit und Auftreffintensität zusammengefasst.\\
 Das Verfahren kann dabei von zwei verschiedenen Größen abhängig gemacht werden. 
-Zum einen der maximalen Anzahl an Reflexionen, die für alle Strahlen gleichermaßen festgelegt wird. Hierbei liegt der Vorteil darin, dass die benötigte Speichermenge und Rechenzeit limitiert ist und vom Benutzer besser gesteuert werden kann. 
+Zum einen von der maximalen Anzahl an Reflexionen, die für alle Strahlen gleichermaßen festgelegt wird. Hierbei liegt der Vorteil darin, dass die benötigte Speichermenge und Rechenzeit limitiert ist und vom Benutzer besser gesteuert werden kann. 
 Nachteilig ist hingegen, dass einzelne Strahlen, die in einem engen Bereich zwischen zwei begrenzenden Flächen oft reflektiert werden, damit insgesamt kürzere Strecken zurücklegen als Strahlen, die nur auf den äußeren Begrenzungsflächen des Prüfkörpers auftreffen.
 Dies führt zu eventuellen Verlusten von Messwerten, die in einer realen Anwendung wahrnehmbar gewesen wären, da die Strahlen, die einen kürzeren Weg zurücklegen mussten, eine höhere Intensität haben und eventuell nach weiteren Reflexionen den Sender noch erreichen könnten.\\
-Um diesen Fall ebenfalls abzudecken, ist eine zweite Version dieser Prozedur implementiert. 
+Um diesen Fall ebenfalls abzudecken, ist im Programm eine zweite Version dieser Prozedur implementiert. 
 Hierfür wird statt einer maximalen Anzahl an Reflexionen die maximale Weglänge eingelesen. 
 Damit legt jeder Strahl im Material die gleiche, vom Benutzer ausgewählte Strecke zurück, wodurch das Problem der Messwertverluste gelöst wird. 
 Der Nachteil hierbei liegt allerdings darin, dass man für einen Strahl nie voraussehen kann, wann die Maximalweglänge überschritten wird. 
-Daher kann es hierbei zu einer hohen Anzahl an Reflexionen kommen, welche proportional zu Speicherbedarf und Rechenzeit sind. 
+Daher kann es hierbei zu einer hohen Anzahl an Reflexionen kommen, welche proportional zu Speicherbedarf und Rechenzeit sind.
 Insgesamt muss hier für jeden Anwendungszweck separat entschieden werden, welches Verfahren aufgrund seiner Vor- und Nachteile gewählt wird.\\
 
 \newpage
-\subsubsection{Auswertung der Messergebnisse} %TODO verweis Struktogramm Anhang -> wenn eingefügt
+\subsubsection{Auswertung der Messergebnisse}
 \begin{wrapfigure}[15]{lH}{2.8cm}
 \includegraphics[scale=0.25]{pictures/Strahlenbuendel.png} 
 \caption{Darstellung Wegunterschied}
@@ -381,14 +370,14 @@ Dies erfolgt in der Methode \texttt{processScan}. \par
 \end{wrapfigure} 
 Zuerst werden dabei alle Wertepaare aus Zeit und Intensität errechnet und in zeitlicher Abfolge sortiert. 
 Zwischen zwei Wertepaaren liegt eine Zeitdifferenz, die für alle Paare errechnet und in eine Liste einsortiert wird.
-Anschließend wird aus dieser Liste an Differenzen die Stelle gesucht, an der der Quotient aus zwei aufeinanderfolgenden Zeitdifferenzen am größten ist und der größere Wert der Zeitdifferenzen als sogenannter Zeitbereich definiert. %TODO Wortwiederholung wird
+Anschließend wird aus dieser Liste an Differenzen die Stelle gesucht, an der der Quotient aus zwei aufeinanderfolgenden Zeitdifferenzen am größten ist und der größere Wert der Zeitdifferenzen als sogenannter Zeitbereich definiert.
 Dieser sagt aus, in welchem Abstand von einem gegebenen Treffer weitere Treffer nicht separat in das Diagramm für A-Scans eingetragen, sondern als ein Treffer zusammengefasst werden.\\
 Auf Basis des Zeitbereichs werden nun alle Scanwerte in Gruppen eingeteilt. 
-Ausgehend von einem Startwert werden alle folgenden Werte überprüft und so lange der selben Gruppe zugeordnet, bis sie nicht mehr innerhalb des Zeitbereichs liegen. 
-Die Gruppe wird dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durch\-schnitts\-zeit errechnet wird. %TODO durchschnittszeit wird falsch getrennt
+Ausgehend von einem Startwert werden alle folgenden Werte überprüft und solange der selben Gruppe zugeordnet, bis sie nicht mehr innerhalb des Zeitbereichs liegen. 
+Die Gruppe wird dann ausgewertet, indem eine durchschnittliche Intensität der Treffer sowie eine Durch\-schnitts\-zeit errechnet wird.
 Dieses Teilergebnis ist eines der neuen Wertepaare, welche dann im Diagramm für A-Scans dargestellt werden. 
-Die Gruppe wird daraufhin geleert, ein neuer Wert hinzugefügt und das Verfahren wiederholt, bis alle Scanergebnisse einer Gruppe zugeordnet wurden.
-
+Die Gruppe wird daraufhin geleert, ein neuer Wert hinzugefügt und das Verfahren wiederholt, bis alle Scanergebnisse einer Gruppe zugeordnet wurden.\\
+Der genaue Ablauf der Funktion ist auch im Struktogramm unter \ref{sec:documentation} nachzulesen.
 
 \subsection{Verwendung des Programms} %TODO für Programm neu kompilieren
 \begin{figure}[h]
@@ -396,7 +385,7 @@ Die Gruppe wird daraufhin geleert, ein neuer Wert hinzugefügt und das Verfahren
 \includegraphics[scale=0.315]{pictures/MainWindow.png}
 \caption{Simulationsfenster (MainWindow)}
 \end{figure}
-Im Sidebar für die Simulationseinstellungen (1) können Position, Ausrichtung und Art des Senders sowie weitere Parameter eingestellt werden. 
+In der Sidebar für die Simulationseinstellungen (1) können Position, Ausrichtung und Art des Senders sowie weitere Parameter eingestellt werden. 
 Die Position des Senders kann auch mittels der Pfeiltasten rechts und links automatisch entlang der Outline verschoben werden. 
 Der Winkel des Strahls zur x-Achse kann auch mit den Plus- und Minustasten eingestellt werden. 
 Mittels des Feldes \textit{Anzeige} kann man eine einzelne Reflexion anzeigen lassen. 
@@ -412,8 +401,8 @@ Die schwarzen Punkte an verschiedenen Rändern von Körpern sind die Punkte, an 
 Der Strahlenkegel wird mit einem Farbübergang deutlicher gekennzeichnet.\\
 In diesem Fall wird der ursprünglich linke Teil des Strahls (die blauen Bestandteile) am Rand des Kreises zerstreut, was zu einem Echo bei der vierten Reflexion führt.\\
 Das Scanpanel (4) stellt einen Graphen dar, in dem die Messergebnisse, also die Echos, dargestellt werden. 
-Im obigen Beispiel ist ein Echo bei ca. 2.1 Zeiteinheiten zu sehen: die blaue Linie leicht rechts von der Markierung an der X-Achse.\\
-\newpage %TODO in final notwendig?
+Im obigen Beispiel ist ein Echo bei ca. 2.1 Zeiteinheiten zu sehen: die blaue Linie leicht rechts von der Markierung an der X-Achse.
+\newpage
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.315]{pictures/EditorWindow.png}
@@ -432,12 +421,12 @@ Weiterhin kann man den gewählten Körper mit der linken und rechten Pfeiltaste 
 Die anderen Tools werden verwendet, indem eine Reihe von Punkten auf der Zeichenfläche (4) angeklickt wird.
 Je nach Tool bestimmen diese dann die Konstruktion des Körpers.
 Im Fall des \textit{Polygon} Tools entspricht jeder Klick einem Eckpunkt und ein erneuter Klick auf den ersten Punkt oder ein Klick der mittleren Maustaste beendet die Konstruktion.
-In jedem Tool kann die Konstruktion außerdem mit der rechten Maustaste vorzeitig abzubrechen. \\
+In jedem Tool kann die Konstruktion außerdem mit der rechten Maustaste vorzeitig abgebrochen werden. \\
 Das \textit{Rechteck} Tool hilft bei der Konstruktion der gleichnamigen regelmäßigen Vierecke, was zwar theoretisch aber oft nur schwierig mit dem \textit{Polygon} Tool möglich ist. 
 Dazu wird eine Linie zwischen den ersten zwei Punkten konstruiert. 
 Das Klicken der mittleren Maustaste konstruiert dann ein Rechteck mit Seiten parallel zu den Koordinatenachsen und der Linie als Diagonale. 
 Fügt man jedoch einen dritten Punkt hinzu, wird ein schiefes Rechteck konstruiert.
-Die Höhe des dritten Punktes über besagter Linie ist die Höhe des Rechtecsk und die Linie dessen Grundseite.\\
+Die Höhe des dritten Punktes über besagter Linie ist die Höhe des Rechtecks und die Linie dessen Grundseite.\\
 Die \textit{Kreis} und \textit{Kreisbogen} Tools funktionieren ähnlich.
 Der erste Punkt ist in beiden Fällen der Kreismittelpunkt.
 Der Abstand des zweiten Punktes vom Mittelpunkt legt den Radius fest.
@@ -450,36 +439,51 @@ Der dritte Punkt bestimmt dann ihre Exzentrizität, indem eine Ellipse ermittelt
 Da die beiden Brennpunkte auf der längeren Achse liegen, ist die Exzentrizität jedoch durch den Abstand der Brennpunkte nach oben beschränkt.\\
 Unabhängig vom gewählten Tool muss gewählt werden, ob die konstuierten Körper der Outline oder den Defekten hinzugefügt werden sollen. 
 Dies kann über die beiden Radiobuttons rechts von den Tools festgelegt werden.
-Um Ungenauigkeiten durch beliebiges Klicken auf der Zeichenfläche zu vermeiden, existiert außerdem ein Feld für exakte Eingabe der Koordinaten eines Punktes (3). Der nebenstehende Knopf führt dann automatisch einen Klick bei den gegebenen Koordinaten aus.
+Um Ungenauigkeiten durch beliebiges Klicken auf der Zeichenfläche zu vermeiden, existiert außerdem ein Feld für die exakte Eingabe der Koordinaten eines Punktes (3).
+Der nebenstehende Knopf führt dann automatisch einen Klick bei den gegebenen Koordinaten aus.
 
 \newpage
 \section{Zusammenfassung}
-Eine Flugzeugturbine, eine Schweißnaht oder ein Ölpipeline-Segment.
-All diese Bauteile sind häufig anzutreffen, können aber mit dem Röntgenverfahren nicht geprüft werden.
-Aufgrund der besonderen Bedingungen ist für diese Fälle die Ultraschallprüfung meist die geeignetste Methode.
-Sie bietet wenig Einschränkungen bei den zu prüfenden Materialien, der Prüfaufbau kann durch autonome Roboter sogar in das Innere einer Pipeline verlagert werden, und Schweißnähte in verbauten Brückenteilen stellen ebenfalls keine Herausforderung dar.
-Insgesamt ist die Prüfung mittels Ultraschall sehr vielseitig und flexibel einsetzbar.
-Rückblickend können wir das Ziel, das Verfahren genauer zu verstehen und mit anderen zu vergleichen, somit als erreicht ansehen.\\
-Ein weiteres Ziel war es, mithilfe des Programms im zweidimensionalen Raum Formen einzugeben und Prüfvorgänge daran zu simulieren. 
-Dabei können dem Sender vielseitige Eigenschaften zugewiesen werden.
-Das Programm selbst bietet dabei ein gutes Maß an Anschaulichkeit und Einstellungsmöglichkeiten.
-Trotzdem wäre es hier für zukünftige Projekte möglich, Erweiterungsmöglichkeiten mit einzubinden.
-Sinnvoll wäre hier die Implementierung von verschiedenen Materialien sowie die dazugehörigen 
-Schallgeschwindigkeiten und deren Einfluss auf die Messergebnisse. Auch die Übertragung der Berechnung und Darstellung auf den dreidimensionalen Raum ist denkbar, erfordert aber mehr Arbeitszeit als uns zur Verfügung stand.
-Daher sehen wir auch dieses Ziel trotz der gegebenen Erweiterungsmöglichkeiten als vollständig erreicht an.\\
-Die vom Programm bereitgestellten Möglichkeiten bieten die notwendige Grundlage, um einen Prüfplan zu erstellen. 
-Dabei ist es nicht nur für erfahrene Prüfer geeignet, sondern auch für Anfänger, die erst einmal eine Idee des Prüfvorgangs und des Verhaltens des Strahlenganges erlangen müssen.
-Auch kann man sich für das Prüfen ungewöhnlicher Geometrien und komplex geformter Körper einen Überblick über die möglichen Herangehensweisen schaffen. Die Vorbereitung auf die Prüfung wird durch die schnelle und einfache Veranschaulichung wesentlich vereinfacht. \\
-Das Rekonstruieren bereits durchgeführter Prüfverfahren, sofern sie sich auf den zweidimensionalen Raum abstrahieren lassen, ist grundsätzlich möglich. 
-Hierbei ist zu beachten, dass durch den idealisierten Strahlenverlauf die Messergebnisse nur näherungsweise der Realität entsprechen.
-Besonders wenn man von einer hohen Anzahl an Reflexionen ausgeht, sind die realen Messwerte schwer zu rekonstruieren.
-Hier zeigen sich die Nachteile eines Modells, denn dieses ist immer mit Ungenauigkeiten und Einschränkungen verbunden.
-Dies ist jedoch unumgänglich, weshalb für uns das Ziel der Prüfplanungshilfe als Funktion des Programms erreicht ist.\\ %TODO hier Übergang
-Wir streben einer Welt entgegen, in der der Mensch immer schneller, weiter und größer möchte. 
-Doch um die Gefahren, die sich aus dem enormen technischen Fortschritt ergeben, eindämmen zu können, ist es notwendig, sicherheitsrelevante Teile zerstörungsfrei prüfen zu können.
-Diesen Prozess möchten wir unterstützen.\\ %TODO umformulieren und verbessern
+% Bogen zur Einleitung
+    % Röntgen geht nicht -> Ultraschall
+% präzise, wesentliche Darstellung der Arbeitsergebnisse
+    % Information -> Verstehen, Vergleichen
+    % Planung und Umsetzung des Simulationsprogramms
+    % Verwendung Prüfplanung
+    % Verwendung Hypothesenverifizierung
+% Bezug Zielstellungen, pseudo-kritisch
+    % check, check, check, check
+    % aber: Programm nur 2d -> Zeitproblem
+% Bezug Erweiterungsmöglichkeiten
+    % 3d
+    % Materialien
+% Schluss: elegant, nicht schwülstig
+    
 
-
+Ein Brückenträger, Schienen oder ein Ölpipeline-Segment - all diese Bauteile sind häufig anzutreffen, können aber mit dem Röntgenverfahren nicht geprüft werden.
+Aufgrund ihrer Größe und Unbeweglichkeit muss hierbei ein mobil durchzuführendes Verfahren eingestzt werden, welches dennoch eine Prüfung auf innere Fehler, vergleichbar mit der Durchstrahlungsmethode, ermöglicht.\\
+So lassen sich die primären Vorzüge der Ultraschallprüfung zusammenfassen.
+Doch, wenn das Verfahren die selbe Genauigkeit wie eine Röntgen-Untersuchung bietet, dabei jedoch kostengünstiger und weniger gefährlich ist, warum ersetzt es diese dann nicht vollständig?
+Mit dieser Frage haben wir uns im Rahmen dieser Arbeit beschäftigt, um die Nachteile %TODO Probleme?
+des Verfahrens zu erkennen.
+Dabei haben wir vor allem das Problem der Prüfplanung identifiziert.
+%Die Interpretaition der Ergebnisse ist oft schwierig - im Gegensatz zu den selbst für Laien nachvollziehbaren Röntgenaufnahmen sind die A-Scans einer Ultraschallprüfung, grade in komplexeren Szenarien, nur mit einem fundierten Fachwissen zu deuten.
+Die Interpretaition der Ergebnisse ist oft schwierig, da die zeitlich versetzt auftretenden Echos erst in Zusammenhang mit den Abmessungen des Prüfkörpers und der Position und Ausrichtung des Prüfkopfes zur Identifikation von Fehlern genutzt werden können. Im Gegensatz dazu sind Röntgenaufnahmen selbst hochkomplexer Geometrien häufig für Laien auf einen Blick nachvollziehbar.\\
+Um diesem Missstand entgegen zu wirken, haben wir ein Programm zur Simulation Ultraschall-basierter zerstörungsfreier Materialprüfung entwickelt.
+%TODO Missstand ersetzen
+Dieses erfüllt heute unsere grundlegende Zielstellung, regelmäßige zweidimensionale Geometrien und einzelne Strahlengänge zu simulieren.
+Im Laufe der Arbeit erweiterten wir das Programm außerdem um komplexe Geomtrien sowie die Simulation eines Strahlenbündels.\\
+Die Kombination dieser Funktionen erlaubt den Einsatz des Programms für die Prüfplanung.
+Durch Verschieben des Senders und die Feineinstellung des Einstrahlungswinkels kann die richtige Ausgangssituation für vielfältige Prüfungsszenarien gefunden werden. \\
+Ein weiteres erreichtes Ziel ist die Verwendung zur Hypothesenverifizierung.
+Anders als bei der Prüfplanung sollen hier die aus einer bereits durchgeführten Prüfung abgeleiteten Vermutungen über Position, Form und Größe von Fehlern bestätigt oder entkräftet werden.
+Dazu wird die erwartete Situation im Programm nachgestellt und simuliert. 
+Mithilfe der Funktion, basierend auf einem ermittelten Strahlenverlauf, die Peaks eines A-Scans anzuzeigen, kann der Nutzer durch Abgleich mit den realen Messergebnisse auf den Wahrheitsgehalt seiner Hypothese schließen.\\
+Obwohl wir die Arbeit somit als erfolgreich bezeichnen können, konnten wir nicht alle Erweiterungsmöglichkeiten, die wir uns zu Beginn überlegten, umsetzen.
+Diese stellen zugleich die vielversprechendsten Ansätze für eine Fortführung des Projekts dar.
+Zum einen wäre eine Erweiterung der Algorithmen um regelmäßige dreidimensionale Geometrien denkbar, wenn auch sehr zeitaufwendig.
+Zum anderen lässt sich der Realismus der vorhandenen, zweidimensionalen Simulationen erhöhen, indem man Materialübergänge und materialspezifische Schallgeschwindigkeiten einführt, wodurch ein weites Feld an zusätzlichen Anwendungsmögichkeiten erschlossen wird.\\
+\[kreativer Schluss, Bezug zu Zukunft des Verfahrens?\]
 \newpage
 \section{Anhang}
 
@@ -723,7 +727,8 @@ Ist der Radikant hingegen positiv, ergibt sich daraus mit $\vec{s} = \vec{o} + \
 \subsubsection*{Funktion zur Berechnung gerichteter Winkel}
 %TODO vervollständigen
 
-\subsection{Programmdokumentation und Benutzungsanleitung}
+\subsection{Programmdokumentation}
+\label{sec:documentation}
 %TODO vervollständigen
 
 \newpage
@@ -733,10 +738,7 @@ Ist der Radikant hingegen positiv, ergibt sich daraus mit $\vec{s} = \vec{o} + \
 \printbibliography[type=book, title=Buchquellen]
 \printbibliography[type=misc, title=Bildquellen]
 Sämtliche anderen Bilder sind entweder Aufnahmen der Programmoberfläche oder eigens erstellte geometrische Konstruktionen und UML-Diagramme.
-%TODO
-%Gliederungspunkte überarbeite
-%Tipps von Florian überprüfen
-%Anhang fertig schreiben
+%TODO Tipps von Florian überprüfen
 %TODO FINAL: Wortrennung an Zeilenende und Satztrennung an Seitenende prüfen -> notfalls manuell ändern
 
 \eidesstattlicheerklaerung
